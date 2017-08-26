@@ -9,8 +9,8 @@
 
   & > .call {
     width: 40vw;
-    padding-top: 50px;
     margin-left: 15vw;
+    padding-top: 50px;
   }
 
   & > .call > h1 {
@@ -31,15 +31,17 @@
 
   & > .call > .simple-button {
     position: relative;
-    margin-top: 46px;
     z-index: 2;
+
+    margin-top: 46px;
   }
 
   & > .tale {
     position: absolute;
+    z-index: 1;
     right: 0;
     bottom: 0;
-    z-index: 1;
-  }
 
+    width: 72vw;
+  }
 }
