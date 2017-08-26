@@ -1,0 +1,21 @@
+@import 'ambience/typography';
+$simple-button-red: #ED5564;
+
+.simple-button {
+  font-family: $font-interface;
+  font-weight: $weight-bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+
+  width: 270px;
+  height: 55px;
+
+  cursor: pointer;
+
+  color: #FFF;
+  background-color: $simple-button-red;
+
+  &:hover {
+    background-color: darken($simple-button-red, 3%);
+  }
+}
