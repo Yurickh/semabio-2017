@@ -4,6 +4,7 @@ import App from './scenes/App'
 
 import 'reset-css'
 import './base/reset.css'
+import './base/typography.css'
 
 import registerServiceWorker from './registerServiceWorker'
 
