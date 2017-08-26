@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 
 import cloud1x from './cloud@1x.png'
 import cloud2x from './cloud@2x.png'
