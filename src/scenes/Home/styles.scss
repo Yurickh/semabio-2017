@@ -30,7 +30,9 @@
   }
 
   & > .call > .simple-button {
+    position: relative;
     margin-top: 46px;
+    z-index: 2;
   }
 
   & > .tale {
