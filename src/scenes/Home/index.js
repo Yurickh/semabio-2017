@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Button from '../../components/Button'
+import Cloud from '../../components/Cloud'
 
 import './styles.css'
 
@@ -15,6 +16,7 @@ class Home extends Component {
             Quero me inscrever
           </Button>
         </main>
+        <Cloud />
       </section>
     )
   }
