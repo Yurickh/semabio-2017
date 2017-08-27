@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar should render correctly 1`] = `
+<nav
+  className="navbar"
+>
+  <div
+    className="brand"
+  >
+    <img
+      className="logo"
+      src="semabio-logo.svg"
+    />
+    <span
+      className="name"
+    >
+      Semana da Biologia
+    </span>
+  </div>
+</nav>
+`;
