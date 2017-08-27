@@ -2,6 +2,6 @@
 
 exports[`Button should render correctly 1`] = `
 <button
-  className="simple-button -undefined"
+  className="simple-button -red"
 />
 `;

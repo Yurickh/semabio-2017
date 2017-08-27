@@ -17,4 +17,8 @@ Button.propTypes = {
   color: PropTypes.oneOf(['green', 'red', 'outline']),
 }
 
+Button.defaultProps = {
+  color: 'red'
+}
+
 export default Button
