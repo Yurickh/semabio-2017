@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Title from '../../components/Title'
+import Carrousel from '../../components/Carrousel'
 
 import './styles.css'
 
@@ -18,6 +19,9 @@ class About extends Component {
            de comunicação como um todo. Todavia, a estrutura atual da organização ainda não demonstrou
            convincentemente que vai participar na mudança de todos os recursos funcionais envolvidos.
         </p>
+        <h2 className="title">
+          Conheça nossa equipe
+        </h2>
       </section>
     )
   }

@@ -4,13 +4,26 @@
 .page-about {
   width: 70vw;
   margin: 0 auto;
-  text-align: center;
   margin-top: 80px;
   margin-bottom: 170px;
 
+  text-align: center;
+
   & > p {
-    color: #979797;
-    letter-spacing: .25px;
     line-height: 27px;
+
+    letter-spacing: .25px;
+
+    color: #979797;
+  }
+
+  & > h2.title {
+    font-size: 24px;
+
+    margin-top: 86px;
+
+    text-transform: uppercase;
+
+    color: #2F5035;
   }
 }
