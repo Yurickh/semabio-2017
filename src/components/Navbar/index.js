@@ -33,6 +33,16 @@ class Navbar extends Component {
           variant={this.variant()}
           onClick={this.props.toggleMenu}
         />
+
+        { this.props.open
+          ? (
+            <div className='links'>
+              <a className="link">Sobre</a>
+              <a className="link">Cronograma</a>
+            </div>
+          )
+          : null
+        }
       </div>
     )
   }

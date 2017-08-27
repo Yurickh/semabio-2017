@@ -33,23 +33,34 @@ class Home extends Component {
           toggleMenu={this.toggleMenu}
         />
 
-        <main className="call">
-          <h1>A Odisseia da vida</h1>
-          <p>Uma aventura pela origem da diversidade</p>
+        { this.state.menuIsOpen
+          ? null
+          : (
+            <main className="call">
+              <h1>A Odisseia da vida</h1>
+              <p>Uma aventura pela origem da diversidade</p>
 
-          <Button color="red">
-            Quero me inscrever
-          </Button>
-        </main>
+              <Button color="red">
+                Quero me inscrever
+              </Button>
+            </main>
+          )
+        }
 
-        <img className="tale"
-          alt=""
-          srcSet={
-            `${tale1x} 1x,
-             ${tale2x} 2x`
-          }
-          src={tale1x}
-        />
+        {
+          this.state.menuIsOpen
+          ? null
+          : (
+            <img className="tale"
+              alt=""
+              srcSet={
+                `${tale1x} 1x,
+                 ${tale2x} 2x`
+              }
+              src={tale1x}
+            />
+          )
+        }
 
         <Cloud />
       </section>
