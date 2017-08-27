@@ -1,11 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navbar should render correctly 1`] = `
-<nav
-  className="navbar"
+<div
+  className="navbar "
 >
-  <div
+  <a
     className="brand"
+    href="/"
   >
     <img
       alt="logo"
@@ -17,6 +18,10 @@ exports[`Navbar should render correctly 1`] = `
     >
       Semana da Biologia
     </span>
-  </div>
-</nav>
+  </a>
+  <NavBurger
+    onClick={[Function]}
+    variant=""
+  />
+</div>
 `;

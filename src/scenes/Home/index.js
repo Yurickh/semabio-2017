@@ -10,10 +10,29 @@ import tale2x from './tale@2x.png'
 import './styles.css'
 
 class Home extends Component {
+
+  state = {
+    menuIsOpen: false
+  }
+
+  toggleMenu = () => {
+    this.setState({
+      menuIsOpen: !this.state.menuIsOpen,
+    })
+  }
+
+  variant = () => {
+    return this.state.menuIsOpen ? '-open' : ''
+  }
+
   render() {
     return (
-      <section className="page-home">
-        <Navbar open={ this.props.open } toggleMenu={ this.props.toggleMenu } />
+      <section className={`page-home ${this.variant()}`}>
+        <Navbar
+          open={this.state.menuIsOpen}
+          toggleMenu={this.toggleMenu}
+        />
+
         <main className="call">
           <h1>A Odisseia da vida</h1>
           <p>Uma aventura pela origem da diversidade</p>
@@ -22,6 +41,7 @@ class Home extends Component {
             Quero me inscrever
           </Button>
         </main>
+
         <img className="tale"
           alt=""
           srcSet={
@@ -30,6 +50,7 @@ class Home extends Component {
           }
           src={tale1x}
         />
+
         <Cloud />
       </section>
     )
