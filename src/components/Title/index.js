@@ -11,9 +11,7 @@ class Title extends Component {
       <div className="simple-title">
         { this.props.children }
         <img className="divisor"
-          src={
-            `${divisor}`
-          }
+          src={divisor}
         />
       </div>
     )
