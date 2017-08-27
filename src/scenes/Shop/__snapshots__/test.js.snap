@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shop should render correctly 1`] = `
+<section
+  className="page-shop"
+>
+  <h2
+    className="title"
+  >
+    Quero me inscrever
+  </h2>
+  <p
+    className="description"
+  >
+    Escolha o pacote ideal para você!
+  </p>
+  <main
+    className="options"
+  >
+    <ShopCard
+      description="
+                  Lorem ipsum dolor
+                  Consectetur adipiscing elit
+                  Maecenas ante ipsum
+                  Etiam luctus rhoncus urna
+                "
+      price={19}
+      title="Básico"
+    />
+  </main>
+</section>
+`;
