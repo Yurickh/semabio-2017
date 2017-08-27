@@ -1,8 +1,11 @@
+@import "ambience/typography.scss";
+
 $price-box-color: #343434;
 
 .price-box {
   display: flex;
   align-items: center;
+  font-weight: $weight-bold;
 
   color: $price-box-color;
 
