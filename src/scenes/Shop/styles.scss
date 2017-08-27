@@ -3,4 +3,26 @@
   width: 100vw;
 
   background-color: #FAFAFA;
+  padding-top: 170px;
+
+  & > .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 26px;
+    letter-spacing: .41px;
+    line-height: 24px;
+
+    opacity: .53;
+  }
+
+  & > .options {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+
+    height: 500px;
+    margin-top: 42px;
+  }
 }

@@ -1,0 +1,23 @@
+$price-box-color: #343434;
+
+.price-box {
+  color: $price-box-color;
+  display: flex;
+  align-items: center;
+
+  & > .currency {
+    font-size: 30px;
+    letter-spacing: -.44px;
+  }
+
+  & > .integer {
+    font-size: 60px;
+    letter-spacing: -.88px;
+    line-height: 30px;
+  }
+
+  & > .decimal {
+    font-size: 14px;
+    align-self: flex-end;
+  }
+}

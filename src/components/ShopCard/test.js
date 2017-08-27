@@ -6,7 +6,12 @@ import ShopCard from '../ShopCard'
 
 describe('ShopCard', () => {
   it('should render correctly', () => {
-    const button = shallow(<ShopCard />)
+    const button = shallow(
+      <ShopCard
+        title="test title"
+        price={ 3.14 }
+      />
+    )
     expect(toJSON(button)).toMatchSnapshot()
   })
 })

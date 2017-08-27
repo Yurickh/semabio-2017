@@ -1,3 +1,17 @@
 .shop-card {
   background-color: #FFF;
+  box-shadow: rgba(#000, .5) 0 2px 4px;
+  width: 270px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  > .title {
+    font-size: 36px;
+    color: #FF7381;
+    letter-spacing: -.53px;
+    text-transform: uppercase;
+  }
 }

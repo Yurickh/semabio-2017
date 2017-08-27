@@ -1,3 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ShopCard should render correctly 1`] = `<div />`;
+exports[`ShopCard should render correctly 1`] = `
+<div
+  className="shop-card"
+>
+  <img
+    alt=""
+    className="icon"
+    src="icon-basic.svg"
+  />
+  <h3
+    className="title"
+  >
+    test title
+  </h3>
+  <Price>
+    3.14
+  </Price>
+</div>
+`;
