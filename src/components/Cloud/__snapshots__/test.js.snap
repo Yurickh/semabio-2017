@@ -2,9 +2,10 @@
 
 exports[`Cloud should render correctly 1`] = `
 <img
+  alt=""
   className="cloud"
   src="cloud@1x.png"
-  srcset="cloud@1x.png 1x,
+  srcSet="cloud@1x.png 1x,
            cloud@2x.png 2x"
 />
 `;

@@ -2,11 +2,11 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import toJSON from 'enzyme-to-json'
 
-import Navbar from '../Navbar'
+import Title from '../Title'
 
-describe('Navbar', () => {
+describe('Title', () => {
   it('should render correctly', () => {
-    const button = shallow(<Navbar />)
+    const button = shallow(<Title />)
     expect(toJSON(button)).toMatchSnapshot()
   })
 })

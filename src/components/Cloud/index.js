@@ -9,6 +9,7 @@ class Cloud extends Component {
   render() {
     return (
       <img className="cloud"
+        alt=""
         srcSet={
           `${cloud1x} 1x,
            ${cloud2x} 2x`
