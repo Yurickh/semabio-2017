@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import Button from '../../components/Button'
 import Cloud from '../../components/Cloud'
 import Navbar from '../../components/Navbar'
@@ -12,7 +13,7 @@ class Home extends Component {
   render() {
     return (
       <section className="page-home">
-        <Navbar />
+        <Navbar open={ this.props.open } toggleMenu={ this.props.toggleMenu } />
         <main className="call">
           <h1>A Odisseia da vida</h1>
           <p>Uma aventura pela origem da diversidade</p>
@@ -32,6 +33,11 @@ class Home extends Component {
       </section>
     )
   }
+}
+
+Home.propTypes = {
+  open: PropTypes.bool,
+  toggleMenu: PropTypes.func,
 }
 
 export default Home
