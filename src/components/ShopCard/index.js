@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import Price from '../Price'
+import Button from '../Button'
 
 import iconBasic from './icon-basic.svg'
 
@@ -19,7 +20,15 @@ class ShopCard extends Component {
           {this.props.title}
         </h3>
 
-        <Price>{this.props.price}</Price>
+        <div className="price">
+          <Price>{this.props.price}</Price>
+        </div>
+
+        <p className="description">
+          {this.props.description}
+        </p>
+
+        <Button color="green"> Comprar </Button>
       </div>
     )
   }

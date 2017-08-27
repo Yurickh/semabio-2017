@@ -14,8 +14,20 @@ exports[`ShopCard should render correctly 1`] = `
   >
     test title
   </h3>
-  <Price>
-    3.14
-  </Price>
+  <div
+    className="price"
+  >
+    <Price>
+      3.14
+    </Price>
+  </div>
+  <p
+    className="description"
+  />
+  <Button
+    color="green"
+  >
+     Comprar 
+  </Button>
 </div>
 `;

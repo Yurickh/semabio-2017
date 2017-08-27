@@ -8,8 +8,6 @@ class Price extends Component {
     const integer = Math.trunc(this.props.children)
     const decimal = Math.round((this.props.children - integer) * 100)
 
-    debugger
-
     return (
       <div className="price-box">
         <span className="currency">R$</span>
