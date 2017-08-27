@@ -20,8 +20,4 @@ class Title extends Component {
   }
 }
 
-Title.propTypes = {
-  color: PropTypes.string,
-}
-
 export default Title
