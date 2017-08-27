@@ -1,18 +1,25 @@
 @import 'ambience/typography.scss';
+@import 'ambience/responsive.scss';
 $simple-button-red: #ED5564;
 
 .simple-button {
-  font-weight: $weight-bold;
   font-size: 18px;
-  letter-spacing: 1px;
+  font-weight: $weight-bold;
 
   width: 270px;
   height: 55px;
 
   cursor: pointer;
+  letter-spacing: 1px;
 
   color: #FFF;
   background-color: $simple-button-red;
+
+  @include small-only {
+    font-size: calc(14px + 1vw);
+
+    width: 72vw;
+  }
 
   &:hover {
     background-color: darken($simple-button-red, 3%);

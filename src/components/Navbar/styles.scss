@@ -1,9 +1,14 @@
 @import "ambience/typography.scss";
+@import "ambience/responsive.scss";
 
 .navbar {
   width: 70vw;
-  margin-left: 15vw;
+  margin: 0 auto;
   padding-top: 32px;
+
+  @include small-only {
+    width: 82vw;
+  }
 
   & > .brand {
     display: flex;
