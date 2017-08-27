@@ -4,11 +4,9 @@ exports[`Shop should render correctly 1`] = `
 <section
   className="page-shop"
 >
-  <h2
-    className="title"
-  >
+  <Title>
     Quero me inscrever
-  </h2>
+  </Title>
   <p
     className="description"
   >

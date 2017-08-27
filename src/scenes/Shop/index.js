@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ShopCard from '../../components/ShopCard'
+import Title from '../../components/Title'
 
 import './styles.css'
 
@@ -7,7 +8,7 @@ class Shop extends Component {
   render() {
     return (
       <section className="page-shop">
-        <h2 className="title">Quero me inscrever</h2>
+        <Title>Quero me inscrever</Title>
         <p className="description">
           Escolha o pacote ideal para você!
         </p>

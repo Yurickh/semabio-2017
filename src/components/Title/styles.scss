@@ -1,0 +1,21 @@
+@import 'ambience/typography.scss';
+@import 'ambience/responsive.scss';
+
+.simple-title {
+  font-size: 32px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  text-transform: uppercase;
+
+  color: #2F5035;
+
+  & > .divisor {
+    width: 100px;
+    height: 4px;
+    margin-top: 12px;
+    margin-bottom: 40px;
+  }
+}

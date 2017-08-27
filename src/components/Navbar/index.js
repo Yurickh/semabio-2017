@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 
 // import iconFacebook from './facebook.svg'
 // import iconInstagram from './instagram.svg'
@@ -12,7 +11,7 @@ class Navbar extends Component {
     return (
       <nav className="navbar">
         <div className="brand">
-          <img className="logo" src={semabioLogo} />
+          <img className="logo" alt="logo" src={semabioLogo} />
           <span className="name">
             Semana da Biologia
           </span>
