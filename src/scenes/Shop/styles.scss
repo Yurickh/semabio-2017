@@ -1,28 +1,45 @@
 .page-shop {
-  height: 100vh;
   width: 100vw;
-
-  background-color: #FAFAFA;
+  height: 100vh;
   padding-top: 170px;
 
-  & > .description {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #FAFAFA;
 
+  & > .description {
     font-size: 26px;
-    letter-spacing: .41px;
     line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    letter-spacing: .41px;
 
     opacity: .53;
   }
 
   & > .options {
     display: flex;
-    justify-content: space-around;
     align-items: stretch;
+    justify-content: space-around;
 
     height: 500px;
     margin-top: 42px;
+  }
+
+  & > .shirt {
+    display: flex;
+
+    margin-top: 60px;
+    justify-content: center;
+  }
+
+  & > .shirt > .simple-button > .icon {
+    margin-right: 15px;
+  }
+
+  & > .shirt > .simple-button:hover > .icon {
+    // makes image white
+    filter: brightness(0) invert(1);
   }
 }

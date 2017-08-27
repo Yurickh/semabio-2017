@@ -60,5 +60,23 @@ exports[`Shop should render correctly 1`] = `
       title="Ultra"
     />
   </main>
+  <footer
+    className="shirt"
+  >
+    <Button
+      color="outline"
+    >
+      <img
+        alt="icone de camiseta"
+        className="icon"
+        src="shirt.svg"
+      />
+      <div
+        className="text"
+      >
+        Quero apenas a camiseta
+      </div>
+    </Button>
+  </footer>
 </section>
 `;

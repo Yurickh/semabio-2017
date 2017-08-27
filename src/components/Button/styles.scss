@@ -7,9 +7,6 @@ $simple-button-green: #58C166;
   font-size: 18px;
   font-weight: $weight-bold;
 
-  width: 270px;
-  height: 55px;
-
   cursor: pointer;
   letter-spacing: 1px;
 
@@ -32,5 +29,19 @@ $simple-button-green: #58C166;
 
   &.-green:hover {
     background-color: darken($simple-button-green, 3%);
+  }
+
+  &.-outline {
+    display: flex;
+    padding: 15px 45px;
+
+    color: $simple-button-green;
+    border: 2px solid $simple-button-green;
+    background-color: transparent;
+  }
+
+  &.-outline:hover {
+    background-color: $simple-button-green;
+    color: #FFF;
   }
 }

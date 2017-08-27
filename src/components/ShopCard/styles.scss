@@ -14,7 +14,7 @@ $shop-card-color-blue: #2CABCA;
   width: 270px;
 
   background-color: #FFF;
-  box-shadow: rgba(#000, .5) 0 2px 4px;
+  box-shadow: rgba(#000, .5) 0 2px 9px;
 
   & > .title {
     font-size: 36px;
@@ -44,7 +44,6 @@ $shop-card-color-blue: #2CABCA;
     justify-content: center;
 
     width: 100%;
-
     padding-bottom: 21px;
 
     border-bottom: $shop-card-color-divisor 1px solid;
@@ -64,5 +63,6 @@ $shop-card-color-blue: #2CABCA;
 
   & > .simple-button {
     width: 160px;
+    height: 55px;
   }
 }
