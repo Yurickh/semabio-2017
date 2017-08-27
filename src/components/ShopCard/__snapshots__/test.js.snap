@@ -7,10 +7,10 @@ exports[`ShopCard should render correctly 1`] = `
   <img
     alt=""
     className="icon"
-    src="icon-basic.svg"
+    src="icon-super.svg"
   />
   <h3
-    className="title"
+    className="title -green"
   >
     test title
   </h3>

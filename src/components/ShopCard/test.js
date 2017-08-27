@@ -10,6 +10,7 @@ describe('ShopCard', () => {
       <ShopCard
         title="test title"
         price={ 3.14 }
+        level={2}
       />
     )
     expect(toJSON(button)).toMatchSnapshot()

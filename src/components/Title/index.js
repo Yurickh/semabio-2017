@@ -12,9 +12,7 @@ class Title extends Component {
         { this.props.children }
         <img className="divisor"
           alt="divisor"
-          src={
-            `${divisor}`
-          }
+          src={divisor}
         />
       </div>
     )
