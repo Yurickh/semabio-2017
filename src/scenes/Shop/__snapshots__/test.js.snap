@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shop should render correctly 1`] = `
+<section
+  className="page-shop"
+>
+  <Title>
+    Quero me inscrever
+  </Title>
+  <p
+    className="description"
+  >
+    Escolha o pacote ideal para você!
+  </p>
+  <main
+    className="options"
+  >
+    <ShopCard
+      description="
+                  Lorem ipsum dolor
+                  Consectetur adipiscing elit
+                  Maecenas ante ipsum
+                  Etiam luctus rhoncus urna
+                "
+      level={0}
+      price={19}
+      title="Básico"
+    />
+    <ShopCard
+      description="
+                  Lorem ipsum dolor
+                  Consectetur adipiscing elit
+                  Maecenas ante ipsum
+                  Etiam luctus rhoncus urna
+                "
+      level={1}
+      price={39}
+      title="Médio"
+    />
+    <ShopCard
+      description="
+                  Lorem ipsum dolor
+                  Consectetur adipiscing elit
+                  Maecenas ante ipsum
+                  Etiam luctus rhoncus urna
+                "
+      level={2}
+      price={99}
+      title="Super"
+    />
+    <ShopCard
+      description="
+                  Lorem ipsum dolor
+                  Consectetur adipiscing elit
+                  Maecenas ante ipsum
+                  Etiam luctus rhoncus urna
+                "
+      level={3}
+      price={99.99}
+      title="Ultra"
+    />
+  </main>
+  <footer
+    className="shirt"
+  >
+    <Button
+      color="outline"
+    >
+      <img
+        alt="icone de camiseta"
+        className="icon"
+        src="shirt.svg"
+      />
+      <div
+        className="text"
+      >
+        Quero apenas a camiseta
+      </div>
+    </Button>
+  </footer>
+</section>
+`;

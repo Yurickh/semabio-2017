@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShopCard should render correctly 1`] = `
+<div
+  className="shop-card"
+>
+  <img
+    alt=""
+    className="icon"
+    src="icon-super.svg"
+  />
+  <h3
+    className="title -green"
+  >
+    test title
+  </h3>
+  <div
+    className="price"
+  >
+    <Price>
+      3.14
+    </Price>
+  </div>
+  <p
+    className="description"
+  />
+  <Button
+    color="green"
+  >
+     Comprar 
+  </Button>
+</div>
+`;

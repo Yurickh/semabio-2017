@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Home from '../Home'
 import About from '../About'
+import Shop from '../Shop'
 
 class App extends Component {
   render() {
@@ -8,10 +9,10 @@ class App extends Component {
       <div className="App">
         <Home />
         <About />
+        <Shop />
         {// <Team />
         // <Schedule />
         // <Features />
-        // <Shop />
         // <Faq />
         // <PlacesToStay />
         // <Map />
