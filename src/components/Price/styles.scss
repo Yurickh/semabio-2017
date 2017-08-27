@@ -1,0 +1,30 @@
+@import "ambience/typography.scss";
+
+$price-box-color: #343434;
+
+.price-box {
+  display: flex;
+  align-items: center;
+  font-weight: $weight-bold;
+
+  color: $price-box-color;
+
+  & > .currency {
+    font-size: 30px;
+
+    letter-spacing: -.44px;
+  }
+
+  & > .integer {
+    font-size: 60px;
+    line-height: 30px;
+
+    letter-spacing: -.88px;
+  }
+
+  & > .decimal {
+    font-size: 14px;
+
+    align-self: flex-end;
+  }
+}

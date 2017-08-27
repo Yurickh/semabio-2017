@@ -22,6 +22,7 @@ class Home extends Component {
           </Button>
         </main>
         <img className="tale"
+          alt=""
           srcSet={
             `${tale1x} 1x,
              ${tale2x} 2x`

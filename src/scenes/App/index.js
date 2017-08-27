@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Home from '../Home'
+import Shop from '../Shop'
 
 class App extends Component {
   render() {
@@ -10,8 +11,9 @@ class App extends Component {
         <Team />
         <Schedule />
         <Features />
+        */}
         <Shop />
-        <Faq />
+        {/*<Faq />
         <PlacesToStay />
         <Map />
         <Contact />

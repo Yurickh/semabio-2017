@@ -1,0 +1,68 @@
+$shop-card-color-divisor: #F0F0F0;
+$shop-card-color-description: #9A9A9A;
+$shop-card-color-red: #FF7381;
+$shop-card-color-yellow: #FCB755;
+$shop-card-color-green: #58C166;
+$shop-card-color-blue: #2CABCA;
+
+.shop-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: 270px;
+
+  background-color: #FFF;
+  box-shadow: rgba(#000, .5) 0 2px 9px;
+
+  & > .title {
+    font-size: 36px;
+
+    letter-spacing: -.53px;
+    text-transform: uppercase;
+  }
+
+  & > .title.-red {
+    color: $shop-card-color-red;
+  }
+
+  & > .title.-yellow {
+    color: $shop-card-color-yellow;
+  }
+
+  & > .title.-green {
+    color: $shop-card-color-green;
+  }
+
+  & > .title.-blue {
+    color: $shop-card-color-blue;
+  }
+
+  & > .price {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    padding-bottom: 21px;
+
+    border-bottom: $shop-card-color-divisor 1px solid;
+  }
+
+  & > .description {
+    font-size: 16px;
+    line-height: 31px;
+
+    padding: 0 28px;
+
+    text-align: center;
+    letter-spacing: -.4px;
+
+    color: $shop-card-color-description;
+  }
+
+  & > .simple-button {
+    width: 160px;
+    height: 55px;
+  }
+}
