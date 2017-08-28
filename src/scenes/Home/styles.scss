@@ -67,10 +67,15 @@
     bottom: 0;
 
     width: 72vw;
+    transition: opacity .15s ease-in;
 
     @include small-only {
       width: 95vw;
       margin-bottom: 2vh;
     }
+  }
+
+  & > .tale.-invisible {
+    opacity: 0;
   }
 }

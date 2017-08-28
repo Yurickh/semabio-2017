@@ -46,21 +46,14 @@ class Home extends Component {
             </main>
           )
         }
-
-        {
-          this.state.menuIsOpen
-          ? null
-          : (
-            <img className="tale"
-              alt=""
-              srcSet={
-                `${tale1x} 1x,
-                 ${tale2x} 2x`
-              }
-              src={tale1x}
-            />
-          )
-        }
+        <img className={`tale ${this.state.menuIsOpen ? '-invisible' : ''}`}
+          alt=""
+          srcSet={
+            `${tale1x} 1x,
+             ${tale2x} 2x`
+          }
+          src={tale1x}
+        />
 
         <Cloud />
       </section>

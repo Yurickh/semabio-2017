@@ -1,7 +1,11 @@
 .page-shop {
   width: 100vw;
   height: 100vh;
-  padding-top: 170px;
+  padding-top: 155px;
+
+  & .simple-title {
+    padding-top: 15px;
+  }
 
   & > .description {
     font-size: 26px;
