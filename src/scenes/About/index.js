@@ -8,7 +8,7 @@ class About extends Component {
   render() {
     return (
       <section className="page-about">
-        <Title>
+        <Title className="title">
           Sobre Nós
         </Title>
         <p>
@@ -22,6 +22,7 @@ class About extends Component {
         <h2 className="title">
           Conheça nossa equipe
         </h2>
+        <Carrousel />
       </section>
     )
   }

@@ -1,20 +1,28 @@
 @import 'ambience/typography.scss';
 @import 'ambience/responsive.scss';
 
+$page-about-color-darkgray: #979797;
+$page-about-color-darkslategrey: #2F5035;
+
 .page-about {
-  width: 70vw;
-  margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 170px;
 
   text-align: center;
+
+  & > p,
+  & > .title,
+  & > .carrousel > .bar {
+    width: 70vw;
+    margin: 0 auto;
+  }
 
   & > p {
     line-height: 27px;
 
     letter-spacing: .25px;
 
-    color: #979797;
+    color: $page-about-color-darkgray;
   }
 
   & > h2.title {
@@ -24,6 +32,10 @@
 
     text-transform: uppercase;
 
-    color: #2F5035;
+    color: $page-about-color-darkslategrey;
+  }
+
+  & > .carrousel {
+    margin-top: 56px;
   }
 }
