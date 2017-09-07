@@ -33,20 +33,16 @@ class Home extends Component {
           toggleMenu={this.toggleMenu}
         />
 
-        { this.state.menuIsOpen
-          ? null
-          : (
-            <main className="call">
-              <h1>A Odisseia da vida</h1>
-              <p>Uma aventura pela origem da diversidade</p>
+        <main className="call">
+          <h1>A Odisseia da vida</h1>
+          <p>Uma aventura pela origem da diversidade</p>
 
-              <Button color="red">
-                Quero me inscrever
-              </Button>
-            </main>
-          )
-        }
-        <img className={`tale ${this.state.menuIsOpen ? '-invisible' : ''}`}
+          <Button color="red">
+            Quero me inscrever
+          </Button>
+        </main>
+
+        <img className={`tale`}
           alt=""
           srcSet={
             `${tale1x} 1x,
