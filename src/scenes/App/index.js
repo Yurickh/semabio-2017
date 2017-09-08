@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Home from '../Home'
 import Shop from '../Shop'
+import Faq from '../Faq'
 
 class App extends Component {
   render() {
@@ -13,8 +14,8 @@ class App extends Component {
         <Features />
         */}
         <Shop />
-        {/*<Faq />
-        <PlacesToStay />
+        <Faq />
+        {/*<PlacesToStay />
         <Map />
         <Contact />
         <Partners /> */}
