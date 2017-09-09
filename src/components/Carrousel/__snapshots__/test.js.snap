@@ -1,0 +1,279 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Carrousel should render correctly 1`] = `
+<div
+  className="carrousel"
+>
+  <div
+    className="fog-before"
+    onClick={[Function]}
+  />
+  <div
+    className="people"
+  >
+    <div
+      className="person "
+      style={
+        Object {
+          "transform": "translateX(calc(-1920px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="person.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      style={
+        Object {
+          "transform": "translateX(calc(-1680px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="person.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      style={
+        Object {
+          "transform": "translateX(calc(-1440px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="person.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      style={
+        Object {
+          "transform": "translateX(calc(-1200px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="person.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      style={
+        Object {
+          "transform": "translateX(calc(-960px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="person.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      style={
+        Object {
+          "transform": "translateX(calc(-720px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="person.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      style={
+        Object {
+          "transform": "translateX(calc(-480px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="person.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      style={
+        Object {
+          "transform": "translateX(calc(-240px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="person.jpg"
+      />
+    </div>
+    <div
+      className="person -centered"
+      style={
+        Object {
+          "transform": "translateX(calc(0px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="person.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      style={
+        Object {
+          "transform": "translateX(calc(240px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="person.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      style={
+        Object {
+          "transform": "translateX(calc(480px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="person.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      style={
+        Object {
+          "transform": "translateX(calc(720px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="person.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      style={
+        Object {
+          "transform": "translateX(calc(960px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="person.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      style={
+        Object {
+          "transform": "translateX(calc(1200px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="person.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      style={
+        Object {
+          "transform": "translateX(calc(1440px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="person.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      style={
+        Object {
+          "transform": "translateX(calc(1680px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="person.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      style={
+        Object {
+          "transform": "translateX(calc(1920px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="person.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      style={
+        Object {
+          "transform": "translateX(calc(2160px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="person.jpg"
+      />
+    </div>
+  </div>
+  <div
+    className="bar"
+  >
+    <div
+      className="middle-bar"
+    />
+  </div>
+  <div
+    className="fog-after"
+    onClick={[Function]}
+  />
+</div>
+`;
