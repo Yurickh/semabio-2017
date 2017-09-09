@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import GoogleMapsLoader from 'google-maps'
+import { googleMapsKey } from '../../secret-keys'
 
 import './styles.css'
 
@@ -10,6 +11,8 @@ const colorWoods = '#3A7742'
 class GoogleMap extends Component {
   componentDidMount() {
     const { lat, lng, zoom } = this.props
+
+    GoogleMapsLoader.KEY = googleMapsKey()
 
     GoogleMapsLoader.load(google => {
       this.mapAPI = new google.maps.Map(this.mapNode, {
