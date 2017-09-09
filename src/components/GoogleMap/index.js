@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import GoogleMapsLoader from 'google-maps'
 
 import googleMapsStyle from '../../helpers/googleMapsStyle'
-import { googleMapsKey } from '../../secret-keys'
 
 import markerIcon from './markerIcon.svg'
 
@@ -13,7 +12,7 @@ class GoogleMap extends Component {
   componentDidMount() {
     const { lat, lng, zoom } = this.props
 
-    GoogleMapsLoader.KEY = googleMapsKey()
+    GoogleMapsLoader.KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY
 
     GoogleMapsLoader.load(google => {
       this.mapAPI = new google.maps.Map(this.mapNode, {
