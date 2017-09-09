@@ -29,6 +29,7 @@ class Carrousel extends Component {
           style={this.styleFor(i)}
           className={`person ${this.isSelected(i) ? '-centered' : ''}`}
           key={person.name + i}
+          onClick={() => this.moveToIndex(i)}
         >
           <img
             alt="avatar"
@@ -51,7 +52,7 @@ class Carrousel extends Component {
     }
 
     return {
-      transform: `translateX(calc(${offset * 240}px - 50%))`
+      transform: `translateX(calc(${offset * 180}px - 50%))`
     }
   }
 
@@ -67,6 +68,10 @@ class Carrousel extends Component {
     this.setState({
       selected: selected < 0 ? selected + numOfPeople : selected
     })
+  }
+
+  moveToIndex = (selected) => {
+    this.setState({ selected })
   }
 
   currentPerson = () => {
