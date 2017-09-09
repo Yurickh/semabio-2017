@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 
 import divisor from './divisor.svg'
 
@@ -12,6 +11,7 @@ class Title extends Component {
         { this.props.children }
         <img className="divisor"
           src={divisor}
+          alt="___________"
         />
       </div>
     )

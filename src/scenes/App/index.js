@@ -9,16 +9,14 @@ class App extends Component {
       <div className="App">
         <Home />
         <About />
+        {/* <Schedule />
+        <Features /> */}
         <Shop />
-        {// <Team />
-        // <Schedule />
-        // <Features />
-        // <Faq />
-        // <PlacesToStay />
-        // <Map />
-        // <Contact />
-        // <Partners /> */
-      }
+        {/* <Faq />
+        <PlacesToStay />
+        <Map />
+        <Contact />
+        <Partners /> */}
       </div>
     )
   }

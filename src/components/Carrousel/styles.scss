@@ -1,5 +1,9 @@
+@import "ambience/color.scss";
+
 .carrousel {
-  & > .peoples {
+  $num-of-people: 16;
+
+  & > .people {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,16 +11,30 @@
     margin-bottom: 24px;
   }
 
-  & > .peoples > .people {
-    cursor: pointer;
+  & > .people::before {
+    content: '';
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    left: 0;
+    background: linear-gradient(to right, $color-background 70%, rgba(#FFF, 0));
   }
 
-  & > .peoples > .people.-centered > .avatar {
+  & > .people::after {
+    content: '';
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    right: 0;
+    background: linear-gradient(to left, $color-background 70%, rgba(#FFF, 0));
+  }
+
+  & > .people > .person.-centered > .avatar {
     width: 100px;
     height: 100px;
   }
 
-  & > .peoples > .people > .avatar {
+  & > .people > .person > .avatar {
     width: 65px;
     height: 65px;
     margin-right: 5vw;
