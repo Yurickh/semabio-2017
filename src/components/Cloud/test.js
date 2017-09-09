@@ -6,7 +6,7 @@ import Cloud from '../Cloud'
 
 describe('Cloud', () => {
   it('should render correctly', () => {
-    const button = shallow(<Cloud />)
-    expect(toJSON(button)).toMatchSnapshot()
+    const cloud = shallow(<Cloud />)
+    expect(toJSON(cloud)).toMatchSnapshot()
   })
 })

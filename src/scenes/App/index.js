@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Home from '../Home'
+import About from '../About'
 import Shop from '../Shop'
 
 class App extends Component {
@@ -7,13 +8,11 @@ class App extends Component {
     return (
       <div className="App">
         <Home />
-        {/* <About />
-        <Team />
-        <Schedule />
-        <Features />
-        */}
+        <About />
+        {/* <Schedule />
+        <Features /> */}
         <Shop />
-        {/*<Faq />
+        {/* <Faq />
         <PlacesToStay />
         <Map />
         <Contact />
