@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Home from '../Home'
 import Shop from '../Shop'
+import Map from '../Map'
 
 class App extends Component {
   render() {
@@ -15,8 +16,9 @@ class App extends Component {
         <Shop />
         {/*<Faq />
         <PlacesToStay />
+        */}
         <Map />
-        <Contact />
+        {/*<Contact />
         <Partners /> */}
       </div>
     )

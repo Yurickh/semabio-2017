@@ -1,0 +1,26 @@
+.page-map {
+  width: 100vw;
+  min-height: 80vh;
+  margin-top: 150px;
+
+  & > .simple-title > .divisor {
+    margin-bottom: 24px;
+  }
+
+  & > .subtitle {
+    font-size: 26px;
+
+    text-align: center;
+    letter-spacing: .41px;
+
+    opacity: .53;
+  }
+
+  & > .map-container {
+    width: 50vw;
+    height: 450px;
+    margin-top: 42px;
+
+    background-color: red;
+  }
+}

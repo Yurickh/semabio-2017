@@ -1,7 +1,9 @@
 @import 'ambience/typography.scss';
 @import 'ambience/responsive.scss';
-$simple-button-red: #ED5564;
-$simple-button-green: #58C166;
+@import 'ambience/color.scss';
+
+$simple-button-red: $color-blood;
+$simple-button-green: $color-forest;
 
 .simple-button {
   font-size: 18px;
