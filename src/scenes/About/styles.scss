@@ -11,8 +11,7 @@ $page-about-color-darkslategrey: #2F5035;
   text-align: center;
 
   & > p,
-  & > .title,
-  & > .carrousel > .bar {
+  & > .title {
     width: 70vw;
     margin: 0 auto;
   }

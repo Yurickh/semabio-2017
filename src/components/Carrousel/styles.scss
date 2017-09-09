@@ -1,46 +1,69 @@
-@import "ambience/color.scss";
+@import 'ambience/color.scss';
 
 .carrousel {
   $num-of-people: 16;
 
-  & > .people {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
 
-    margin-bottom: 24px;
-  }
-
-  & > .people::before {
-    content: '';
-    height: 200px;
-    width: 250px;
+  &::before {
     position: absolute;
+    z-index: 1;
+    top: 0;
     left: 0;
+
+    width: 250px;
+    height: 200px;
+
+    content: '';
+
     background: linear-gradient(to right, $color-background 70%, rgba(#FFF, 0));
   }
 
-  & > .people::after {
-    content: '';
-    height: 200px;
-    width: 250px;
+  &::after {
     position: absolute;
+    z-index: 1;
+    top: 0;
     right: 0;
+
+    width: 250px;
+    height: 200px;
+
+    content: '';
+
     background: linear-gradient(to left, $color-background 70%, rgba(#FFF, 0));
+  }
+
+  & > .people {
+    position: relative;
+
+    overflow: hidden;
+
+    height: 130px;
+  }
+
+  & > .people > .person {
+    position: absolute;
+    top: 15px;
+    left: calc(50% - 35px);
+
+    transition: all .15s ease-in-out;
+  }
+
+  & > .people > .person.-centered {
+    top: 0;
+    left: calc(50% - 50px);
+  }
+
+  & > .people > .person > .avatar {
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
   }
 
   & > .people > .person.-centered > .avatar {
     width: 100px;
     height: 100px;
-  }
-
-  & > .people > .person > .avatar {
-    width: 65px;
-    height: 65px;
-    margin-right: 5vw;
-    margin-left: 5vw;
-
-    border-radius: 50%;
   }
 
   & > .bar {
