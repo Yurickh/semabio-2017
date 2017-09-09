@@ -246,21 +246,7 @@ exports[`Carrousel should render correctly 1`] = `
       <img
         alt="avatar"
         className="avatar"
-        src="person.jpg"
-      />
-    </div>
-    <div
-      className="person "
-      style={
-        Object {
-          "transform": "translateX(calc(2160px - 50%))",
-        }
-      }
-    >
-      <img
-        alt="avatar"
-        className="avatar"
-        src="person.jpg"
+        src="other-person.png"
       />
     </div>
   </div>
@@ -270,6 +256,20 @@ exports[`Carrousel should render correctly 1`] = `
     <div
       className="middle-bar"
     />
+  </div>
+  <div
+    className="info"
+  >
+    <div
+      className="name"
+    >
+      Ricardo Prado
+    </div>
+    <div
+      className="about"
+    >
+      Lorem Ipsum
+    </div>
   </div>
   <div
     className="fog-after"

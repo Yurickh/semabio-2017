@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import person from './images/person.jpg'
+import secondPerson from './images/other-person.png'
 
 import './styles.css'
 
@@ -9,21 +10,29 @@ class Carrousel extends Component {
     selected: 8
   }
 
-  people = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]
+  people = [...Array(16)].map(_ => ({
+      name: 'Ricardo Prado',
+      about: 'Lorem Ipsum',
+      photo: person,
+    })).concat([{
+      name: 'Potato Ramalho',
+      about: 'Muitas informações relevantes aqui',
+      photo: secondPerson,
+    }])
 
   isSelected = item => item === this.state.selected
 
-  createPeople = () => {
+  renderPeople = () => {
     return (
-      this.people.map((value, i) => (
+      this.people.map((person, i) => (
         <div
           style={this.styleFor(i)}
           className={`person ${this.isSelected(i) ? '-centered' : ''}`}
-          key={value}
+          key={person.name + i}
         >
           <img
             alt="avatar"
-            src={person}
+            src={person.photo}
             className='avatar'
           />
         </div>
@@ -60,15 +69,27 @@ class Carrousel extends Component {
     })
   }
 
+  currentPerson = () => {
+    return this.people[this.state.selected]
+  }
+
   render() {
     return (
       <div className="carrousel">
         <div className="fog-before" onClick={this.moveToPrevious} />
         <div className="people">
-          { this.createPeople() }
+          { this.renderPeople() }
         </div>
         <div className="bar">
           <div className="middle-bar" />
+        </div>
+        <div className="info">
+          <div className="name">
+            {this.currentPerson().name}
+          </div>
+          <div className="about">
+            {this.currentPerson().about}
+          </div>
         </div>
         <div className="fog-after" onClick={this.moveToNext} />
       </div>

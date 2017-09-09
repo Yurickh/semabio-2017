@@ -46,7 +46,7 @@
     top: 15px;
     left: 50%;
 
-    transition: top 1s, transform .25s ease-in-out;
+    transition: top 1s, transform .15s ease-in-out;
   }
 
   & > .people > .person.-centered {
@@ -57,8 +57,9 @@
     width: 70px;
     height: 70px;
 
-    border-radius: 50%;
     transition: all 1s;
+
+    border-radius: 50%;
   }
 
   & > .people > .person.-centered > .avatar {
@@ -81,5 +82,23 @@
     height: 3px;
 
     background-color: #58C166;
+  }
+
+  & > .info {
+    margin-top: 24px;
+  }
+
+  & > .info > .name {
+    font-size: 18px;
+  }
+
+  & > .info > .about {
+    font-size: 12px;
+
+    margin-top: 2px;
+
+    letter-spacing: 2.4px;
+
+    color: $color-light;
   }
 }
