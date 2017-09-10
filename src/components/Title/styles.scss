@@ -1,6 +1,5 @@
 @import 'ambience/typography.scss';
 @import 'ambience/responsive.scss';
-
 $simple-title-color-darkslategrey: #2F5035;
 
 .simple-title {
@@ -19,5 +18,15 @@ $simple-title-color-darkslategrey: #2F5035;
     height: 4px;
     margin-top: 12px;
     margin-bottom: 40px;
+
+    background-image: url('./divisor.svg');
+  }
+
+  &.-white {
+    color: #FFF;
+
+    & > .divisor {
+      background-image: url('./divisor-white.svg');
+    }
   }
 }
