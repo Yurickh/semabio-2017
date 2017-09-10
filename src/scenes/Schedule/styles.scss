@@ -1,0 +1,7 @@
+@import "ambience/color";
+
+.page-schedule {
+  & > .week-picker > .day {
+    color: $color-forest;
+  }
+}

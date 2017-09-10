@@ -23,6 +23,7 @@
     "eject": "react-scripts eject",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
-    "build": "npm run build-css && react-scripts build"
+    "build": "npm run build-css && react-scripts build",
+    "new": "source ./bin/new"
   }
 }
