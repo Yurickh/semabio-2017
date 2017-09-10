@@ -15,7 +15,10 @@ class App extends Component {
         <Features /> */}
         <Shop />
         <Faq />
+        {/*<PlacesToStay />
+        {/* <Faq />
         <PlacesToStay />
+        */}
         <Map />
         {/*<Contact />
         <Partners /> */}
