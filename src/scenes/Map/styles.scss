@@ -1,0 +1,52 @@
+@import 'ambience/color.scss';
+
+.page-map {
+  width: 100vw;
+  min-height: 80vh;
+  margin-top: 150px;
+
+  & > .simple-title > .divisor {
+    margin-bottom: 24px;
+  }
+
+  & > .subtitle {
+    font-size: 26px;
+
+    text-align: center;
+    letter-spacing: .41px;
+
+    opacity: .53;
+  }
+
+  & > .content {
+    display: flex;
+
+    margin-top: 42px;
+  }
+
+  & > .content > .map-container {
+    width: 50vw;
+    height: 450px;
+
+    background-color: red;
+  }
+
+  & > .content > .bus-lines {
+    font-size: 26px;
+
+    margin-top: 23px;
+    margin-left: 54px;
+
+    color: $color-bullfrog;
+  }
+
+  & > .content > .bus-lines > .line {
+    margin-top: 27px;
+  }
+
+  & > .content > .bus-lines > .simple-button {
+    margin-top: 45px;
+    width: 266px;
+    padding: 17px;
+  }
+}
