@@ -2,22 +2,15 @@ import React, { Component } from 'react'
 
 import Title from '../../components/Title'
 
+import scheduleData from '../../helpers/scheduleData'
+
 import './styles.css'
 
 class Schedule extends Component {
 	state = {
 		selected: 'SEG',
-		schedule: [
-			{ time:'08:00', name: 'Minicursos Bloco A'},
-			{ time:'11:30', name: 'Almoço'},
-			{ time:'13:00', name: 'Palestra de Abertura'},
-			{ time:'14:30', name: 'Palestra'},
-			{ time:'15:45', name: 'Coffee Break'},
-			{ time:'16:00', name: 'Roda da Conversa'},
-			{ time:'17:30', name: 'Jantar'},
-			{ time:'19:00 às 22:00', name: 'Minicursos Bloco B'},
-		]
 	}
+
 
 	choose = (day) => {
 		this.setState({
@@ -27,11 +20,15 @@ class Schedule extends Component {
 
 	renderTimes = () => null
 
+	schedule = () => {
+		return scheduleData[this.state.selected]
+	}
+
 	renderEvents = (type) => {
 		// grab all the even or the odd indexes, depending on type
 		const isOfType = index => index % 2 === +(type === 'even')
 
-		const events = this.state.schedule.filter((_, index) => isOfType(index))
+		const events = this.schedule().filter((_, index) => isOfType(index))
 
 		return events.map(event => (
 			<div className="event" key={`${event.time} - ${event.name}`}>
