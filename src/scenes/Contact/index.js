@@ -11,7 +11,7 @@ class Contact extends Component {
     return (
       <section className="page-contact">
         <Cloud />
-        <Title color="white">Contato</Title>
+        <Title white>Contato</Title>
 
         <h2 className="subtitle">Mande um email para nós, ou só um “oi” mesmo se quiser</h2>
 
