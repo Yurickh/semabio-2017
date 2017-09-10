@@ -1,0 +1,78 @@
+@import 'ambience/color';
+
+.schedule-table {
+  display: flex;
+  justify-content: center;
+
+  height: 550px;
+  margin-top: 33px;
+
+  & > .-odd {
+    align-self: flex-start;
+
+    text-align: right;
+  }
+
+  & > .-even {
+    align-self: flex-end;
+
+    text-align: left;
+  }
+
+  & > .events > .event {
+    line-height: 16px;
+
+    margin-right: 35px;
+
+    letter-spacing: -.25px;
+
+    color: $color-tuna;
+  }
+
+  & > .events > .event > .time {
+    font-size: 14px;
+
+    margin-top: 60px;
+  }
+
+  & > .events > .event > .name {
+    font-size: 18px;
+
+    margin-top: 1em;
+  }
+
+  & > .times > .sun {
+    position: relative;
+
+    width: 150px;
+    height: 3em;
+    margin-top: 60px;
+    z-index: 2;
+  }
+
+  & > .times > .sun::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: block;
+
+    width: 45px;
+    height: 45px;
+
+    content: '';
+
+    border-radius: 50%;
+    background-color: $color-sun;
+    z-index: 1;
+  }
+
+  & > .times > .sun.-small::before {
+    margin-top: -18px;
+  }
+
+  & > .times > .sun.-medium::before {
+    margin-top: -25px;
+  }
+}

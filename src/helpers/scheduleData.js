@@ -1,4 +1,4 @@
-export default {
+export default () => ({
   'SEG': [
     { time:'08:00', name: 'Minicursos Bloco A'},
     { time:'11:30', name: 'Almoço'},
@@ -59,4 +59,4 @@ export default {
     { time:'17:30', name: 'Jantar'},
     { time:'19:00 às 22:00', name: 'Festa de Despedida'},
   ],
-}
+})
