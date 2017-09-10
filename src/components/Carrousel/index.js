@@ -1,7 +1,20 @@
 import React, { Component } from 'react'
 
-import person from './images/person.jpg'
-import secondPerson from './images/other-person.png'
+import ademar from './images/ademar.jpg'
+import ana from './images/ana.jpg'
+import cibelle from './images/cibelle.jpg'
+import dhara from './images/dhara.jpg'
+import giovana from './images/giovana.jpg'
+import helena from './images/helena.jpg'
+import isadora from './images/isadora.jpg'
+import joao from './images/joao.jpg'
+import leticia from './images/leticia.jpg'
+import marcela from './images/marcela.jpg'
+import mariana from './images/mariana.jpg'
+import patryck from './images/patryck.jpg'
+import pedro from './images/pedro.jpg'
+import rodrigo from './images/rodrigo.jpg'
+import sarah from './images/sarah.jpg'
 
 import './styles.css'
 
@@ -11,13 +24,65 @@ class Carrousel extends Component {
   }
 
   people = [...Array(16)].map(_ => ({
-      name: 'Ricardo Prado',
-      about: 'Lorem Ipsum',
-      photo: person,
+      name: 'Letícia Campos',
+      about: ' ',
+      photo: leticia,
     })).concat([{
-      name: 'Potato Ramalho',
-      about: 'Muitas informações relevantes aqui',
-      photo: secondPerson,
+      name: 'Rodrigo Béllo',
+      about: ' ',
+      photo: rodrigo,
+    }]).concat([{
+      name: 'Ademar Dantas Jr.',
+      about: ' ',
+      photo: ademar,
+    }]).concat([{
+      name: 'João Antônio Alves',
+      about: ' ',
+      photo: joao,
+    }]).concat([{
+      name: 'Pedro Paulo Souza',
+      about: ' ',
+      photo: pedro,
+    }]).concat([{
+      name: 'Helena Schuch',
+      about: ' ',
+      photo: helena,
+    }]).concat([{
+      name: 'Ana Luísa Gouvêa',
+      about: ' ',
+      photo: ana,
+    }]).concat([{
+      name: 'Dhara Reis',
+      about: ' ',
+      photo: dhara,
+    }]).concat([{
+      name: 'Sarah Barreto',
+      about: ' ',
+      photo: sarah,
+    }]).concat([{
+      name: 'Giovana Frota',
+      about: ' ',
+      photo: giovana,
+    }]).concat([{
+      name: 'Cibelle Borges',
+      about: ' ',
+      photo: cibelle,
+    }]).concat([{
+      name: 'Mariana Batista',
+      about: ' ',
+      photo: mariana,
+    }]).concat([{
+      name: 'Marcela Novaes',
+      about: ' ',
+      photo: marcela,
+    }]).concat([{
+      name: 'Isadora Bretas',
+      about: ' ',
+      photo: isadora,
+    }]).concat([{
+      name: 'Patryck Dougllas',
+      about: ' ',
+      photo: patryck,
     }])
 
   isSelected = item => item === this.state.selected
