@@ -1,6 +1,8 @@
 @import 'ambience/typography.scss';
 @import 'ambience/responsive.scss';
 
+$simple-title-color-darkslategrey: #2F5035;
+
 .simple-title {
   font-size: 32px;
 
@@ -10,7 +12,7 @@
 
   text-transform: uppercase;
 
-  color: #2F5035;
+  color: $simple-title-color-darkslategrey;
 
   & > .divisor {
     width: 100px;

@@ -5,7 +5,7 @@ exports[`Title should render correctly 1`] = `
   className="simple-title"
 >
   <img
-    alt="divisor"
+    alt="___________"
     className="divisor"
     src="divisor.svg"
   />

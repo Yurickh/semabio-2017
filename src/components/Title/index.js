@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 
 import divisor from './divisor.svg'
 
@@ -11,16 +10,12 @@ class Title extends Component {
       <div className="simple-title">
         { this.props.children }
         <img className="divisor"
-          alt="divisor"
           src={divisor}
+          alt="___________"
         />
       </div>
     )
   }
-}
-
-Title.propTypes = {
-  color: PropTypes.string,
 }
 
 export default Title

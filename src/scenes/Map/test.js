@@ -2,11 +2,11 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import toJSON from 'enzyme-to-json'
 
-import Navbar from '../Navbar'
+import Map from '../Map'
 
-describe('Navbar', () => {
+describe('Map', () => {
   it('should render correctly', () => {
-    const navbar = shallow(<Navbar />)
-    expect(toJSON(navbar)).toMatchSnapshot()
+    const page = shallow(<Map />)
+    expect(toJSON(page)).toMatchSnapshot()
   })
 })
