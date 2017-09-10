@@ -7,7 +7,7 @@ import './styles.css'
 class Carrousel extends Component {
   people = profilesData()
   state = {
-    selected: 8
+    selected: Math.floor(Math.random() * this.people.length)
   }
 
   isSelected = item => item === this.state.selected
