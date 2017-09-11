@@ -11,7 +11,7 @@ class PlacesToStay extends Component {
 
         <h2 className="subtitle">Selecionamos alguns lugares baratinhos e próximos ao evento :)</h2>
 
-        <div className="content">
+        <main className="content">
           <div className="left">
             <div className="place">
               <h1 className="name">Pousada Damasco</h1>
@@ -31,7 +31,7 @@ class PlacesToStay extends Component {
             </div>
           </div>
 
-          <div className="bar"></div>
+          <div className="bar" />
 
           <div className="right">
             <div className="place">
@@ -47,7 +47,7 @@ class PlacesToStay extends Component {
               <span className="phone">(61) 98200-1879</span>
             </div>
           </div>
-        </div>
+        </main>
       </section>
     )
   }
