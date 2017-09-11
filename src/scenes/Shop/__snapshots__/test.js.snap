@@ -17,47 +17,61 @@ exports[`Shop should render correctly 1`] = `
   >
     <ShopCard
       description="
-                  Lorem ipsum dolor
-                  Consectetur adipiscing elit
-                  Maecenas ante ipsum
-                  Etiam luctus rhoncus urna
+                  Ciclo de Palestras +
+                  Coffee Break +
+                  Kit Semabio
                 "
       level={0}
       price={19}
-      title="Básico"
+      title="Pacote A"
     />
     <ShopCard
       description="
-                  Lorem ipsum dolor
-                  Consectetur adipiscing elit
-                  Maecenas ante ipsum
-                  Etiam luctus rhoncus urna
+                  Ciclo de Palestras +
+                  Coffee Break +
+                  Kit Semabio +
+                  1 Minicurso +
+                  Camiseta
                 "
       level={1}
       price={39}
-      title="Médio"
+      title="Pacote B"
     />
     <ShopCard
       description="
-                  Lorem ipsum dolor
-                  Consectetur adipiscing elit
-                  Maecenas ante ipsum
-                  Etiam luctus rhoncus urna
+                  Ciclo de Palestras +
+                  Coffee Break +
+                  Kit Semabio +
+                  2 Minicursos +
+                  Camiseta
                 "
       level={2}
       price={99}
-      title="Super"
+      title="Pacote C"
     />
     <ShopCard
       description="
-                  Lorem ipsum dolor
-                  Consectetur adipiscing elit
-                  Maecenas ante ipsum
-                  Etiam luctus rhoncus urna
+                  Ciclo de Palestras +
+                  Coffee Break +
+                  Kit Semabio +
+                  3 Minicursos +
+                  Camiseta
                 "
       level={3}
       price={99.99}
-      title="Ultra"
+      title="Pacote D"
+    />
+    <ShopCard
+      description="
+                  Ciclo de Palestras +
+                  Coffee Break +
+                  Kit Semabio +
+                  4 Minicursos +
+                  Camiseta
+                "
+      level={4}
+      price={99.99}
+      title="Pacote E"
     />
   </main>
   <footer
@@ -77,6 +91,11 @@ exports[`Shop should render correctly 1`] = `
         Quero apenas a camiseta
       </div>
     </Button>
+    <span
+      className="price"
+    >
+      Camiseta avulsa (R$ 25,00)
+    </span>
   </footer>
 </section>
 `;
