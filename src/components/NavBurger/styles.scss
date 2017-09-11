@@ -34,8 +34,9 @@
   }
 
   &.-open {
-    top: 0;
-    left: 17%;
+    position: fixed;
+    top: 30px;
+    right: 22%;
     z-index: 2;
 
     &::before,
