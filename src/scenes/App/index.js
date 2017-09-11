@@ -4,6 +4,7 @@ import About from '../About'
 import Shop from '../Shop'
 import Map from '../Map'
 import Contact from '../Contact'
+import PlacesToStay from '../PlacesToStay'
 
 class App extends Component {
   render() {
@@ -15,9 +16,9 @@ class App extends Component {
         <Features /> */}
         <Shop />
         {/* <Faq />
-        <PlacesToStay />
         */}
         <Map />
+        <PlacesToStay />
         <Contact />
         {/*<Partners /> */}
       </div>
