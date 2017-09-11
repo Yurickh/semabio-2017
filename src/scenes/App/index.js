@@ -3,6 +3,7 @@ import Home from '../Home'
 import About from '../About'
 import Shop from '../Shop'
 import Map from '../Map'
+import Contact from '../Contact'
 import PlacesToStay from '../PlacesToStay'
 
 class App extends Component {
@@ -18,8 +19,8 @@ class App extends Component {
         */}
         <Map />
         <PlacesToStay />
-        {/*<Contact />
-        <Partners /> */}
+        <Contact />
+        {/*<Partners /> */}
       </div>
     )
   }

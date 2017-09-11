@@ -7,7 +7,7 @@ exports[`ShopCard should render correctly 1`] = `
   <img
     alt=""
     className="icon"
-    src="icon-super.svg"
+    src="icon-3.svg"
   />
   <h3
     className="title -green"
@@ -21,7 +21,7 @@ exports[`ShopCard should render correctly 1`] = `
       3.14
     </Price>
   </div>
-  <p
+  <div
     className="description"
   />
   <Button

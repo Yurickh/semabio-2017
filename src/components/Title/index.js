@@ -1,21 +1,30 @@
 import React, { Component } from 'react'
-
-import divisor from './divisor.svg'
+import PropTypes from 'prop-types'
 
 import './styles.css'
 
 class Title extends Component {
+  whiteVariant = () => {
+    return this.props.white ? '-white' : ''
+  }
+
+  className = () => {
+    return this.props.className || ''
+  }
+
   render() {
     return (
-      <div className="simple-title">
+      <div className={`simple-title ${this.whiteVariant()} ${this.className()}`}>
         { this.props.children }
-        <img className="divisor"
-          src={divisor}
-          alt="___________"
-        />
+        <div className="divisor"></div>
       </div>
     )
   }
+}
+
+Title.propTypes = {
+  color: PropTypes.bool,
+  className: PropTypes.string,
 }
 
 export default Title
