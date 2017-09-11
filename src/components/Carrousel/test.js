@@ -8,22 +8,10 @@ describe('Carrousel', () => {
   let carrousel
 
   beforeEach(() => {
-    carrousel = shallow(<Carrousel />)
+    carrousel = shallow(<Carrousel deterministic />)
   })
 
   it('should render correctly', () => {
     expect(toJSON(carrousel)).toMatchSnapshot()
-  })
-
-  it('passes to the next when fog-after is clicked', () => {
-    const current = carrousel.state('selected')
-    carrousel.find('.fog-after').simulate('click')
-    expect(carrousel.state('selected')).toBe(current + 1)
-  })
-
-  it('returns to the previous when fog-before is clicked', () => {
-    const current = carrousel.state('selected')
-    carrousel.find('.fog-before').simulate('click')
-    expect(carrousel.state('selected')).toBe(current - 1)
   })
 })

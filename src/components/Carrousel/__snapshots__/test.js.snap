@@ -12,126 +12,6 @@ exports[`Carrousel should render correctly 1`] = `
     className="people"
   >
     <div
-      className="person "
-      onClick={[Function]}
-      style={
-        Object {
-          "transform": "translateX(calc(-1440px - 50%))",
-        }
-      }
-    >
-      <img
-        alt="avatar"
-        className="avatar"
-        src="person.jpg"
-      />
-    </div>
-    <div
-      className="person "
-      onClick={[Function]}
-      style={
-        Object {
-          "transform": "translateX(calc(-1260px - 50%))",
-        }
-      }
-    >
-      <img
-        alt="avatar"
-        className="avatar"
-        src="person.jpg"
-      />
-    </div>
-    <div
-      className="person "
-      onClick={[Function]}
-      style={
-        Object {
-          "transform": "translateX(calc(-1080px - 50%))",
-        }
-      }
-    >
-      <img
-        alt="avatar"
-        className="avatar"
-        src="person.jpg"
-      />
-    </div>
-    <div
-      className="person "
-      onClick={[Function]}
-      style={
-        Object {
-          "transform": "translateX(calc(-900px - 50%))",
-        }
-      }
-    >
-      <img
-        alt="avatar"
-        className="avatar"
-        src="person.jpg"
-      />
-    </div>
-    <div
-      className="person "
-      onClick={[Function]}
-      style={
-        Object {
-          "transform": "translateX(calc(-720px - 50%))",
-        }
-      }
-    >
-      <img
-        alt="avatar"
-        className="avatar"
-        src="person.jpg"
-      />
-    </div>
-    <div
-      className="person "
-      onClick={[Function]}
-      style={
-        Object {
-          "transform": "translateX(calc(-540px - 50%))",
-        }
-      }
-    >
-      <img
-        alt="avatar"
-        className="avatar"
-        src="person.jpg"
-      />
-    </div>
-    <div
-      className="person "
-      onClick={[Function]}
-      style={
-        Object {
-          "transform": "translateX(calc(-360px - 50%))",
-        }
-      }
-    >
-      <img
-        alt="avatar"
-        className="avatar"
-        src="person.jpg"
-      />
-    </div>
-    <div
-      className="person "
-      onClick={[Function]}
-      style={
-        Object {
-          "transform": "translateX(calc(-180px - 50%))",
-        }
-      }
-    >
-      <img
-        alt="avatar"
-        className="avatar"
-        src="person.jpg"
-      />
-    </div>
-    <div
       className="person -centered"
       onClick={[Function]}
       style={
@@ -143,7 +23,7 @@ exports[`Carrousel should render correctly 1`] = `
       <img
         alt="avatar"
         className="avatar"
-        src="person.jpg"
+        src="leticia.jpg"
       />
     </div>
     <div
@@ -158,7 +38,7 @@ exports[`Carrousel should render correctly 1`] = `
       <img
         alt="avatar"
         className="avatar"
-        src="person.jpg"
+        src="rodrigo.jpg"
       />
     </div>
     <div
@@ -173,7 +53,7 @@ exports[`Carrousel should render correctly 1`] = `
       <img
         alt="avatar"
         className="avatar"
-        src="person.jpg"
+        src="ademar.jpg"
       />
     </div>
     <div
@@ -188,7 +68,7 @@ exports[`Carrousel should render correctly 1`] = `
       <img
         alt="avatar"
         className="avatar"
-        src="person.jpg"
+        src="joao.jpg"
       />
     </div>
     <div
@@ -203,7 +83,7 @@ exports[`Carrousel should render correctly 1`] = `
       <img
         alt="avatar"
         className="avatar"
-        src="person.jpg"
+        src="pedro.jpg"
       />
     </div>
     <div
@@ -218,7 +98,7 @@ exports[`Carrousel should render correctly 1`] = `
       <img
         alt="avatar"
         className="avatar"
-        src="person.jpg"
+        src="helena.jpg"
       />
     </div>
     <div
@@ -233,7 +113,7 @@ exports[`Carrousel should render correctly 1`] = `
       <img
         alt="avatar"
         className="avatar"
-        src="person.jpg"
+        src="ana.jpg"
       />
     </div>
     <div
@@ -248,7 +128,7 @@ exports[`Carrousel should render correctly 1`] = `
       <img
         alt="avatar"
         className="avatar"
-        src="person.jpg"
+        src="dhara.jpg"
       />
     </div>
     <div
@@ -256,14 +136,104 @@ exports[`Carrousel should render correctly 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "transform": "translateX(calc(1440px - 50%))",
+          "transform": "translateX(calc(-1260px - 50%))",
         }
       }
     >
       <img
         alt="avatar"
         className="avatar"
-        src="other-person.png"
+        src="sarah.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(-1080px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="giovana.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(-900px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="cibelle.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(-720px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="mariana.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(-540px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="marcela.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(-360px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="isadora.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(-180px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="patryck.jpg"
       />
     </div>
   </div>
@@ -280,12 +250,12 @@ exports[`Carrousel should render correctly 1`] = `
     <div
       className="name"
     >
-      Ricardo Prado
+      Letícia Campos
     </div>
     <div
       className="about"
     >
-      Lorem Ipsum
+       
     </div>
   </div>
   <div
