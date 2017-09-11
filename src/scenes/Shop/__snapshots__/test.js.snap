@@ -10,54 +10,78 @@ exports[`Shop should render correctly 1`] = `
   <p
     className="description"
   >
-    Escolha o pacote ideal para você!
+     Escolha o pacote ideal para você! 
   </p>
   <main
     className="options"
   >
     <ShopCard
-      description="
-                  Lorem ipsum dolor
-                  Consectetur adipiscing elit
-                  Maecenas ante ipsum
-                  Etiam luctus rhoncus urna
-                "
+      description={
+        Array [
+          "Ciclo de Palestras",
+          "Coffee Break",
+          "Kit Semabio",
+        ]
+      }
       level={0}
-      price={19}
-      title="Básico"
+      price={40}
+      title="Pacote A"
     />
     <ShopCard
-      description="
-                  Lorem ipsum dolor
-                  Consectetur adipiscing elit
-                  Maecenas ante ipsum
-                  Etiam luctus rhoncus urna
-                "
+      description={
+        Array [
+          "Ciclo de Palestras",
+          "Coffee Break",
+          "Kit Semabio",
+          "1 Minicurso",
+          "Camiseta",
+        ]
+      }
       level={1}
-      price={39}
-      title="Médio"
+      price={50}
+      title="Pacote B"
     />
     <ShopCard
-      description="
-                  Lorem ipsum dolor
-                  Consectetur adipiscing elit
-                  Maecenas ante ipsum
-                  Etiam luctus rhoncus urna
-                "
+      description={
+        Array [
+          "Ciclo de Palestras",
+          "Coffee Break",
+          "Kit Semabio",
+          "2 Minicursos",
+          "Camiseta",
+        ]
+      }
       level={2}
-      price={99}
-      title="Super"
+      price={55}
+      title="Pacote C"
     />
     <ShopCard
-      description="
-                  Lorem ipsum dolor
-                  Consectetur adipiscing elit
-                  Maecenas ante ipsum
-                  Etiam luctus rhoncus urna
-                "
+      description={
+        Array [
+          "Ciclo de Palestras",
+          "Coffee Break",
+          "Kit Semabio",
+          "3 Minicursos",
+          "Camiseta",
+        ]
+      }
       level={3}
-      price={99.99}
-      title="Ultra"
+      price={60}
+      title="Pacote D"
+    />
+    <ShopCard
+      description={
+        Array [
+          "Ciclo de Palestras",
+          "Coffee Break",
+          "Kit Semabio",
+          "4 Minicursos",
+          "Camiseta",
+        ]
+      }
+      level={4}
+      price={70}
+      title="Pacote E"
     />
   </main>
   <footer
@@ -77,6 +101,11 @@ exports[`Shop should render correctly 1`] = `
         Quero apenas a camiseta
       </div>
     </Button>
+    <span
+      className="price"
+    >
+      Camiseta avulsa (R$ 25,00)
+    </span>
   </footer>
 </section>
 `;

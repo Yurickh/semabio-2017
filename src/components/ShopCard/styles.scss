@@ -1,9 +1,10 @@
 $shop-card-color-divisor: #F0F0F0;
 $shop-card-color-description: #9A9A9A;
 $shop-card-color-red: #FF7381;
-$shop-card-color-yellow: #FCB755;
+$shop-card-color-orange: #FCB755;
 $shop-card-color-green: #58C166;
 $shop-card-color-blue: #2CABCA;
+$shop-card-color-purple: #911AEC;
 
 .shop-card {
   display: flex;
@@ -11,15 +12,18 @@ $shop-card-color-blue: #2CABCA;
   flex-direction: column;
   justify-content: space-around;
 
-  width: 270px;
+  width: 210px;
+  height: 380px;
+  padding-bottom: 20px;
 
   background-color: #FFF;
   box-shadow: rgba(#000, .5) 0 2px 9px;
 
   & > .title {
-    font-size: 36px;
+    font-size: 24px;
+    margin-bottom: 10px;
 
-    letter-spacing: -.53px;
+    letter-spacing: -.4px;
     text-transform: uppercase;
   }
 
@@ -27,8 +31,8 @@ $shop-card-color-blue: #2CABCA;
     color: $shop-card-color-red;
   }
 
-  & > .title.-yellow {
-    color: $shop-card-color-yellow;
+  & > .title.-orange {
+    color: $shop-card-color-orange;
   }
 
   & > .title.-green {
@@ -39,21 +43,25 @@ $shop-card-color-blue: #2CABCA;
     color: $shop-card-color-blue;
   }
 
+  & > .title.-purple {
+    color: $shop-card-color-purple;
+  }
+
   & > .price {
     display: flex;
     justify-content: center;
 
     width: 100%;
-    padding-bottom: 21px;
+    padding-bottom: 20px;
 
     border-bottom: $shop-card-color-divisor 1px solid;
   }
 
   & > .description {
-    font-size: 16px;
-    line-height: 31px;
+    font-size: 14px;
+    line-height: 22px;
 
-    padding: 0 28px;
+    padding: 0 20px;
 
     text-align: center;
     letter-spacing: -.4px;
@@ -62,7 +70,33 @@ $shop-card-color-blue: #2CABCA;
   }
 
   & > .simple-button {
-    width: 160px;
-    height: 55px;
+    font-size: 16px;
+
+    width: 125px;
+    height: 35px;
+  }
+
+  &:nth-child(1) > .icon {
+    margin-top: 10px;
+  }
+
+  &:nth-child(2) > .icon {
+    margin-top: -20px;
+    margin-bottom: 5px;
+  }
+
+  &:nth-child(3) > .icon {
+    margin-top: -45px;
+    margin-bottom: 25px;
+  }
+
+  &:nth-child(4) > .icon {
+    margin-top: -65px;
+    margin-bottom: 25px;
+  }
+
+  &:nth-child(5) > .icon {
+    margin-top: -65px;
+    margin-bottom: 25px;
   }
 }
