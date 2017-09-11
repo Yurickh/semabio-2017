@@ -1,6 +1,9 @@
+@import "ambience/typography.scss";
+
 .page-shop {
-  width: 100vw;
+  width: 95vw;
   min-height: 100vh;
+  margin: 0 auto;
   padding-top: 170px;
 
   & > .description {
@@ -21,15 +24,27 @@
     align-items: stretch;
     justify-content: space-around;
 
-    height: 500px;
-    margin-top: 42px;
+    height: 380px;
+    margin-top: 70px;
   }
 
   & > .shirt {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     margin-top: 60px;
-    justify-content: center;
+
+    text-align: center;
+  }
+
+  & > .shirt > .simple-button {
+    width: 377px;
+    margin: 0 auto;
+  }
+
+  & > .shirt > .simple-button > .text {
+    font-weight: $weight-regular;
   }
 
   & > .shirt > .simple-button > .icon {
@@ -39,5 +54,15 @@
   & > .shirt > .simple-button:hover > .icon {
     // makes image white
     filter: brightness(0) invert(1);
+  }
+
+  & > .shirt > .price {
+    font-size: 14px;
+
+    margin-top: 12px;
+
+    letter-spacing: .5px;
+
+    color: #9A9A9A;
   }
 }

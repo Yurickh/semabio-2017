@@ -1,24 +1,28 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
-import person from './images/person.jpg'
-import secondPerson from './images/other-person.png'
+import profilesData from '../../helpers/profilesData'
 
 import './styles.css'
 
 class Carrousel extends Component {
-  state = {
-    selected: 8
+
+  static propTypes = {
+    deterministic: PropTypes.bool,
   }
 
-  people = [...Array(16)].map(_ => ({
-      name: 'Ricardo Prado',
-      about: 'Lorem Ipsum',
-      photo: person,
-    })).concat([{
-      name: 'Potato Ramalho',
-      about: 'Muitas informações relevantes aqui',
-      photo: secondPerson,
-    }])
+  getSelected = () => {
+    if (this.props.deterministic) {
+      return 0
+    } else {
+      return Math.floor(Math.random() * this.people.length)
+    }
+  }
+
+  people = profilesData()
+  state = {
+    selected: this.getSelected()
+  }
 
   isSelected = item => item === this.state.selected
 
