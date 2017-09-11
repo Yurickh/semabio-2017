@@ -4,26 +4,30 @@ import PropTypes from 'prop-types'
 import Price from '../Price'
 import Button from '../Button'
 
-import iconBasic from './icon-basic.svg'
-import iconMedium from './icon-medium.svg'
-import iconSuper from './icon-super.svg'
-import iconUltra from './icon-ultra.svg'
+import iconOne from './icon-1.svg'
+import iconTwo from './icon-2.svg'
+import iconThree from './icon-3.svg'
+import iconFour from './icon-4.svg'
+import iconFive from './icon-5.svg'
 
 import './styles.css'
 
 const Levels = [
   {
     variant: '-red',
-    image: iconBasic,
+    image: iconOne,
   }, {
-    variant: '-yellow',
-    image: iconMedium,
+    variant: '-orange',
+    image: iconTwo,
   }, {
     variant: '-green',
-    image: iconSuper,
+    image: iconThree,
   }, {
     variant: '-blue',
-    image: iconUltra,
+    image: iconFour,
+  }, {
+    variant: '-purple',
+    image: iconFive,
   }
 ]
 
@@ -57,7 +61,7 @@ class ShopCard extends Component {
 ShopCard.propTypes = {
   title: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
-  level: PropTypes.oneOf([0, 1, 2, 3]).isRequired,
+  level: PropTypes.oneOf([0, 1, 2, 3, 4]).isRequired,
   description: PropTypes.string,
 }
 

@@ -18,47 +18,61 @@ class Shop extends Component {
 
         <main className="options">
           <ShopCard
-            title="Básico"
+            title="Pacote A"
             price={19}
             level={0}
             description={`
-              Lorem ipsum dolor
-              Consectetur adipiscing elit
-              Maecenas ante ipsum
-              Etiam luctus rhoncus urna
+              Ciclo de Palestras +
+              Coffee Break +
+              Kit Semabio
             `}
           />
           <ShopCard
-            title="Médio"
+            title="Pacote B"
             price={39}
             level={1}
             description={`
-              Lorem ipsum dolor
-              Consectetur adipiscing elit
-              Maecenas ante ipsum
-              Etiam luctus rhoncus urna
+              Ciclo de Palestras +
+              Coffee Break +
+              Kit Semabio +
+              1 Minicurso +
+              Camiseta
             `}
           />
           <ShopCard
-            title="Super"
+            title="Pacote C"
             price={99}
             level={2}
             description={`
-              Lorem ipsum dolor
-              Consectetur adipiscing elit
-              Maecenas ante ipsum
-              Etiam luctus rhoncus urna
+              Ciclo de Palestras +
+              Coffee Break +
+              Kit Semabio +
+              2 Minicursos +
+              Camiseta
             `}
           />
           <ShopCard
-            title="Ultra"
+            title="Pacote D"
             price={99.99}
             level={3}
             description={`
-              Lorem ipsum dolor
-              Consectetur adipiscing elit
-              Maecenas ante ipsum
-              Etiam luctus rhoncus urna
+              Ciclo de Palestras +
+              Coffee Break +
+              Kit Semabio +
+              3 Minicursos +
+              Camiseta
+            `}
+          />
+          <ShopCard
+            title="Pacote E"
+            price={99.99}
+            level={4}
+            description={`
+              Ciclo de Palestras +
+              Coffee Break +
+              Kit Semabio +
+              4 Minicursos +
+              Camiseta
             `}
           />
         </main>
@@ -74,6 +88,7 @@ class Shop extends Component {
               Quero apenas a camiseta
             </div>
           </Button>
+          <span className="price">Camiseta avulsa (R$ 25,00)</span>
         </footer>
       </section>
     )
