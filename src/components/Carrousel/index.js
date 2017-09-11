@@ -1,13 +1,27 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 import profilesData from '../../helpers/profilesData'
 
 import './styles.css'
 
 class Carrousel extends Component {
+
+  static propTypes = {
+    deterministic: PropTypes.bool,
+  }
+
+  getSelected = () => {
+    if (this.props.deterministic) {
+      return 0
+    } else {
+      return Math.floor(Math.random() * this.people.length)
+    }
+  }
+
   people = profilesData()
   state = {
-    selected: Math.floor(Math.random() * this.people.length)
+    selected: this.getSelected()
   }
 
   isSelected = item => item === this.state.selected
