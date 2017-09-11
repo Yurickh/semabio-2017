@@ -12,68 +12,67 @@ class Shop extends Component {
     return (
       <section className="page-shop">
         <Title>Quero me inscrever</Title>
-        <p className="description">
-          Escolha o pacote ideal para você!
-        </p>
+
+        <p className="description"> Escolha o pacote ideal para você! </p>
 
         <main className="options">
           <ShopCard
             title="Pacote A"
-            price={19}
+            price={40}
             level={0}
-            description={`
-              Ciclo de Palestras +
-              Coffee Break +
-              Kit Semabio
-            `}
+            description={[
+              'Ciclo de Palestras',
+              'Coffee Break',
+              'Kit Semabio',
+            ]}
           />
           <ShopCard
             title="Pacote B"
-            price={39}
+            price={50}
             level={1}
-            description={`
-              Ciclo de Palestras +
-              Coffee Break +
-              Kit Semabio +
-              1 Minicurso +
-              Camiseta
-            `}
+            description={[
+              'Ciclo de Palestras',
+              'Coffee Break',
+              'Kit Semabio',
+              '1 Minicurso',
+              'Camiseta',
+            ]}
           />
           <ShopCard
             title="Pacote C"
-            price={99}
+            price={55}
             level={2}
-            description={`
-              Ciclo de Palestras +
-              Coffee Break +
-              Kit Semabio +
-              2 Minicursos +
-              Camiseta
-            `}
+            description={[
+              'Ciclo de Palestras',
+              'Coffee Break',
+              'Kit Semabio',
+              '2 Minicursos',
+              'Camiseta',
+            ]}
           />
           <ShopCard
             title="Pacote D"
-            price={99.99}
+            price={60}
             level={3}
-            description={`
-              Ciclo de Palestras +
-              Coffee Break +
-              Kit Semabio +
-              3 Minicursos +
-              Camiseta
-            `}
+            description={[
+              'Ciclo de Palestras',
+              'Coffee Break',
+              'Kit Semabio',
+              '3 Minicursos',
+              'Camiseta',
+            ]}
           />
           <ShopCard
             title="Pacote E"
-            price={99.99}
+            price={70}
             level={4}
-            description={`
-              Ciclo de Palestras +
-              Coffee Break +
-              Kit Semabio +
-              4 Minicursos +
-              Camiseta
-            `}
+            description={[
+              'Ciclo de Palestras',
+              'Coffee Break',
+              'Kit Semabio',
+              '4 Minicursos',
+              'Camiseta',
+            ]}
           />
         </main>
 

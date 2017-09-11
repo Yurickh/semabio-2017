@@ -48,9 +48,9 @@ class ShopCard extends Component {
           <Price>{this.props.price}</Price>
         </div>
 
-        <p className="description">
-          {this.props.description}
-        </p>
+        <div className="description">
+          {this.props.description.map(phrase => <div key={phrase}>{phrase}</div>)}
+        </div>
 
         <Button color="green"> Comprar </Button>
       </div>
@@ -62,7 +62,11 @@ ShopCard.propTypes = {
   title: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   level: PropTypes.oneOf([0, 1, 2, 3, 4]).isRequired,
-  description: PropTypes.string,
+  description: PropTypes.arrayOf(PropTypes.string),
+}
+
+ShopCard.defaultProps = {
+  description: []
 }
 
 export default ShopCard
