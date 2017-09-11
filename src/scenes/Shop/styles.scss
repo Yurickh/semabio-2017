@@ -1,3 +1,5 @@
+@import "ambience/typography.scss";
+
 .page-shop {
   width: 95vw;
   min-height: 100vh;
@@ -37,7 +39,12 @@
   }
 
   & > .shirt > .simple-button {
+    width: 377px;
     margin: 0 auto;
+  }
+
+  & > .shirt > .simple-button > .text {
+    font-weight: $weight-regular;
   }
 
   & > .shirt > .simple-button > .icon {
