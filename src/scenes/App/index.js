@@ -4,6 +4,8 @@ import About from '../About'
 import Shop from '../Shop'
 import Faq from '../Faq'
 import Map from '../Map'
+import Contact from '../Contact'
+import PlacesToStay from '../PlacesToStay'
 
 class App extends Component {
   render() {
@@ -17,11 +19,11 @@ class App extends Component {
         <Faq />
         {/*<PlacesToStay />
         {/* <Faq />
-        <PlacesToStay />
         */}
         <Map />
-        {/*<Contact />
-        <Partners /> */}
+        <PlacesToStay />
+        <Contact />
+        {/*<Partners /> */}
       </div>
     )
   }

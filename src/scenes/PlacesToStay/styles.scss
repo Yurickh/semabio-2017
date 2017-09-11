@@ -1,0 +1,107 @@
+@import 'ambience/typography.scss';
+@import 'ambience/responsive.scss';
+@import 'ambience/color.scss';
+
+.page-placestostay {
+  width: 100vw;
+  min-height: 80vh;
+  margin-top: 150px;
+
+  & > .simple-title > .divisor {
+    margin-bottom: 24px;
+  }
+
+  & > .subtitle {
+    font-size: 26px;
+
+    text-align: center;
+    letter-spacing: .41px;
+
+    opacity: .53;
+  }
+
+  & > .content {
+    display: flex;
+    justify-content: space-between;
+
+    width: 60vw;
+    margin: 0 auto;
+    margin-top: 42px;
+  }
+
+  & > .content > .left,
+  & > .content > .right {
+    width: 50%;
+  }
+
+  & > .content > .left > .place,
+  & > .content > .right > .place {
+    margin-top: 30px;
+
+    color: $color-bullfrog;
+  }
+
+  & > .content > .left > .place > .name,
+  & > .content > .right > .place > .name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  & > .content > .left > .place > .phone,
+  & > .content > .right > .place > .phone {
+    font-size: 18px;
+
+    display: block;
+
+    margin-top: 4px;
+
+    letter-spacing: .4px;
+  }
+
+  & > .content > .left > .place {
+    text-align: right;
+    padding-right: 80px;
+  }
+
+  & > .content > .right > .place {
+    text-align: left;
+    padding-left: 80px;
+  }
+
+  & > .content > .left > .place::after,
+  & > .content > .right > .place::before {
+    display: inline-block;
+
+    width: 40px;
+    height: 62px;
+
+    content: '';
+
+    background-image: url('icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  & > .content > .left > .place::after {
+    position: relative;
+    top: -50px;
+    right: -60px;
+
+    text-align: right;
+  }
+
+  & > .content > .right > .place::before {
+    position: relative;
+    top: 50px;
+    left: -60px;
+
+    text-align: left;
+  }
+
+  & > .content > .bar {
+    width: 2px;
+    height: 525px;
+
+    background-color: $color-bullfrog;
+  }
+}
