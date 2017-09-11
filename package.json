@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "prop-types": "^15.5.10",
+    "google-maps": "^3.2.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-scroll": "^1.5.4",

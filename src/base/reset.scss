@@ -1,5 +1,8 @@
+@import "ambience/color.scss";
+
 html {
   overflow-x: hidden;
+  background-color: $color-background;
 }
 
 * {

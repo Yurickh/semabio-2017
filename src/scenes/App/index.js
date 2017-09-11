@@ -1,22 +1,23 @@
 import React, { Component } from 'react'
 import Home from '../Home'
+import About from '../About'
 import Shop from '../Shop'
+import Map from '../Map'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Home />
-        {/* <About />
-        <Team />
-        <Schedule />
-        <Features />
-        */}
+        <About />
+        {/* <Schedule />
+        <Features /> */}
         <Shop />
-        {/*<Faq />
+        {/* <Faq />
         <PlacesToStay />
+        */}
         <Map />
-        <Contact />
+        {/*<Contact />
         <Partners /> */}
       </div>
     )

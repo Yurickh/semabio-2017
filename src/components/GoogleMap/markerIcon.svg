@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="65px" viewBox="0 0 51 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>marker</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="29.5" cy="46" rx="17.5" ry="13"></ellipse>
+        <filter x="-20.0%" y="-19.2%" width="140.0%" height="153.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BetterDesk" transform="translate(-334.000000, -5279.000000)">
+            <g id="marker" transform="translate(334.000000, 5279.000000)">
+                <g id="shadow" fill-opacity="1" fill="black">
+                    <use filter="url(#filter-2)" xlink:href="#path-1"></use>
+                </g>
+                <path d="M19.5,0 C8.73321429,0 0,8.778 0,19.6 C0,34.3 19.5,56 19.5,56 C19.5,56 39,34.3 39,19.6 C39,8.778 30.2667857,0 19.5,0 L19.5,0 Z M19.5,26.6 C15.6557143,26.6 12.5357143,23.464 12.5357143,19.6 C12.5357143,15.736 15.6557143,12.6 19.5,12.6 C23.3442857,12.6 26.4642857,15.736 26.4642857,19.6 C26.4642857,23.464 23.3442857,26.6 19.5,26.6 L19.5,26.6 Z" id="Shape" fill="#58C166"></path>
+            </g>
+        </g>
+    </g>
+</svg>

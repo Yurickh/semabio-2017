@@ -6,7 +6,7 @@ import Title from '../Title'
 
 describe('Title', () => {
   it('should render correctly', () => {
-    const button = shallow(<Title />)
-    expect(toJSON(button)).toMatchSnapshot()
+    const title = shallow(<Title />)
+    expect(toJSON(title)).toMatchSnapshot()
   })
 })
