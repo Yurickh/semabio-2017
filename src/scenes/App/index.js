@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Home from '../Home'
 import About from '../About'
 import Shop from '../Shop'
+import Faq from '../Faq'
 import Map from '../Map'
 import Contact from '../Contact'
 import PlacesToStay from '../PlacesToStay'
@@ -15,6 +16,8 @@ class App extends Component {
         {/* <Schedule />
         <Features /> */}
         <Shop />
+        <Faq />
+        {/*<PlacesToStay />
         {/* <Faq />
         */}
         <Map />

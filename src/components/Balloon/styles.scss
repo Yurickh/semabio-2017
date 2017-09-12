@@ -1,0 +1,58 @@
+@import "ambience/color.scss";
+
+.balloon-bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  width: 100%;
+  padding: 24px 36px;
+
+  background-color: #FFF;
+  box-shadow: 0 2px 4px 0 rgba(119,119,119,.5);
+
+  &.-question {
+    font-weight: bold;
+    line-height: 17px;
+
+    max-height: 80px;
+
+    color: #58C166;
+    border-radius: 100px;
+    border-bottom-left-radius: 0;
+  }
+
+  &.-answer {
+    font-size: 18px;
+    line-height: 27px;
+
+    margin-top: 94px;
+
+    color: $color-wall;
+    border-radius: 40px;
+    border-bottom-right-radius: 0;
+  }
+}
+
+.example-enter {
+  opacity: 0.01;
+  width: 0px;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  width: 100%;
+  transition: 700ms;
+}
+
+.example-leave {
+  opacity: 1;
+  width: 100%;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  width: 0px;
+  transition: 700ms;
+}
