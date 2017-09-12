@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+
 import Title from '../../components/Title'
+import Balloon from '../../components/Balloon'
 
 import questionsData from '../../helpers/questionsData'
 
@@ -19,6 +21,14 @@ class Faq extends Component {
     })
   }
 
+  question = () => {
+    return this.data[this.state.selected].question
+  }
+
+  answer = () => {
+    return this.data[this.state.selected].answer
+  }
+
   render() {
     return (
       <section className="page-faq">
@@ -29,16 +39,20 @@ class Faq extends Component {
         </p>
 
         <main className="balloons">
-          <div className="balloon question">
-            Minha inscrição na SemaBio me dá direito a que?
-          </div>
-          <div className="balloon answer">
-            Todo mundo! Estudantes de ensino médio, graduação, pós-graduação, professores, pessoas da
-             comunidade em geral… Qualquer um que goste de Biologia!
-          </div>
+          <Balloon type="question" key={this.question()}>
+            {this.question()}
+          </Balloon>
+          <Balloon type="answer">
+            {this.answer()}
+          </Balloon>
         </main>
 
         <aside>
+          <div className="divisor">
+            <div className="ball" style={{
+              top: `${58 + this.state.selected * 48}px`
+            }}/>
+          </div>
           <div className="left">
             {
               this.data.map((datum, index) => {

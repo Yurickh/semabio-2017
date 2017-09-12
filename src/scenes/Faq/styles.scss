@@ -1,9 +1,9 @@
+@import 'ambience/color.scss';
+
 .page-faq {
-  width: 100vw;
   width: 82vw;
   margin: 0 auto;
-  padding-top: 170px;
-  padding-bottom: 170px;
+  margin-top: 170px;
 
   & > .description {
     font-size: 26px;
@@ -22,42 +22,12 @@
     display: flex;
     justify-content: space-between;
 
+    height: 350px;
     margin-top: 43px;
   }
 
-  & > .balloons > .balloon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    box-sizing: border-box;
-    width: 48%;
-    padding: 24px 36px;
-
-    background-color: #FFF;
-    box-shadow: 0 2px 4px 0 rgba(119,119,119,.5);
-  }
-
-  & > .balloons > .question {
-    font-weight: bold;
-    line-height: 17px;
-
-    max-height: 80px;
-
-    color: #58C166;
-    border-radius: 100px;
-    border-bottom-left-radius: 0;
-  }
-
-  & > .balloons > .answer {
-    font-size: 18px;
-    line-height: 27px;
-
-    margin-top: 94px;
-
-    color: #7E7D7D;
-    border-radius: 40px;
-    border-bottom-right-radius: 0;
+  & > .balloons > span {
+    flex: 1;
   }
 
   & > aside {
@@ -66,6 +36,28 @@
     justify-content: space-between;
 
     margin-top: 24px;
+  }
+
+  & > aside > .divisor {
+    position: relative;
+
+    width: 1px;
+    height: 320px;
+
+    background-color: $color-wall;
+  }
+
+  & > aside > .divisor > .ball {
+    position: absolute;
+    left: -5px;
+
+    width: 11px;
+    height: 11px;
+
+    transition: top .25s ease-in-out;
+
+    border-radius: 50%;
+    background-color: $color-wall;
   }
 
   & > aside > .left {
@@ -84,13 +76,14 @@
   }
 
   & > aside > .left > span {
-    margin-top: 34px;
+    font-size: 18px;
+    line-height: 48px;
 
     cursor: pointer;
   }
 
   & > aside > .left > span:hover {
-    color: #7E7D7D;
+    color: $color-wall;
   }
 
   & > aside > .left > span.-active {
