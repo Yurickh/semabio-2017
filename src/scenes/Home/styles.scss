@@ -73,4 +73,9 @@
       margin-bottom: 2vh;
     }
   }
+
+  & > .cloud {
+    position: absolute;
+    bottom: 0;
+  }
 }

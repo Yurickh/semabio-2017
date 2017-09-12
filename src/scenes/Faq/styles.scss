@@ -1,0 +1,101 @@
+@import 'ambience/color.scss';
+
+.page-faq {
+  width: 82vw;
+  margin: 0 auto;
+  margin-top: 170px;
+
+  & > .description {
+    font-size: 26px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    letter-spacing: .41px;
+
+    opacity: .53;
+  }
+
+  & > .balloons {
+    display: flex;
+    justify-content: space-between;
+
+    height: 350px;
+    margin-top: 43px;
+  }
+
+  & > .balloons > span {
+    flex: 1;
+  }
+
+  & > aside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 24px;
+  }
+
+  & > aside > .divisor {
+    position: relative;
+
+    width: 1px;
+    height: 320px;
+
+    background-color: $color-wall;
+  }
+
+  & > aside > .divisor > .ball {
+    position: absolute;
+    left: -5px;
+
+    width: 11px;
+    height: 11px;
+
+    transition: top .25s ease-in-out;
+
+    border-radius: 50%;
+    background-color: $color-wall;
+  }
+
+  & > aside > .left {
+    font-size: 18px;
+    line-height: 22px;
+
+    display: flex;
+    flex-direction: column;
+
+    color: #A2A2A2;
+  }
+
+  & > aside > .left,
+  & > aside > .dino {
+    width: 48%;
+  }
+
+  & > aside > .left > span {
+    font-size: 18px;
+    line-height: 48px;
+
+    cursor: pointer;
+  }
+
+  & > aside > .left > span:hover {
+    color: $color-wall;
+  }
+
+  & > aside > .left > span.-active {
+    color: #58C166;
+  }
+
+  & > aside > .dino {
+    display: flex;
+    justify-content: center;
+  }
+
+  & > aside > .dino > img {
+    width: 80%;
+  }
+}
