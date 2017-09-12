@@ -13,6 +13,12 @@ class Faq extends Component {
     selected: 0,
   }
 
+  selectQuestion = (index) => {
+    this.setState({
+      selected: index
+    })
+  }
+
   render() {
     return (
       <section className="page-faq">
@@ -35,7 +41,17 @@ class Faq extends Component {
         <aside>
           <div className="left">
             {
-              this.data.map(datum => <span key={datum.question}>{datum.question}</span>)
+              this.data.map((datum, index) => {
+                return (
+                   <span
+                     key={datum.question}
+                     className={index === this.state.selected ? '-active' : ''}
+                     onClick={() => this.selectQuestion(index)}
+                    >
+                      {datum.question}
+                    </span>
+                )
+              })
             }
           </div>
           <div className="dino">
