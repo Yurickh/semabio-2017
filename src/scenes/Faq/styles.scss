@@ -38,7 +38,7 @@
     box-shadow: 0 2px 4px 0 rgba(119,119,119,.5);
   }
 
-  & > .balloons > .ask {
+  & > .balloons > .question {
     font-weight: bold;
     line-height: 17px;
 
@@ -60,7 +60,7 @@
     border-bottom-right-radius: 0;
   }
 
-  & > footer {
+  & > aside {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,7 +68,7 @@
     margin-top: 24px;
   }
 
-  & > footer > .left {
+  & > aside > .left {
     font-size: 18px;
     line-height: 22px;
 
@@ -78,31 +78,31 @@
     color: #A2A2A2;
   }
 
-  & > footer > .left,
-  & > footer > .dino {
+  & > aside > .left,
+  & > aside > .dino {
     width: 48%;
   }
 
-  & > footer > .left > span {
+  & > aside > .left > span {
     margin-top: 34px;
 
     cursor: pointer;
   }
 
-  & > footer > .left > span:hover {
+  & > aside > .left > span:hover {
     color: #7E7D7D;
   }
 
-  & > footer > .left > span.-active {
+  & > aside > .left > span.-active {
     color: #58C166;
   }
 
-  & > footer > .dino {
+  & > aside > .dino {
     display: flex;
     justify-content: center;
   }
 
-  & > footer > .dino > img {
+  & > aside > .dino > img {
     width: 80%;
   }
 }

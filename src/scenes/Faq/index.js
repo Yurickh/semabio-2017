@@ -1,21 +1,29 @@
 import React, { Component } from 'react'
 import Title from '../../components/Title'
 
+import questionsData from '../../helpers/questionsData'
+
 import dino from './dino.svg'
 
 import './styles.css'
 
 class Faq extends Component {
+  data = questionsData()
+  state = {
+    selected: 0,
+  }
+
   render() {
     return (
       <section className="page-faq">
         <Title>Dúvidas Frequentes</Title>
+
         <p className="description">
-          Caso sua dúvida não esteja aqui, entre em contato.
+          Caso sua dúvida não esteja aqui, entre em contato conosco.
         </p>
 
         <main className="balloons">
-          <div className="balloon ask">
+          <div className="balloon question">
             Minha inscrição na SemaBio me dá direito a que?
           </div>
           <div className="balloon answer">
@@ -24,30 +32,19 @@ class Faq extends Component {
           </div>
         </main>
 
-        <footer>
+        <aside>
           <div className="left">
-            <span className="-active">
-              Quem pode se inscrever na SemaBio
-            </span>
-            <span>
-              Em até quantos minicursos posso me inscrever?
-            </span>
-            <span>
-              Quais as formas de pagamento?
-            </span>
-            <span>
-              Minha inscrição na SemaBio me dá direito a que?
-            </span>
-            <span>
-              Como posso pegar meus certificados?
-            </span>
+            {
+              this.data.map(datum => <span key={datum.question}>{datum.question}</span>)
+            }
           </div>
           <div className="dino">
             <img
               src={dino}
+              alt="philosoraptor"
             />
           </div>
-        </footer>
+        </aside>
       </section>
     )
   }
