@@ -1,4 +1,8 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+
+import { Link } from 'react-scroll'
+
 import Button from '../../components/Button'
 import Cloud from '../../components/Cloud'
 import Navbar from '../../components/Navbar'
@@ -17,9 +21,14 @@ class Home extends Component {
           <h1>A Odisseia da vida</h1>
           <p>Uma aventura pela origem da diversidade</p>
 
-          <Button color="red">
-            Quero me inscrever
-          </Button>
+          <Link to="shop"
+            smooth="easeInOutQuad"
+            duration={500}
+          >
+            <Button color="red">
+              Quero me inscrever
+            </Button>
+          </Link>
         </main>
         <img className="tale"
           alt=""
