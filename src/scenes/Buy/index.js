@@ -1,13 +1,28 @@
 import React, { Component } from 'react'
 
 import Button from '../../components/Button'
+
 import miniCoursesData from '../../helpers/miniCoursesData'
+import ShopClient from '../../helpers/ShopClient'
 
 import './styles.css'
+
+const shirtId = 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzEwOTE5NzY4ODg1Ng=='
 
 class Buy extends Component {
 	miniCourses = miniCoursesData()
 	validProducts = ['A', 'B', 'C', 'D', 'E', 'camiseta']
+	state = {
+		shirt: null
+	}
+
+	componentDidMount() {
+		this.shopClient = ShopClient()
+
+		this.shopClient.fetchProduct(shirtId)
+		.then(shirt => this.setState({ shirt: shirt.attrs }))
+		.catch(error => console.error('Error while fetching shirt: ' + error))
+	}
 
 	isInvalid = () => {
 		const { product } = this.props.match.params
@@ -28,15 +43,24 @@ class Buy extends Component {
 	}
 
 	renderShirtPicker = () => {
+		const { shirt } = this.state
+
+		if (!shirt) return null
+
+		const shirtSizes = this.state.shirt.variants.map(size => ({
+			name: size.attrs.title.value,
+			id: size.attrs.id.value,
+		}))
+
 		return (
 			<div className="shirt-picker">
 				Selecione o tamanho da sua camiseta:
 				<select ref={selector => this.shirtSizeSelector = selector}>
-					<option value="PP">PP</option>
-					<option value="P">P</option>
-					<option value="M">M</option>
-					<option value="G">G</option>
-					<option value="GG">GG</option>
+					{
+						shirtSizes.map(size => {
+							return <option value={size.id} key={size.id}>{size.name}</option>
+						})
+					}
 				</select>
 			</div>
 		)
@@ -68,14 +92,29 @@ class Buy extends Component {
 			<div className="course-picker">
 				Escolha seus mini-cursos:
 				<ul>
-					{ this.miniCourses.map(miniCourse => <li>{miniCourse}</li>) }
+					{ this.miniCourses.map(miniCourse => <li key={miniCourse}>{miniCourse}</li>) }
 				</ul>
 			</div>
 		)
 	}
 
 	buy = () => {
-		console.log(this.shirtSizeSelector.value)
+		if (!this.shopClient) return
+
+		if (this.shirtSizeSelector) {
+
+			this.shopClient.createCheckout()
+			.then(checkout => {
+				const lineItems = [{
+					variantId: this.shirtSizeSelector.value,
+					quantity: 1,
+				}]
+				return this.shopClient.addLineItems(checkout.attrs.id.value, lineItems)
+			})
+			.then(checkout => {
+				window.location.href = checkout.attrs.webUrl.value
+			})
+		}
 	}
 
 	render() {

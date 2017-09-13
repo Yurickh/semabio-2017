@@ -1,11 +1,10 @@
-import ShopifyBuy from 'shopify-buy'
+import Client, { Config } from 'shopify-buy'
 
-export default function shopClient() {
-  this.client ||= ShopifyBuy.buildClient({
-    accessToken: process.env.REACT_APP_SHOPIFY_TOKEN,
+export default function ShopClient() {
+  const config = new Config({
     domain: process.env.REACT_APP_SHOPIFY_DOMAIN,
-    appId: process.env.REACT_APP_SHOPIFY_APP_ID,
+    storefrontAccessToken: process.env.REACT_APP_SHOPIFY_TOKEN,
   })
 
-  return this.client
+  return new Client(config)
 }
