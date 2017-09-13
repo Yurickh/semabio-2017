@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
+import ReactSVG from 'react-svg'
 import scheduleData from '../../helpers/scheduleData'
+
+import sun from './sun.svg'
 
 import './styles.css'
 
 class ScheduleTable extends Component {
 	scheduleData = scheduleData()
-	evenTimes = ['medium', 'big', 'small', 'moon']
-	oddTimes = ['small', 'big', 'medium', 'minimal']
+	oddTimes = ['small', 'full', 'medium', 'minimal']
+	evenTimes = ['half', 'medium', 'small', 'moon']
 
 	static propTypes = {
 		selected: PropTypes.oneOf(Object.keys(scheduleData()))
@@ -39,7 +42,9 @@ class ScheduleTable extends Component {
 			<div
 				key={time}
 				className={`sun -${time}`}
-			/>
+			>
+				<ReactSVG path={sun} />
+			</div>
 		))
 	}
 
