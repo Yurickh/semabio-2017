@@ -2,27 +2,51 @@ import React, { Component } from 'react'
 
 import Button from '../../components/Button'
 
-import miniCoursesData from '../../helpers/miniCoursesData'
 import GraphQL from '../../helpers/GraphQL'
 import ShopClient from '../../helpers/ShopClient'
 
 import './styles.css'
 
-const shirtId = 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzEwOTE5NzY4ODg1Ng=='
-
 class Buy extends Component {
-	miniCourses = miniCoursesData()
-	validProducts = ['A', 'B', 'C', 'D', 'E', 'camiseta']
-	state = {
-		shirt: null
+	validProducts = {
+		A: 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzEwOTE4Mzg2MDc2MA==',
+		B: 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzEwOTIzNDI1Nzk0NA==',
+		C: 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzEwOTMyMzkxMTE5Mg==',
+		D: 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzEwOTMyODgyNjM5Mg==',
+		E: 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzEwOTMzMjAzNzY1Ng==',
+		camiseta: 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzEwOTE5NzY4ODg1Ng==',
 	}
+	state = {}
 
 	componentDidMount() {
 		this.shopClient = ShopClient()
 
-		this.shopClient.fetchProduct(shirtId)
-		.then(shirt => this.setState({ shirt: GraphQL.read(shirt) }))
-		.catch(error => console.error('Error while fetching shirt: ' + error))
+		this.shopClient.fetchAllProducts()
+		.then(productsData => {
+			GraphQL.read(productsData)
+			.map(product => ({
+				name: this.getTitle(product.get('title')),
+				variants: product.get('variants').map(variant => ({
+					name: variant.get('title'),
+					id: variant.get('id'),
+				})),
+			}))
+			.forEach(product => {
+				this.setState({
+					[product.name]: product.variants
+				})
+			})
+		})
+		.catch(error => console.error('Error while fetching products: ' + error))
+	}
+
+	getTitle = (title) => {
+		const broken = title.split(' ')
+
+		if (broken[0] === 'Pacote') return broken[1]
+		if (broken[0] === 'Camiseta') return 'camiseta'
+
+		return undefined
 	}
 
 	isInvalid = () => {
@@ -32,7 +56,7 @@ class Buy extends Component {
 			return true
 		}
 
-		if (!this.validProducts.includes(product)) {
+		if (!Object.keys(this.validProducts).includes(product)) {
 			return true
 		}
 
@@ -44,14 +68,11 @@ class Buy extends Component {
 	}
 
 	renderShirtPicker = () => {
-		const { shirt } = this.state
+		const { camiseta } = this.state
 
-		if (!shirt) return null
+		if (!camiseta) return null
 
-		const shirtSizes = this.state.shirt.get('variants').map(size => ({
-			name: size.get('title'),
-			id: size.get('id'),
-		}))
+		const shirtSizes = this.state.camiseta
 
 		return (
 			<div className="shirt-picker">
@@ -93,29 +114,53 @@ class Buy extends Component {
 			<div className="course-picker">
 				Escolha seus mini-cursos:
 				<ul>
-					{ this.miniCourses.map(miniCourse => <li key={miniCourse}>{miniCourse}</li>) }
+					{/* { this.miniCourses.map(miniCourse => <li key={miniCourse}>{miniCourse}</li>) } */}
 				</ul>
 			</div>
 		)
 	}
 
+	addShirtToCheckout = (checkoutId) => {
+		const lineItems = [{
+			variantId: this.shirtSizeSelector.value,
+			quantity: 1,
+		}]
+		return this.shopClient.addLineItems(checkoutId, lineItems)
+	}
+
+	addCourseToCheckout = (checkoutId) => {
+		const { product } = this.props.match.params
+
+		const lineItems = [{
+			variantId: this.state[product][0].id,
+			quantity: 1,
+		}]
+		return this.shopClient.addLineItems(checkoutId, lineItems)
+	}
+
 	buy = () => {
 		if (!this.shopClient) return
 
-		if (this.shirtSizeSelector) {
+		this.shopClient.createCheckout()
+		.then(checkout => {
+			if (this.shirtSizeSelector) {
+				return this.addShirtToCheckout(GraphQL.read(checkout).get('id'))
+			} else {
+				return checkout
+			}
+		})
+		.then(checkout => {
+			const { product } = this.props.match.params
 
-			this.shopClient.createCheckout()
-			.then(checkout => {
-				const lineItems = [{
-					variantId: this.shirtSizeSelector.value,
-					quantity: 1,
-				}]
-				return this.shopClient.addLineItems(GraphQL.read(checkout).get('id'), lineItems)
-			})
-			.then(checkout => {
-				window.location.href = GraphQL.read(checkout).get('webUrl')
-			})
-		}
+			if (product !== 'camiseta') {
+				return this.addCourseToCheckout(GraphQL.read(checkout).get('id'))
+			}
+
+			return checkout
+		})
+		.then(checkout => {
+			window.location.href = GraphQL.read(checkout).get('webUrl')
+		})
 	}
 
 	render() {
