@@ -6,7 +6,7 @@ import './styles.css'
 class Button extends Component {
   render() {
     return (
-      <button className={`simple-button -${this.props.color}`}>
+      <button {...this.props} className={`simple-button -${this.props.color}`}>
         { this.props.children }
       </button>
     )

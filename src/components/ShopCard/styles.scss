@@ -1,12 +1,14 @@
-$shop-card-color-divisor: #F0F0F0;
-$shop-card-color-description: #9A9A9A;
-$shop-card-color-red: #FF7381;
-$shop-card-color-orange: #FCB755;
-$shop-card-color-green: #58C166;
-$shop-card-color-blue: #2CABCA;
-$shop-card-color-purple: #911AEC;
+@import "ambience/typography.scss";
 
 .shop-card {
+  $color-red: #FF7381;
+  $color-blue: #2CABCA;
+  $color-green: #58C166;
+  $color-purple: #911AEC;
+  $color-orange: #FCB755;
+  $color-divisor: #F0F0F0;
+  $color-description: #9A9A9A;
+
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -28,23 +30,23 @@ $shop-card-color-purple: #911AEC;
   }
 
   & > .title.-red {
-    color: $shop-card-color-red;
+    color: $color-red;
   }
 
   & > .title.-orange {
-    color: $shop-card-color-orange;
+    color: $color-orange;
   }
 
   & > .title.-green {
-    color: $shop-card-color-green;
+    color: $color-green;
   }
 
   & > .title.-blue {
-    color: $shop-card-color-blue;
+    color: $color-blue;
   }
 
   & > .title.-purple {
-    color: $shop-card-color-purple;
+    color: $color-purple;
   }
 
   & > .price {
@@ -54,7 +56,7 @@ $shop-card-color-purple: #911AEC;
     width: 100%;
     padding-bottom: 20px;
 
-    border-bottom: $shop-card-color-divisor 1px solid;
+    border-bottom: $color-divisor 1px solid;
   }
 
   & > .description {
@@ -66,11 +68,12 @@ $shop-card-color-purple: #911AEC;
     text-align: center;
     letter-spacing: -.4px;
 
-    color: $shop-card-color-description;
+    color: $color-description;
   }
 
-  & > .simple-button {
+  & > a > .simple-button {
     font-size: 16px;
+    font-weight: $weight-regular;
 
     width: 125px;
     height: 35px;

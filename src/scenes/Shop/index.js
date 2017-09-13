@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+
 import ShopCard from '../../components/ShopCard'
 import Title from '../../components/Title'
 import Button from '../../components/Button'
@@ -9,6 +11,8 @@ import './styles.css'
 
 class Shop extends Component {
   render() {
+    const { url } = this.props.match
+
     return (
       <section className="page-shop">
         <Title>Quero me inscrever</Title>
@@ -17,9 +21,10 @@ class Shop extends Component {
 
         <main className="options">
           <ShopCard
-            title="Pacote A"
+            product="A"
             price={40}
             level={0}
+            root={url}
             description={[
               'Ciclo de Palestras',
               'Coffee Break',
@@ -27,9 +32,10 @@ class Shop extends Component {
             ]}
           />
           <ShopCard
-            title="Pacote B"
+            product="B"
             price={50}
             level={1}
+            root={url}
             description={[
               'Ciclo de Palestras',
               'Coffee Break',
@@ -39,9 +45,10 @@ class Shop extends Component {
             ]}
           />
           <ShopCard
-            title="Pacote C"
+            product="C"
             price={55}
             level={2}
+            root={url}
             description={[
               'Ciclo de Palestras',
               'Coffee Break',
@@ -51,9 +58,10 @@ class Shop extends Component {
             ]}
           />
           <ShopCard
-            title="Pacote D"
+            product="D"
             price={60}
             level={3}
+            root={url}
             description={[
               'Ciclo de Palestras',
               'Coffee Break',
@@ -63,9 +71,10 @@ class Shop extends Component {
             ]}
           />
           <ShopCard
-            title="Pacote E"
+            product="E"
             price={70}
             level={4}
+            root={url}
             description={[
               'Ciclo de Palestras',
               'Coffee Break',
@@ -77,16 +86,18 @@ class Shop extends Component {
         </main>
 
         <footer className="shirt">
-          <Button color='outline'>
-            <img
-              className="icon"
-              alt='icone de camiseta'
-              src={iconShirt}
-            />
-            <div className="text">
-              Quero apenas a camiseta
-            </div>
-          </Button>
+          <Link to={`${url}comprar/camiseta`}>
+            <Button color='outline'>
+              <img
+                className="icon"
+                alt='icone de camiseta'
+                src={iconShirt}
+              />
+              <div className="text">
+                Quero apenas a camiseta
+              </div>
+            </Button>
+          </Link>
           <span className="price">Camiseta avulsa (R$ 25,00)</span>
         </footer>
       </section>
