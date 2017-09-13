@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import Button from '../../components/Button'
 
 import miniCoursesData from '../../helpers/miniCoursesData'
+import GraphQL from '../../helpers/GraphQL'
 import ShopClient from '../../helpers/ShopClient'
 
 import './styles.css'
@@ -20,7 +21,7 @@ class Buy extends Component {
 		this.shopClient = ShopClient()
 
 		this.shopClient.fetchProduct(shirtId)
-		.then(shirt => this.setState({ shirt: shirt.attrs }))
+		.then(shirt => this.setState({ shirt: GraphQL.read(shirt) }))
 		.catch(error => console.error('Error while fetching shirt: ' + error))
 	}
 
@@ -47,9 +48,9 @@ class Buy extends Component {
 
 		if (!shirt) return null
 
-		const shirtSizes = this.state.shirt.variants.map(size => ({
-			name: size.attrs.title.value,
-			id: size.attrs.id.value,
+		const shirtSizes = this.state.shirt.get('variants').map(size => ({
+			name: size.get('title'),
+			id: size.get('id'),
 		}))
 
 		return (
@@ -109,10 +110,10 @@ class Buy extends Component {
 					variantId: this.shirtSizeSelector.value,
 					quantity: 1,
 				}]
-				return this.shopClient.addLineItems(checkout.attrs.id.value, lineItems)
+				return this.shopClient.addLineItems(GraphQL.read(checkout).get('id'), lineItems)
 			})
 			.then(checkout => {
-				window.location.href = checkout.attrs.webUrl.value
+				window.location.href = GraphQL.read(checkout).get('webUrl')
 			})
 		}
 	}
