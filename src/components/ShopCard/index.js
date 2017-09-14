@@ -52,7 +52,7 @@ class ShopCard extends Component {
           {this.props.description.map(phrase => <div key={phrase}>{phrase}</div>)}
         </div>
 
-        <Button color="green"> Comprar </Button>
+        {/*<Button color="green"> Comprar </Button>*/}
       </div>
     )
   }

@@ -14,7 +14,7 @@
   & > .cloud {
     position: absolute;
     z-index: 1;
-    top: 0;
+    top: -10px;
 
     transform: rotate(180deg);
   }

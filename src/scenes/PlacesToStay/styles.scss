@@ -83,7 +83,7 @@
 
   & > .content > .left > .place::after {
     position: relative;
-    top: -50px;
+    top: -75px;
     right: -60px;
 
     text-align: right;
@@ -91,7 +91,7 @@
 
   & > .content > .right > .place::before {
     position: relative;
-    top: 50px;
+    top: 75px;
     left: -60px;
 
     text-align: left;
@@ -99,8 +99,15 @@
 
   & > .content > .bar {
     width: 2px;
-    height: 525px;
+    height: 340px;
 
     background-color: $color-bullfrog;
+  }
+
+  & > .content .address {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
 }
