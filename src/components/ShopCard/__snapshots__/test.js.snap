@@ -24,10 +24,5 @@ exports[`ShopCard should render correctly 1`] = `
   <div
     className="description"
   />
-  <Button
-    color="green"
-  >
-     Comprar 
-  </Button>
 </div>
 `;

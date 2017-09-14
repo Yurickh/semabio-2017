@@ -18,6 +18,10 @@ class ScheduleTable extends Component {
 		selected: PropTypes.oneOf(Object.keys(scheduleData()))
 	}
 
+	static defaultProps = {
+		selected: 'SEG'
+	}
+
 	schedule = () => {
 		return this.scheduleData[this.props.selected]
 	}
