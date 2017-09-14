@@ -1,0 +1,30 @@
+@import 'ambience/typography.scss';
+@import 'ambience/color.scss';
+
+.count-down {
+  font-size: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-left: 38px;
+  padding-right: 38px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+
+  cursor: pointer;
+  letter-spacing: .4px;
+
+  color: #FFF;
+  background-color: $color-blood;
+
+  & > .separator {
+    align-self: flex-start;
+  }
+
+  & .label {
+    letter-spacing: .32px;
+    font-size: 8px;
+  }
+}
