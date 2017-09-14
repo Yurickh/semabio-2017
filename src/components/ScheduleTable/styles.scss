@@ -29,10 +29,22 @@
     margin-bottom: 40px;
   }
 
-  & > .events > .event {
-    line-height: 16px;
+  & > .events.-even {
+    width: 30%;
+    margin-bottom: 32px;
+    margin-left: 35px;
+  }
 
+  & > .events.-odd {
+    width: 30%;
+    height: 55px;
     margin-right: 35px;
+  }
+
+  & > .events > .event {
+    line-height: 20px;
+
+    height: 55px;
 
     letter-spacing: -.25px;
 
@@ -58,9 +70,9 @@
     width: 150px;
     height: 3em;
     margin-top: 60px;
-    padding-bottom: 6px;
     margin-right: 14px;
     margin-left: 14px;
+    padding-bottom: 6px;
 
     border-bottom: 1px solid #000;
   }
@@ -112,5 +124,15 @@
     .part-4 {
       display: block;
     }
+  }
+
+  & > .times > .sun.-moon svg {
+    display: none;
+  }
+
+  & > .times > .sun.-moon {
+    background-image: url('./moon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
