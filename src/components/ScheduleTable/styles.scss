@@ -1,0 +1,140 @@
+@import 'ambience/color';
+
+.schedule-table {
+  display: flex;
+  justify-content: center;
+
+  height: 550px;
+  margin-top: 33px;
+
+  & > .-odd {
+    align-self: flex-start;
+
+    text-align: right;
+  }
+
+  & > .-even {
+    align-self: flex-start;
+
+    margin-top: 60px;
+
+    text-align: left;
+  }
+
+  & > .times.-odd {
+    height: 105%;
+
+    border-right: 1px solid #000;
+  }
+
+  & > .times.-even {
+    margin-bottom: 40px;
+  }
+
+  & > .events.-even {
+    width: 30%;
+    margin-bottom: 32px;
+    margin-left: 35px;
+  }
+
+  & > .events.-odd {
+    width: 30%;
+    height: 55px;
+    margin-right: 35px;
+  }
+
+  & > .events > .event {
+    line-height: 20px;
+
+    height: 55px;
+
+    letter-spacing: -.25px;
+
+    color: $color-tuna;
+  }
+
+  & > .events > .event > .time {
+    font-size: 14px;
+
+    margin-top: 60px;
+  }
+
+  & > .events > .event > .name {
+    font-size: 18px;
+
+    margin-top: 1em;
+  }
+
+  & > .times > .sun {
+    position: relative;
+    z-index: 2;
+
+    width: 150px;
+    height: 3em;
+    margin-top: 60px;
+    margin-right: 14px;
+    margin-left: 14px;
+    padding-bottom: 6px;
+
+    border-bottom: 1px solid #000;
+  }
+
+  & > .times > .sun svg {
+    position: absolute;
+    z-index: 1;
+    bottom: 6px;
+    left: 50%;
+
+    display: block;
+
+    width: 85%;
+    height: 44px;
+
+    content: '';
+    transform: translateX(-50%);
+  }
+
+  & > .times > .sun.-small svg,
+  & > .times > .sun.-minimal svg {
+    bottom: -28px;
+    .part-1,
+    .part-2,
+    .part-3 {
+      display: none;
+    }
+  }
+
+  & > .times > .sun.-medium svg,
+  & > .times > .sun.-half svg {
+    bottom: -15px;
+    .part-1,
+    .part-2 {
+      display: none;
+    }
+  }
+
+  & > .times > .sun.-big svg {
+    .part-1 {
+      display: none;
+    }
+  }
+
+  & > .times > .sun.-full svg {
+    .part-1,
+    .part-2,
+    .part-3,
+    .part-4 {
+      display: block;
+    }
+  }
+
+  & > .times > .sun.-moon svg {
+    display: none;
+  }
+
+  & > .times > .sun.-moon {
+    background-image: url('./moon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

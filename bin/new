@@ -1,0 +1,13 @@
+mkdir src/$1
+cd src/$1
+touch styles.scss
+touch index.js
+touch test.js
+
+component=$(basename "$1")
+
+echo "import React, { Component } from 'react'\n\nimport './styles.css'\n\nclass $component extends Component {\n	render() {\n		return (\n			<div />\n		)\n	}\n}\n\nexport default $component" > index.js
+
+echo "import React from 'react'\nimport { shallow } from 'enzyme'\nimport toJSON from 'enzyme-to-json'\n\nimport $component from '../$component'\n\ndescribe('$component', () => {\n  it('should render correctly', () => {\n    const tree = shallow(<$component />)\n    expect(toJSON(tree)).toMatchSnapshot()\n  })\n})" > test.js
+
+cd -

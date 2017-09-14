@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="39px" viewBox="0 0 42 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="56" height="42"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BetterDesk" transform="translate(-757.000000, -2190.000000)">
+            <g id="Fill-1" transform="translate(750.000000, 2187.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <path d="M29.6874492,4.116701 C30.1473507,3.82073575 30.6175103,3.55028475 31.0945085,3.30534799 C26.4356546,2.80186688 21.5784788,3.82753955 17.3402039,6.56436763 C7.56259445,12.8799939 4.78266911,25.8854553 11.1306782,35.6131867 C17.4769776,45.342619 30.5508331,48.1083632 40.3284426,41.792737 C44.5667174,39.0559089 47.4834164,35.0586771 48.9195402,30.6191984 C48.4989611,30.9542855 48.0612853,31.2723631 47.5996741,31.5700293 C39.9813793,36.4908767 29.7934488,34.3357735 24.8473701,26.7546406 C19.8995817,19.1735078 22.0674447,9.03924945 29.6874492,4.116701 Z" fill="#333F5D" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
