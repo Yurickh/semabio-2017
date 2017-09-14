@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import { Link } from 'react-scroll'
+
 import Cloud from '../../components/Cloud'
 import Navbar from '../../components/Navbar'
 import Countdown from '../../components/Countdown'

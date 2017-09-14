@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+
+import { Element } from 'react-scroll'
+
 import ShopCard from '../../components/ShopCard'
 import Title from '../../components/Title'
 import Button from '../../components/Button'
@@ -11,7 +14,9 @@ class Shop extends Component {
   render() {
     return (
       <section className="page-shop">
-        <Title>Quero me inscrever</Title>
+        <Element name="shop">
+          <Title>Quero me inscrever</Title>
+        </Element>
 
         <p className="description"> Escolha o pacote ideal para você! </p>
 
