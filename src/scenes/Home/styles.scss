@@ -1,5 +1,6 @@
 @import 'ambience/typography';
 @import 'ambience/responsive';
+@import 'ambience/responsive-prop';
 
 .page-home {
   width: 100vw;
@@ -11,7 +12,8 @@
   & > .call {
     width: 40vw;
     margin-left: 15vw;
-    padding-top: 50px;
+
+    @include responsive-prop(padding-top, 50, 50);
 
     @include small-only {
       width: 82vw;
