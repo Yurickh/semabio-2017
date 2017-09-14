@@ -6,14 +6,14 @@ import ScheduleSelector from '../../components/ScheduleSelector'
 import './styles.css'
 
 class Schedule extends Component {
-	render() {
-		return (
-			<section className="page-schedule">
-				<Title>Cronograma</Title>
-				<ScheduleSelector />
-			</section>
-		)
-	}
+  render() {
+    return (
+      <section className="page-schedule">
+        <Title>Cronograma</Title>
+        <ScheduleSelector />
+      </section>
+    )
+  }
 }
 
 export default Schedule
