@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import ReactSVG from 'react-svg'
+
 import scheduleData from '../../helpers/scheduleData'
 
 import sun from './sun.svg'
@@ -21,11 +22,14 @@ class ScheduleTable extends Component {
 		return this.scheduleData[this.props.selected]
 	}
 
-	renderEvents = (type) => {
+	eventsOfType = (type) => {
 		// grab all the even or the odd indexes, depending on type
 		const isOfType = index => index % 2 === +(type === 'even')
+		return this.schedule().filter((_, index) => isOfType(index))
+	}
 
-		const events = this.schedule().filter((_, index) => isOfType(index))
+	renderEvents = (type) => {
+		const events = this.eventsOfType(type)
 
 		return events.map(event => (
 			<div className="event" key={`${event.time} - ${event.name}`}>
@@ -38,7 +42,12 @@ class ScheduleTable extends Component {
 	renderTimes = (type) => {
 		let times = type === 'even' ? this.evenTimes : this.oddTimes
 
-		return times.map(time => (
+		return times
+		.filter((time, index) => {
+			// check if there's an event with given index present
+			return Object.keys(this.eventsOfType(type)[index]).length
+		})
+		.map(time => (
 			<div
 				key={time}
 				className={`sun -${time}`}

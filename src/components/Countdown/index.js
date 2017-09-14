@@ -21,8 +21,6 @@ class Countdown extends Component {
 
 		let remainingMs = timeDiff
 
-		console.log(this.props.until);
-
 		let days = Math.floor(remainingMs / msInADay)
 		remainingMs = remainingMs - days * msInADay
 
