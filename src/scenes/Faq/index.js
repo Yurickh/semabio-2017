@@ -5,7 +5,7 @@ import Balloon from '../../components/Balloon'
 
 import questionsData from '../../helpers/questionsData'
 
-import dino from './dino.svg'
+import dino from './dino.png'
 
 import './styles.css'
 
