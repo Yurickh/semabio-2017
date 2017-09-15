@@ -2,6 +2,7 @@
 
 .cloud {
   width: 100%;
+  pointer-events: none;
 
   @include small-only {
     width: 240%;

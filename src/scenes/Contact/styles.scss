@@ -45,6 +45,10 @@
     @include responsive-prop(line-height, 26, 32);
   }
 
+  & > .subtitle > strong {
+    color: #FFF;
+  }
+
   & > .form {
     display: flex;
     flex-direction: column;
