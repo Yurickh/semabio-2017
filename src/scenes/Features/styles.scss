@@ -1,0 +1,27 @@
+.page-features {
+  margin-top: 170px;
+
+  > .selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  > .selector > .page-selector {
+    width: 90px;
+    height: 20px;
+  }
+
+  > .selector-placeholder {
+    height: 20px;
+  }
+
+  .block-selector {
+    margin-top: 32px;
+  }
+
+  > .content {
+    display: flex;
+    justify-content: center;
+  }
+}

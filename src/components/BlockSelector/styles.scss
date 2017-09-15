@@ -1,0 +1,21 @@
+@import 'ambience/color';
+
+.block-selector {
+  display: flex;
+  justify-content: center;
+
+  & > .block {
+    font-size: 20px;
+
+    margin-right: 42px;
+
+    cursor: pointer;
+    letter-spacing: .71px;
+
+    color: #000;
+  }
+
+  & > .block.-selected {
+    border-bottom: $color-forest 3px solid;
+  }
+}
