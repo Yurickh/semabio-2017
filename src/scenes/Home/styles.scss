@@ -18,7 +18,7 @@
     z-index: 999;
 
     width: 50vw;
-
+    
     @include responsive-prop(padding-top, 50, 60);
     @include responsive-prop(margin-left, 220, 220);
     @include medium-only {
