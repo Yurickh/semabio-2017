@@ -32,7 +32,7 @@ exports[`ScheduleTable should render correctly 1`] = `
       <p
         className="name"
       >
-        Palestra de Abertura
+        A Odisseia da Vida
       </p>
     </div>
     <div
@@ -188,7 +188,7 @@ exports[`ScheduleTable should render correctly 1`] = `
       <p
         className="name"
       >
-        Palestra
+        Impactos do Ecoturismo
       </p>
     </div>
     <div
@@ -202,7 +202,7 @@ exports[`ScheduleTable should render correctly 1`] = `
       <p
         className="name"
       >
-        Palestra
+        Ciência em Quadrinhos
       </p>
     </div>
     <div
