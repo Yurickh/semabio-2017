@@ -6,7 +6,7 @@
 
   @if ($value) {
     @include medium-only {
-      #{$property}:  #{$value / (14)}vw;
+      #{$property}:  #{$value / (10)}vw;
     }
 
     @include large-only {

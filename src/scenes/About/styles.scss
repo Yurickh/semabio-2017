@@ -22,6 +22,10 @@
     color: $color-darkgray;
 
     @include responsive-prop(line-height, 27, 27);
+
+    @include medium-only {
+      @include responsive-prop(line-height, 40, 40);
+    }
   }
 
   & > h2.title {

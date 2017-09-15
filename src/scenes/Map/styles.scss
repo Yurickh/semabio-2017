@@ -3,7 +3,7 @@
 @import 'base/responsive-prop';
 
 .page-map {
-  width: 24vw;
+  width: 100%;
 
   @include responsive-prop(margin-top, 100, 170);
   @include small-only {

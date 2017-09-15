@@ -20,7 +20,7 @@
 
   &.-question {
     font-weight: bold;
-    @include responsive-prop(line-height, 17, 17);
+    @include responsive-prop(line-height, 17, 32);
 
     max-height: 80px;
 

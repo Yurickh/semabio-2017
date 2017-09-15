@@ -76,6 +76,7 @@
 
     @include responsive-prop(font-size, 16, 16);
     @include responsive-prop(margin-bottom, 8, 8);
+    @include responsive-prop(margin-top, 8, 8);
     @include responsive-prop(padding-left, 8, 8);
   }
 

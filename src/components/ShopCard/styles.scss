@@ -22,8 +22,12 @@
   @include responsive-prop(height, 380, 380);
   @include responsive-prop(padding-bottom, 20, 20);
 
-  @include small-only {
+  @include medium-down {
     @include responsive-prop(margin-bottom, 100, 100);
+  }
+
+  @include medium-only {
+    @include responsive-prop(width, 260, 260);
   }
 
   & > .title {

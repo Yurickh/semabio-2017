@@ -16,6 +16,10 @@
 
     @include responsive-prop(padding-top, 50, 60);
     @include responsive-prop(margin-left, 220, 220);
+
+    @include medium-only {
+      @include responsive-prop(margin-left, 160, 160);
+    }
     @include small-only {
       width: 82vw;
       margin: 0 auto;

@@ -49,8 +49,12 @@
     margin: 0 auto;
 
     @include responsive-prop(width, 380, 380);
+    @include medium-only {
+      @include responsive-prop(margin-top, -120, -120);
+    }
     @include small-only {
       width: 82vw;
+
       @include responsive-prop(margin-top, -120, -120);
     }
   }
