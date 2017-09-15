@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
+
 import Title from '../../components/Title'
-import PageSelector from '../../components/PageSelector'
 import ModeSelector from '../../components/ModeSelector'
 import BlockSelector from '../../components/BlockSelector'
 
@@ -12,13 +12,8 @@ class Features extends Component {
 	data = featuresData()
 
 	state = {
-		currentPage: 0,
 		currentMode: 0,
 		currentBlock: 0,
-	}
-
-	changePage = (page) => {
-		this.setState({ currentPage: page })
 	}
 
 	changeMode = (mode) => {
@@ -27,10 +22,6 @@ class Features extends Component {
 
 	changeBlock = (block) => {
 		this.setState({ currentBlock: block })
-	}
-
-	hasPagination = () => {
-		return false
 	}
 
 	renderContent = () => {
@@ -55,17 +46,6 @@ class Features extends Component {
 		return (
 			<section className="page-features">
 				<Title>Programação</Title>
-
-				{
-					this.hasPagination()
-					? <div className="selector">
-						<PageSelector
-							currentPage={this.state.currentPage}
-							onChange={this.changePage}
-						/>
-					</div>
-					: <div className="selector-placeholder" />
-				}
 
 				<ModeSelector
 					currentMode={this.state.currentMode}
