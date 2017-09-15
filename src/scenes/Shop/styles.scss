@@ -1,14 +1,14 @@
-@import "ambience/typography.scss";
+@import 'ambience/typography.scss';
+@import 'ambience/responsive.scss';
+@import 'base/responsive-prop';
 
 .page-shop {
   width: 95vw;
   margin: 0 auto;
-  margin-top: 170px;
+
+  @include responsive-prop(margin-top, 170, 170);
 
   & > .description {
-    font-size: 26px;
-    line-height: 24px;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,6 +16,9 @@
     letter-spacing: .41px;
 
     opacity: .53;
+
+    @include responsive-prop(font-size, 26, 26);
+    @include responsive-prop(line-height, 24, 24);
   }
 
   & > .options {
@@ -23,8 +26,12 @@
     align-items: stretch;
     justify-content: space-around;
 
-    height: 380px;
-    margin-top: 70px;
+    @include responsive-prop(margin-top, 70, 70);
+    @include responsive-prop(min-height, 380, 380);
+
+    @include medium-down {
+      flex-wrap: wrap;
+    }
   }
 
   & > .shirt {
@@ -32,14 +39,15 @@
     flex-direction: column;
     justify-content: center;
 
-    margin-top: 60px;
-
     text-align: center;
+
+    @include responsive-prop(margin-top, 60, 60);
   }
 
   & > .shirt > .simple-button {
-    width: 377px;
     margin: 0 auto;
+
+    @include responsive-prop(width, 377, 377);
   }
 
   & > .shirt > .simple-button > .text {
@@ -47,7 +55,7 @@
   }
 
   & > .shirt > .simple-button > .icon {
-    margin-right: 15px;
+    @include responsive-prop(margin-right, 15, 15);
   }
 
   & > .shirt > .simple-button:hover > .icon {
@@ -56,12 +64,11 @@
   }
 
   & > .shirt > .price {
-    font-size: 14px;
-
-    margin-top: 12px;
-
     letter-spacing: .5px;
 
     color: #9A9A9A;
+
+    @include responsive-prop(font-size, 14, 14);
+    @include responsive-prop(margin-top, 12, 12);
   }
 }
