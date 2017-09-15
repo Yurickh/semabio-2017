@@ -1,29 +1,30 @@
-@import 'ambience/color.scss';
+@import 'ambience/color';
+@import 'base/responsive-prop';
 
 .page-faq {
   width: 82vw;
   margin: 0 auto;
-  margin-top: 170px;
+  @include responsive-prop(margin-top, 100, 170);
 
-  & > .description {
-    font-size: 26px;
-    line-height: 24px;
+  & > .subtitle {
+    width: 82vw;
+    margin: 0 auto;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    text-align: center;
     letter-spacing: .41px;
 
-    opacity: .53;
+    opacity: .8;
+    color: $color-description;
+
+    @include responsive-prop(font-size, 20, 26);
+    @include responsive-prop(line-height, 26, 32);
   }
 
   & > .balloons {
     display: flex;
     justify-content: space-between;
-
-    height: 350px;
-    margin-top: 43px;
+    @include responsive-prop(margin-top, 42, 42);
+    @include responsive-prop(height, 350, 350);
   }
 
   & > .balloons > span {
@@ -34,25 +35,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    margin-top: 24px;
+    @include responsive-prop(margin-top, 24, 24);
   }
 
   & > aside > .divisor {
     position: relative;
 
     width: 1px;
-    height: 320px;
+    @include responsive-prop(height, 320, 320);
 
     background-color: $color-wall;
   }
 
   & > aside > .divisor > .ball {
     position: absolute;
-    left: -5px;
+    @include responsive-prop(left, -5, -5);
 
-    width: 11px;
-    height: 11px;
+    @include responsive-prop(width, 11, 11);
+    @include responsive-prop(height, 11, 11);
 
     transition: top .25s ease-in-out;
 
@@ -61,8 +61,8 @@
   }
 
   & > aside > .left {
-    font-size: 18px;
-    line-height: 22px;
+    @include responsive-prop(font-size, 18, 18);
+    @include responsive-prop(line-height, 22, 22);
 
     display: flex;
     flex-direction: column;
@@ -76,8 +76,8 @@
   }
 
   & > aside > .left > span {
-    font-size: 18px;
-    line-height: 48px;
+    @include responsive-prop(font-size, 18, 18);
+    @include responsive-prop(line-height, 48, 48);
 
     cursor: pointer;
   }

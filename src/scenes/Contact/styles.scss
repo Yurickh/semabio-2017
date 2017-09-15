@@ -1,22 +1,26 @@
-@import 'ambience/typography.scss';
-@import 'ambience/responsive.scss';
+@import 'ambience/color';
+@import 'ambience/typography';
+@import 'ambience/responsive';
+@import 'base/responsive-prop';
 
 .page-contact {
   position: relative;
 
   width: 100vw;
-  padding-top: 200px;
-  padding-bottom: 80px;
 
   color: #FFF;
   background-color: #1C281E;
 
+  @include responsive-prop(padding-top, 200, 200);
+  @include responsive-prop(padding-bottom, 80, 80);
+
   & > .cloud {
     position: absolute;
     z-index: 1;
-    top: -10px;
 
     transform: rotate(180deg);
+
+    @include responsive-prop(top, -10, -10);
   }
 
   & > .simple-title {
@@ -24,16 +28,21 @@
   }
 
   & > .simple-title > .divisor {
-    margin-bottom: 24px;
+    @include responsive-prop(margin-bottom, 24, 24);
   }
 
   & > .subtitle {
-    font-size: 26px;
+    width: 82vw;
+    margin: 0 auto;
 
     text-align: center;
     letter-spacing: .41px;
 
     opacity: .8;
+    color: $color-description;
+
+    @include responsive-prop(font-size, 20, 26);
+    @include responsive-prop(line-height, 26, 32);
   }
 
   & > .form {
@@ -42,46 +51,51 @@
 
     width: 50vw;
     margin: 0 auto;
-    margin-top: 43px;
 
+    @include responsive-prop(margin-top, 43, 43);
     @include small-only {
       width: 82vw;
+      margin: 0 auto;
+
+      @include responsive-prop(margin-top, 43, 43);
     }
   }
 
   & > .form > label {
-    margin-top: 18px;
+    @include responsive-prop(margin-bottom, 18, 18);
   }
 
   & > .form > label > input,
   & > .form > label > textarea {
-    font-size: 16px;
-
     box-sizing: border-box;
     width: 100%;
-    margin-top: 8px;
-    padding-left: 8px;
 
     color: #FFF;
     border: 1px solid #FFF;
     background-color: transparent;
+
+    @include responsive-prop(font-size, 16, 16);
+    @include responsive-prop(margin-bottom, 8, 8);
+    @include responsive-prop(margin-top, 8, 8);
+    @include responsive-prop(padding-left, 8, 8);
   }
 
   & > .form > label > input {
-    height: 44px;
+    @include responsive-prop(height, 44, 44);
   }
 
   & > .form > label > textarea {
-    height: 200px;
-    padding-top: 8px;
-
     resize: none;
+
+    @include responsive-prop(height, 200, 200);
+    @include responsive-prop(padding-top, 8, 8);
   }
 
   & > .form > .simple-button {
-    width: 155px;
     margin: 0 auto;
-    margin-top: 42px;
-    padding: 17px;
+
+    @include responsive-prop(width, 155, 155);
+    @include responsive-prop(margin-top, 28, 42);
+    @include responsive-prop(padding, 17, 17);
   }
 }

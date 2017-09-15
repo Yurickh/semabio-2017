@@ -34,7 +34,7 @@ class Faq extends Component {
       <section className="page-faq">
         <Title>Dúvidas Frequentes</Title>
 
-        <p className="description">
+        <p className="subtitle">
           Caso sua dúvida não esteja aqui, entre em contato conosco.
         </p>
 

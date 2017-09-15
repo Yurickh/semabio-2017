@@ -12,7 +12,7 @@ exports[`Shop should render correctly 1`] = `
     </Title>
   </_>
   <p
-    className="description"
+    className="subtitle"
   >
      Escolha o pacote ideal para você! 
   </p>

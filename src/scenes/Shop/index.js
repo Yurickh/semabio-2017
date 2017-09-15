@@ -18,7 +18,7 @@ class Shop extends Component {
           <Title>Quero me inscrever</Title>
         </Element>
 
-        <p className="description"> Escolha o pacote ideal para você! </p>
+        <p className="subtitle"> Escolha o pacote ideal para você! </p>
 
         <main className="options">
           <ShopCard
