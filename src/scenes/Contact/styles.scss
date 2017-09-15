@@ -1,3 +1,4 @@
+@import 'ambience/color';
 @import 'ambience/typography';
 @import 'ambience/responsive';
 @import 'base/responsive-prop';
@@ -16,9 +17,10 @@
   & > .cloud {
     position: absolute;
     z-index: 1;
-    @include responsive-prop(top, -10, -10);
 
     transform: rotate(180deg);
+
+    @include responsive-prop(top, -10, -10);
   }
 
   & > .simple-title {
@@ -37,6 +39,7 @@
     letter-spacing: .41px;
 
     opacity: .8;
+    color: $color-description;
 
     @include responsive-prop(font-size, 20, 26);
     @include responsive-prop(line-height, 26, 32);

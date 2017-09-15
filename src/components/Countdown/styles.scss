@@ -1,19 +1,14 @@
 @import 'ambience/typography.scss';
 @import 'ambience/color.scss';
+@import 'ambience/responsive';
+@import 'base/responsive-prop';
 
 .count-down {
-  font-size: 24px;
   font-weight: $weight-bold;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
-  width: 266px;
-  height: 52px;
-  margin-top: 46px;
-  padding-right: 26px;
-  padding-left: 26px;
 
   cursor: pointer;
   letter-spacing: .4px;
@@ -21,19 +16,28 @@
   color: #FFF;
   background-color: $color-blood;
 
+  @include responsive-prop(font-size, 24, 24);
+  @include responsive-prop(width, 266, 266);
+  @include responsive-prop(height, 52, 52);
+  @include responsive-prop(margin-top, 46, 46);
+  @include responsive-prop(padding-right, 26, 26);
+  @include responsive-prop(padding-left, 26, 26);
+
   & > * {
     text-align: center;
   }
 
   & .separator {
-    margin-bottom: 12px;
-    padding: 0 6px;
+    @include responsive-prop(margin-bottom, 12, 12);
+    @include responsive-prop(padding-right, 6, 6);
+    @include responsive-prop(padding-left, 6, 6);
   }
 
   & .label {
-    font-size: 8px;
     font-weight: $weight-regular;
 
     letter-spacing: .32px;
+
+    @include responsive-prop(font-size, 8, 8);
   }
 }

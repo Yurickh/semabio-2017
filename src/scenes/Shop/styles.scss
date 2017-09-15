@@ -1,3 +1,4 @@
+@import 'ambience/color';
 @import 'ambience/typography';
 @import 'ambience/responsive';
 @import 'base/responsive-prop';
@@ -6,19 +7,20 @@
   width: 95vw;
   margin: 0 auto;
 
-  @include responsive-prop(margin-top, 170, 170);
+  @include responsive-prop(margin-top, 100, 170);
 
-  & > .description {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  & > .subtitle {
+    width: 82vw;
+    margin: 0 auto;
 
+    text-align: center;
     letter-spacing: .41px;
 
-    opacity: .53;
+    opacity: .8;
+    color: $color-description;
 
-    @include responsive-prop(font-size, 26, 26);
-    @include responsive-prop(line-height, 24, 24);
+    @include responsive-prop(font-size, 20, 26);
+    @include responsive-prop(line-height, 26, 32);
   }
 
   & > .options {
@@ -28,7 +30,6 @@
 
     @include responsive-prop(margin-top, 70, 70);
     @include responsive-prop(min-height, 380, 380);
-
     @include medium-down {
       flex-wrap: wrap;
     }
@@ -47,15 +48,22 @@
   & > .shirt > .simple-button {
     margin: 0 auto;
 
-    @include responsive-prop(width, 377, 377);
+    @include responsive-prop(width, 380, 380);
+    @include small-only {
+      width: 82vw;
+      @include responsive-prop(margin-top, -120, -120);
+    }
   }
 
   & > .shirt > .simple-button > .text {
     font-weight: $weight-regular;
+
+    @include responsive-prop(font-size, 16, 16);
   }
 
   & > .shirt > .simple-button > .icon {
     @include responsive-prop(margin-right, 15, 15);
+    @include responsive-prop(width, 25, 25);
   }
 
   & > .shirt > .simple-button:hover > .icon {

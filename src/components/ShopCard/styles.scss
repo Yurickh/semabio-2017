@@ -1,9 +1,9 @@
-@import 'ambience/responsive.scss';
+@import 'ambience/color';
+@import 'ambience/responsive';
 @import 'base/responsive-prop';
 
 .shop-card {
   $color-divisor: #F0F0F0;
-  $color-description: #9A9A9A;
   $color-red: #FF7381;
   $color-orange: #FCB755;
   $color-green: #58C166;
