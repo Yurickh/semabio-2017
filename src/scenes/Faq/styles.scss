@@ -75,6 +75,10 @@
     @include responsive-prop(left, -5, -5);
     @include responsive-prop(width, 11, 11);
     @include responsive-prop(height, 11, 11);
+
+    @include medium-down {
+      display: none;
+    };
   }
 
   & > aside > .left {

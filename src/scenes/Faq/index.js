@@ -51,7 +51,7 @@ class Faq extends Component {
         <aside>
           <div className="divisor">
             <div className="ball" style={{
-              top: `${58 + this.state.selected * 48}px`
+              top: `${40 / 9 + this.state.selected * 10 / 3}vw`
             }}/>
           </div>
           <div className="left">
