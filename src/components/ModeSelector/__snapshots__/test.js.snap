@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModeSelector should render correctly 1`] = `
+<div
+  className="mode-selector"
+>
+  <div
+    className="mode "
+    onClick={[Function]}
+  >
+    Minicursos
+  </div>
+  <div
+    className="mode "
+    onClick={[Function]}
+  >
+    Palestras
+  </div>
+  <div
+    className="mode "
+    onClick={[Function]}
+  >
+    Rodas de conversa
+  </div>
+</div>
+`;
