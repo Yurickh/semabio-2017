@@ -15,6 +15,16 @@
     margin-right: 42px;
 
     cursor: pointer;
+    text-align: center;
+    letter-spacing: .71px;
+
+    color: $color-light;
+
+    @include small-only {
+      flex: 1;
+
+      margin-right: 0;
+    }
     letter-spacing: .71px;
 
     color: $color-light;

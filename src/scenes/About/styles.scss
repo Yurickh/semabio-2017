@@ -8,7 +8,7 @@
 
   text-align: center;
 
-  @include responsive-prop(margin-top, 80, 80);
+  @include responsive-prop(margin-top, 100, 170);
 
   & > p,
   & > .title {
@@ -22,7 +22,6 @@
     color: $color-darkgray;
 
     @include responsive-prop(line-height, 27, 27);
-
     @include medium-only {
       @include responsive-prop(line-height, 40, 40);
     }
