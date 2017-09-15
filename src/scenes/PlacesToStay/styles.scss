@@ -1,22 +1,30 @@
-@import 'ambience/typography.scss';
-@import 'ambience/responsive.scss';
-@import 'ambience/color.scss';
+@import 'ambience/color';
+@import 'ambience/typography';
+@import 'ambience/responsive';
+@import 'base/responsive-prop';
 
 .page-placestostay {
   width: 100vw;
-  margin-top: 170px;
+
+  @include responsive-prop(margin-top, 100, 170);
+  @include responsive-prop(padding-bottom, 100, 170);
 
   & > .simple-title > .divisor {
-    margin-bottom: 24px;
+    @include responsive-prop(margin-bottom, 24, 24);
   }
 
   & > .subtitle {
-    font-size: 26px;
+    width: 82vw;
+    margin: 0 auto;
 
     text-align: center;
     letter-spacing: .41px;
 
-    opacity: .53;
+    opacity: .8;
+    color: $color-description;
+
+    @include responsive-prop(font-size, 20, 26);
+    @include responsive-prop(line-height, 26, 32);
   }
 
   & > .content {
@@ -25,89 +33,124 @@
 
     width: 60vw;
     margin: 0 auto;
-    margin-top: 42px;
+
+    @include responsive-prop(margin-top, 42, 42);
+
+    @include small-only {
+      flex-direction: column;
+    }
   }
 
   & > .content > .left,
   & > .content > .right {
     width: 50%;
+
+    @include small-only {
+      width: 100%;
+    }
   }
 
   & > .content > .left > .place,
   & > .content > .right > .place {
-    margin-top: 30px;
-
     color: $color-bullfrog;
+
+    @include responsive-prop(margin-top, 60, 24);
   }
 
   & > .content > .left > .place > .name,
   & > .content > .right > .place > .name {
-    font-size: 20px;
     font-weight: bold;
+
+    @include responsive-prop(font-size, 20, 20);
   }
 
   & > .content > .left > .place > .phone,
   & > .content > .right > .place > .phone {
-    font-size: 18px;
-
     display: block;
 
-    margin-top: 4px;
-
     letter-spacing: .4px;
+
+    @include responsive-prop(font-size, 18, 18);
+    @include responsive-prop(margin-top, 4, 4);
   }
 
   & > .content > .left > .place {
     text-align: right;
-    padding-right: 80px;
+
+    @include responsive-prop(padding-right, 80, 80);
+
+    @include small-only {
+      padding: 0;
+      text-align: center;
+    }
   }
 
   & > .content > .right > .place {
     text-align: left;
-    padding-left: 80px;
+
+    @include responsive-prop(padding-left, 80, 80);
+
+    @include small-only {
+      padding: 0;
+      text-align: center;
+    }
   }
 
   & > .content > .left > .place::after,
   & > .content > .right > .place::before {
     display: inline-block;
 
-    width: 40px;
-    height: 62px;
-
     content: '';
 
     background-image: url('icon.svg');
     background-repeat: no-repeat;
     background-size: contain;
+
+    @include responsive-prop(width, 40, 40);
+    @include responsive-prop(height, 64, 64);
   }
 
   & > .content > .left > .place::after {
     position: relative;
-    top: -75px;
-    right: -60px;
 
     text-align: right;
+
+    @include responsive-prop(top, -75, -75);
+    @include responsive-prop(right, -60, -60);
+
+    @include small-only {
+      display: none;
+    }
   }
 
   & > .content > .right > .place::before {
     position: relative;
-    top: 75px;
-    left: -60px;
 
     text-align: left;
+
+    @include responsive-prop(top, 75, 75);
+    @include responsive-prop(left, -60, -60);
+
+    @include small-only {
+      display: none;
+    }
   }
 
   & > .content > .bar {
-    width: 2px;
-    height: 340px;
-
     background-color: $color-bullfrog;
+
+    @include responsive-prop(width, 2, 2);
+    @include responsive-prop(height, 340, 340);
+
+    @include small-only {
+      display: none;
+    }
   }
 
   & > .content .address {
-    font-size: 14px;
-    line-height: 18px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    @include responsive-prop(font-size, 14, 14);
+    @include responsive-prop(line-height, 18, 18);
+    @include responsive-prop(margin-top, 8, 8);
+    @include responsive-prop(margin-bottom, 8, 8);
   }
 }

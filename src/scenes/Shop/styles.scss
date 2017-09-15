@@ -1,21 +1,26 @@
-@import "ambience/typography.scss";
+@import 'ambience/color';
+@import 'ambience/typography';
+@import 'ambience/responsive';
+@import 'base/responsive-prop';
 
 .page-shop {
   width: 95vw;
   margin: 0 auto;
-  margin-top: 170px;
 
-  & > .description {
-    font-size: 26px;
-    line-height: 24px;
+  @include responsive-prop(margin-top, 100, 170);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  & > .subtitle {
+    width: 82vw;
+    margin: 0 auto;
 
+    text-align: center;
     letter-spacing: .41px;
 
-    opacity: .53;
+    opacity: .8;
+    color: $color-description;
+
+    @include responsive-prop(font-size, 20, 26);
+    @include responsive-prop(line-height, 26, 32);
   }
 
   & > .options {
@@ -23,8 +28,11 @@
     align-items: stretch;
     justify-content: space-around;
 
-    height: 380px;
-    margin-top: 70px;
+    @include responsive-prop(margin-top, 70, 70);
+    @include responsive-prop(min-height, 380, 380);
+    @include medium-down {
+      flex-wrap: wrap;
+    }
   }
 
   & > .shirt {
@@ -32,22 +40,34 @@
     flex-direction: column;
     justify-content: center;
 
-    margin-top: 60px;
-
     text-align: center;
+
+    @include responsive-prop(margin-top, 60, 60);
   }
 
   & > .shirt > .simple-button {
-    width: 400px;
     margin: 0 auto;
+
+    @include responsive-prop(width, 380, 380);
+    @include medium-only {
+      @include responsive-prop(margin-top, -120, -120);
+    }
+    @include small-only {
+      width: 82vw;
+
+      @include responsive-prop(margin-top, -120, -120);
+    }
   }
 
   & > .shirt > .simple-button > .text {
     font-weight: $weight-regular;
+
+    @include responsive-prop(font-size, 16, 16);
   }
 
   & > .shirt > .simple-button > .icon {
-    margin-right: 15px;
+    @include responsive-prop(margin-right, 15, 15);
+    @include responsive-prop(width, 25, 25);
   }
 
   & > .shirt > .simple-button:hover > .icon {
@@ -56,12 +76,11 @@
   }
 
   & > .shirt > .price {
-    font-size: 14px;
-
-    margin-top: 12px;
-
     letter-spacing: .5px;
 
     color: #9A9A9A;
+
+    @include responsive-prop(font-size, 14, 14);
+    @include responsive-prop(margin-top, 12, 12);
   }
 }

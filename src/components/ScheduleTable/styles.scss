@@ -1,11 +1,19 @@
 @import 'ambience/color';
+@import 'ambience/responsive';
+@import 'base/responsive-prop';
 
 .schedule-table {
   display: flex;
   justify-content: center;
 
-  height: 550px;
-  margin-top: 33px;
+  @include responsive-prop(height, 550, 550);
+  @include responsive-prop(margin-top, 33, 33);
+  @include responsive-prop(padding-bottom, 80, 80);
+
+  @include small-only {
+    width: 82vw;
+    margin: 0 auto;
+  }
 
   & > .-odd {
     align-self: flex-start;
@@ -16,87 +24,107 @@
   & > .-even {
     align-self: flex-start;
 
-    margin-top: 60px;
-
     text-align: left;
+
+    @include responsive-prop(margin-top, 60, 60);
   }
 
   & > .times.-odd {
     height: 105%;
 
     border-right: 1px solid #000;
+
+    @include small-only {
+      display: none;
+    }
   }
 
   & > .times.-even {
-    margin-bottom: 40px;
+    @include responsive-prop(margin-bottom, 40, 40);
+
+    @include small-only {
+      display: none;
+    }
   }
 
   & > .events.-even {
     width: 30%;
-    margin-bottom: 32px;
-    margin-left: 35px;
+
+    @include responsive-prop(margin-bottom, 32, 32);
+    @include responsive-prop(margin-left, 35, 35);
+    @include small-only {
+      height: 100%;
+      padding-left: 10%;
+      border-left: 1px solid #000;
+    }
   }
 
   & > .events.-odd {
     width: 30%;
-    height: 55px;
-    margin-right: 35px;
+
+    @include responsive-prop(height, 55, 55);
+    @include responsive-prop(margin-right, 35, 35);
+
+    @include small-only {
+      @include responsive-prop(margin-right, 10, 10);
+    }
+
   }
 
   & > .events > .event {
-    line-height: 20px;
-
-    height: 55px;
-
     letter-spacing: -.25px;
 
     color: $color-tuna;
+
+    @include responsive-prop(line-height, 20, 20);
+    @include responsive-prop(height, 55, 55);
   }
 
   & > .events > .event > .time {
-    font-size: 14px;
-
-    margin-top: 60px;
+    @include responsive-prop(font-size, 14, 14);
+    @include responsive-prop(margin-top, 60, 60);
   }
 
   & > .events > .event > .name {
-    font-size: 18px;
-
     margin-top: 1em;
+
+    @include responsive-prop(font-size, 18, 18);
   }
 
   & > .times > .sun {
     position: relative;
     z-index: 2;
 
-    width: 150px;
     height: 3em;
-    margin-top: 60px;
-    margin-right: 14px;
-    margin-left: 14px;
-    padding-bottom: 6px;
 
     border-bottom: 1px solid #000;
+
+    @include responsive-prop(width, 150, 150);
+    @include responsive-prop(margin-top, 60, 60);
+    @include responsive-prop(margin-right, 14, 14);
+    @include responsive-prop(margin-left, 14, 14);
+    @include responsive-prop(padding-bottom, 6, 6);
   }
 
   & > .times > .sun svg {
     position: absolute;
     z-index: 1;
-    bottom: 6px;
     left: 50%;
 
     display: block;
 
     width: 85%;
-    height: 44px;
 
     content: '';
     transform: translateX(-50%);
+
+    @include responsive-prop(bottom, 6, 6);
+    @include responsive-prop(height, 44, 44);
   }
 
   & > .times > .sun.-small svg,
   & > .times > .sun.-minimal svg {
-    bottom: -28px;
+    @include responsive-prop(bottom, -28, -28);
     .part-1,
     .part-2,
     .part-3 {
@@ -106,7 +134,7 @@
 
   & > .times > .sun.-medium svg,
   & > .times > .sun.-half svg {
-    bottom: -15px;
+    @include responsive-prop(bottom, -15, -15);
     .part-1,
     .part-2 {
       display: none;
