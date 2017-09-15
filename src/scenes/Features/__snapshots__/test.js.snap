@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Features should render correctly 1`] = `
+<section
+  className="page-features"
+>
+  <Title>
+    Programação
+  </Title>
+  <ModeSelector
+    currentMode={0}
+    onChange={[Function]}
+  />
+  <BlockSelector
+    currentBlock={0}
+    onChange={[Function]}
+  />
+  <div
+    className="content"
+  >
+    <div
+      className="minicourse"
+    >
+      Invasões Biológicas
+    </div>
+    <div
+      className="minicourse"
+    >
+      Introdução aos Métodos de estudo em Anatomia Comparativa de Vertebrados
+    </div>
+    <div
+      className="minicourse"
+    >
+      Citogenética Animal
+    </div>
+    <div
+      className="minicourse"
+    >
+      Cultivo de células em Mamíferos
+    </div>
+    <div
+      className="minicourse"
+    >
+      Insetos e o homem: vamos discutir esta relação?
+    </div>
+    <div
+      className="minicourse"
+    >
+      Imunoterapias
+    </div>
+    <div
+      className="minicourse"
+    >
+      Produção de Biofármacos
+    </div>
+    <div
+      className="minicourse"
+    >
+      O despertar dos sentidos: o que sentimos, por que sentimos e como
+    </div>
+    <div
+      className="minicourse"
+    >
+      sentimos?
+    </div>
+    <div
+      className="minicourse"
+    >
+      Oficina de Iniciação em Bonsai
+    </div>
+    <div
+      className="minicourse"
+    >
+      Desenvolvimento e Aplicação de Nanopartículas Carreadoras de Fármacos
+    </div>
+  </div>
+</section>
+`;
