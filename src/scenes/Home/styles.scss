@@ -1,5 +1,6 @@
-@import 'ambience/typography.scss';
-@import 'ambience/responsive.scss';
+@import 'ambience/typography';
+@import 'ambience/responsive';
+@import 'ambience/responsive-prop';
 
 @import 'base/responsive-prop';
 
@@ -38,7 +39,7 @@
     @include responsive-prop(margin-top, 16, 8);
   }
 
-  & > .call > .simple-button {
+  & > .call .simple-button {
     position: relative;
     z-index: 2;
 

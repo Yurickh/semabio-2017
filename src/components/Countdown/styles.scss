@@ -3,15 +3,17 @@
 
 .count-down {
   font-size: 24px;
+  font-weight: $weight-bold;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  padding-left: 38px;
-  padding-right: 38px;
-  padding-top: 5px;
-  padding-bottom: 10px;
+  width: 266px;
+  height: 52px;
+  margin-top: 46px;
+  padding-right: 26px;
+  padding-left: 26px;
 
   cursor: pointer;
   letter-spacing: .4px;
@@ -19,12 +21,19 @@
   color: #FFF;
   background-color: $color-blood;
 
-  & > .separator {
-    align-self: flex-start;
+  & > * {
+    text-align: center;
+  }
+
+  & .separator {
+    margin-bottom: 12px;
+    padding: 0 6px;
   }
 
   & .label {
-    letter-spacing: .32px;
     font-size: 8px;
+    font-weight: $weight-regular;
+
+    letter-spacing: .32px;
   }
 }

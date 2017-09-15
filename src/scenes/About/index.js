@@ -12,12 +12,11 @@ class About extends Component {
           Sobre Nós
         </Title>
         <p>
-          Caros amigos, a execução dos pontos do programa agrega valor ao estabelecimento do investimento em
-           reciclagem técnica. Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se a
-           revolução dos costumes talvez venha a ressaltar a relatividade dos índices pretendidos. Assim
-           mesmo, o entendimento das metas propostas faz parte de um processo de gerenciamento do processo
-           de comunicação como um todo. Todavia, a estrutura atual da organização ainda não demonstrou
-           convincentemente que vai participar na mudança de todos os recursos funcionais envolvidos.
+          Nós, da XVI Comissão Organizadora, queremos contribuir para uma ampla e acessível divulgação
+           científica e para uma maior valorização pela Biologia. Somos uma equipe de estudantes motivados
+           principalmente a guiar pessoas pelo imenso universo que o estudo da Biologia e suas áreas afins
+           apresentam! Esperamos que nosso público experimente novos conhecimentos e se aventure pela
+           diversidade de oportunidades tanto no contexto da universidade quanto para muito além deste.
         </p>
         <h2 className="title">
           Conheça nossa equipe
