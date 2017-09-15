@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import Button from '../../components/Button'
+
 import Cloud from '../../components/Cloud'
 import Navbar from '../../components/Navbar'
+import Countdown from '../../components/Countdown'
 
 import tale1x from './tale@1x.png'
 import tale2x from './tale@2x.png'
@@ -17,11 +18,11 @@ class Home extends Component {
           <h1>A Odisseia da vida</h1>
           <p>Uma aventura pela origem da diversidade</p>
 
-          <Button color="red">
-            Quero me inscrever
-          </Button>
+          {/* year, month, day, hour, minute */}
+          <Countdown until={new Date(2017, 8, 21, 0, 0)} />
         </main>
         <img className="tale"
+          alt=""
           srcSet={
             `${tale1x} 1x,
              ${tale2x} 2x`

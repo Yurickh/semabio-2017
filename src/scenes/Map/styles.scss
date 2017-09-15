@@ -1,0 +1,83 @@
+@import 'ambience/color';
+@import 'ambience/responsive';
+@import 'base/responsive-prop';
+
+.page-map {
+  width: 100%;
+
+  @include responsive-prop(margin-top, 100, 170);
+  @include small-only {
+    width: 100%;
+  }
+
+  & > .simple-title > .divisor {
+    @include responsive-prop(margin-bottom, 24, 24);
+  }
+
+  & > .subtitle {
+    width: 82vw;
+    margin: 0 auto;
+
+    text-align: center;
+    letter-spacing: .41px;
+
+    opacity: .8;
+    color: $color-description;
+
+    @include responsive-prop(font-size, 20, 26);
+    @include responsive-prop(line-height, 26, 32);
+  }
+
+  & > .content {
+    display: flex;
+
+    @include responsive-prop(margin-top, 42, 42);
+    @include small-only {
+      flex-direction: column;
+    }
+  }
+
+  & > .content > .map-container {
+    width: 50vw;
+
+    background-image: url('./map-fallback.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include responsive-prop(height, 450, 450);
+    @include small-only {
+      width: 100vw;
+    }
+  }
+
+  & > .content > .bus-lines {
+    color: $color-bullfrog;
+
+    @include responsive-prop(font-size, 20, 26);
+    @include responsive-prop(margin-top, 23, 23);
+    @include responsive-prop(margin-left, 54, 54);
+    @include small-only {
+      width: 82vw;
+      margin: 0 auto;
+
+      @include responsive-prop(margin-top, 23, 23);
+    }
+  }
+
+  & > .content > .bus-lines > .line {
+    @include responsive-prop(margin-top, 27, 27);
+  }
+
+  & > .content > .bus-lines > a > .simple-button {
+    @include responsive-prop(margin-top, 45, 45);
+    @include responsive-prop(width, 266, 266);
+    @include responsive-prop(padding, 17, 17);
+    @include small-only {
+      width: 82vw;
+      margin: 0 auto;
+
+      @include responsive-prop(margin-top, 45, 45);
+    }
+  }
+}

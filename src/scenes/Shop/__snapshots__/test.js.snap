@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shop should render correctly 1`] = `
+<section
+  className="page-shop"
+>
+  <_
+    name="shop"
+  >
+    <Title>
+      Quero me inscrever
+    </Title>
+  </_>
+  <p
+    className="subtitle"
+  >
+     Escolha o pacote ideal para você! 
+  </p>
+  <main
+    className="options"
+  >
+    <ShopCard
+      description={
+        Array [
+          "Ciclo de Palestras",
+          "Coffee Break",
+          "Kit Semabio",
+        ]
+      }
+      level={0}
+      price={40}
+      title="Pacote A"
+    />
+    <ShopCard
+      description={
+        Array [
+          "Ciclo de Palestras",
+          "Coffee Break",
+          "Kit Semabio",
+          "1 Minicurso",
+          "Camiseta",
+        ]
+      }
+      level={1}
+      price={50}
+      title="Pacote B"
+    />
+    <ShopCard
+      description={
+        Array [
+          "Ciclo de Palestras",
+          "Coffee Break",
+          "Kit Semabio",
+          "2 Minicursos",
+          "Camiseta",
+        ]
+      }
+      level={2}
+      price={55}
+      title="Pacote C"
+    />
+    <ShopCard
+      description={
+        Array [
+          "Ciclo de Palestras",
+          "Coffee Break",
+          "Kit Semabio",
+          "3 Minicursos",
+          "Camiseta",
+        ]
+      }
+      level={3}
+      price={60}
+      title="Pacote D"
+    />
+    <ShopCard
+      description={
+        Array [
+          "Ciclo de Palestras",
+          "Coffee Break",
+          "Kit Semabio",
+          "4 Minicursos",
+          "Camiseta",
+        ]
+      }
+      level={4}
+      price={70}
+      title="Pacote E"
+    />
+  </main>
+  <footer
+    className="shirt"
+  >
+    <span
+      className="price"
+    >
+      A camiseta avulsa estará disponível por R$ 25,00
+    </span>
+  </footer>
+</section>
+`;

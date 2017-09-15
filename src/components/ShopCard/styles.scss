@@ -1,0 +1,113 @@
+@import 'ambience/color';
+@import 'ambience/responsive';
+@import 'base/responsive-prop';
+
+.shop-card {
+  $color-divisor: #F0F0F0;
+  $color-red: #FF7381;
+  $color-orange: #FCB755;
+  $color-green: #58C166;
+  $color-blue: #2CABCA;
+  $color-purple: #911AEC;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+
+  background-color: #FFF;
+  box-shadow: rgba(#000, .2) 0 2px 9px;
+
+  @include responsive-prop(width, 260, 210);
+  @include responsive-prop(height, 380, 380);
+  @include responsive-prop(padding-bottom, 20, 20);
+
+  @include medium-down {
+    @include responsive-prop(margin-bottom, 100, 100);
+  }
+
+  @include medium-only {
+    @include responsive-prop(width, 260, 260);
+  }
+
+  & > .title {
+    letter-spacing: -.4px;
+    text-transform: uppercase;
+
+    @include responsive-prop(font-size, 24, 24);
+    @include responsive-prop(margin-bottom, 10, 10);
+  }
+
+  & > .title.-red {
+    color: $color-red;
+  }
+
+  & > .title.-orange {
+    color: $color-orange;
+  }
+
+  & > .title.-green {
+    color: $color-green;
+  }
+
+  & > .title.-blue {
+    color: $color-blue;
+  }
+
+  & > .title.-purple {
+    color: $color-purple;
+  }
+
+  & > .price {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    border-bottom: $color-divisor 1px solid;
+
+    @include responsive-prop(padding-bottom, 20, 20);
+  }
+
+  & > .description {
+    text-align: center;
+    letter-spacing: -.4px;
+
+    color: $color-description;
+
+    @include responsive-prop(font-size, 14, 14);
+    @include responsive-prop(line-height, 22, 22);
+    @include responsive-prop(padding-left, 20, 20);
+    @include responsive-prop(padding-right, 20, 20);
+  }
+
+  & > .simple-button {
+    @include responsive-prop(font-size, 16, 16);
+    @include responsive-prop(width, 125, 125);
+    @include responsive-prop(height, 35, 35);
+  }
+
+  &:nth-child(1) > .icon {
+    @include responsive-prop(margin-top, 10, 10);
+  }
+
+  &:nth-child(2) > .icon {
+    @include responsive-prop(margin-top, -20, -20);
+    @include responsive-prop(margin-bottom, 5, 5);
+  }
+
+  &:nth-child(3) > .icon {
+    @include responsive-prop(margin-top, -45, -45);
+    @include responsive-prop(margin-bottom, 25, 25);
+  }
+
+  &:nth-child(4) > .icon {
+    @include responsive-prop(margin-top, -65, -65);
+    @include responsive-prop(margin-bottom, 25, 25);
+  }
+
+  &:nth-child(5) > .icon {
+    @include responsive-prop(margin-top, -65, -65);
+    @include responsive-prop(margin-bottom, 25, 25);
+  }
+}

@@ -1,0 +1,104 @@
+@import 'ambience/color';
+@import 'base/responsive-prop';
+
+.carrousel {
+  position: relative;
+
+  & > .fog-before {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    user-select: none;
+
+    background: linear-gradient(to right, $color-background 70%, rgba(#FFF, 0));
+
+    @include responsive-prop(width, 20, 250);
+    @include responsive-prop(height, 200, 200);
+  }
+
+  & > .fog-after {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+
+    user-select: none;
+
+    background: linear-gradient(to left, $color-background 70%, rgba(#FFF, 0));
+
+    @include responsive-prop(width, 20, 250);
+    @include responsive-prop(height, 200, 200);
+  }
+
+  & > .people {
+    position: relative;
+
+    overflow: hidden;
+
+    @include responsive-prop(height, 130, 130);
+  }
+
+  & > .people > .person {
+    position: absolute;
+    left: 50%;
+
+    transition: top 1s, transform .15s ease-in-out;
+
+    @include responsive-prop(top, 15, 15);
+  }
+
+  & > .people > .person.-centered {
+    top: 0;
+  }
+
+  & > .people > .person > .avatar {
+    transition: all 1s;
+
+    border-radius: 50%;
+
+    @include responsive-prop(width, 70, 70);
+    @include responsive-prop(height, 70, 70);
+  }
+
+  & > .people > .person.-centered > .avatar {
+    @include responsive-prop(width, 100, 100);
+    @include responsive-prop(height, 100, 100);
+  }
+
+  & > .bar {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    background-color: #E8E9ED;
+
+    @include responsive-prop(height, 3, 3);
+  }
+
+  & > .bar > .middle-bar {
+    background-color: #58C166;
+
+    @include responsive-prop(width, 100, 100);
+    @include responsive-prop(height, 3, 3);
+  }
+
+  & > .info {
+    @include responsive-prop(margin-top, 24, 24);
+  }
+
+  & > .info > .name {
+    @include responsive-prop(font-size, 18, 18);
+  }
+
+  & > .info > .about {
+    letter-spacing: 2.4px;
+
+    color: $color-light;
+
+    @include responsive-prop(font-size, 12, 12);
+    @include responsive-prop(margin-top, 2, 2);
+  }
+}

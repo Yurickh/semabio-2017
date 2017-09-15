@@ -1,0 +1,105 @@
+@import 'ambience/color';
+@import 'ambience/typography';
+@import 'ambience/responsive';
+@import 'base/responsive-prop';
+
+.page-contact {
+  position: relative;
+
+  width: 100vw;
+
+  color: #FFF;
+  background-color: #1C281E;
+
+  @include responsive-prop(padding-top, 200, 200);
+  @include responsive-prop(padding-bottom, 80, 80);
+
+  & > .cloud {
+    position: absolute;
+    z-index: 1;
+
+    transform: rotate(180deg);
+
+    @include responsive-prop(top, -10, -10);
+  }
+
+  & > .simple-title {
+    color: #FFF;
+  }
+
+  & > .simple-title > .divisor {
+    @include responsive-prop(margin-bottom, 24, 24);
+  }
+
+  & > .subtitle {
+    width: 82vw;
+    margin: 0 auto;
+
+    text-align: center;
+    letter-spacing: .41px;
+
+    opacity: .8;
+    color: $color-description;
+
+    @include responsive-prop(font-size, 20, 26);
+    @include responsive-prop(line-height, 26, 32);
+  }
+
+  & > .subtitle > strong {
+    color: #FFF;
+  }
+
+  & > .form {
+    display: flex;
+    flex-direction: column;
+
+    width: 50vw;
+    margin: 0 auto;
+
+    @include responsive-prop(margin-top, 43, 43);
+    @include small-only {
+      width: 82vw;
+      margin: 0 auto;
+
+      @include responsive-prop(margin-top, 43, 43);
+    }
+  }
+
+  & > .form > label {
+    @include responsive-prop(margin-bottom, 18, 18);
+  }
+
+  & > .form > label > input,
+  & > .form > label > textarea {
+    box-sizing: border-box;
+    width: 100%;
+
+    color: #FFF;
+    border: 1px solid #FFF;
+    background-color: transparent;
+
+    @include responsive-prop(font-size, 16, 16);
+    @include responsive-prop(margin-bottom, 8, 8);
+    @include responsive-prop(margin-top, 8, 8);
+    @include responsive-prop(padding-left, 8, 8);
+  }
+
+  & > .form > label > input {
+    @include responsive-prop(height, 44, 44);
+  }
+
+  & > .form > label > textarea {
+    resize: none;
+
+    @include responsive-prop(height, 200, 200);
+    @include responsive-prop(padding-top, 8, 8);
+  }
+
+  & > .form > .simple-button {
+    margin: 0 auto;
+
+    @include responsive-prop(width, 155, 155);
+    @include responsive-prop(margin-top, 28, 42);
+    @include responsive-prop(padding, 17, 17);
+  }
+}

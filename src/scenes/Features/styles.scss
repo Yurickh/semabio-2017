@@ -1,0 +1,45 @@
+@import "ambience/responsive";
+
+.page-features {
+  margin-top: 170px;
+
+  & > .selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & > .selector > .page-selector {
+    width: 90px;
+    height: 20px;
+  }
+
+  & > .selector-placeholder {
+    height: 20px;
+  }
+
+  & > .block-selector {
+    margin-top: 32px;
+    text-align: center;
+  }
+
+  & > .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 32px;
+  }
+
+  & > .content > * {
+    width: 45%;
+    padding-right: 20px;
+    margin-top: 1.5em;
+
+    @include small-only {
+      width: 100%;
+    };
+  }
+}

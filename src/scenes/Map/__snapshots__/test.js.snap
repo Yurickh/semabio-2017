@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Map should render correctly 1`] = `
+<section
+  className="page-map"
+>
+  <Title>
+    Como chegar
+  </Title>
+  <h2
+    className="subtitle"
+  >
+    Selecionamos algumas das principais linhas de ônibus para você
+  </h2>
+  <div
+    className="content"
+  >
+    <main
+      className="map-container"
+    >
+      <GoogleMap
+        lat={-15.7630982}
+        lng={-47.872239}
+        zoom={14}
+      />
+    </main>
+    <aside
+      className="bus-lines"
+    >
+      <div
+        className="line"
+      >
+        167.2 - Núcleo Bandeirante
+      </div>
+      <div
+        className="line"
+      >
+        521 - Sobradinho
+      </div>
+      <div
+        className="line"
+      >
+        517 - Sobradinho II
+      </div>
+      <div
+        className="line"
+      >
+        167.2 - Núcleo Bandeirante
+      </div>
+      <div
+        className="line"
+      >
+        521 - Sobradinho
+      </div>
+      <div
+        className="line"
+      >
+        517 - Núcleo Bandeirante
+      </div>
+      <a
+        href="http://www.sistemas.dftrans.df.gov.br/horarios/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <Button
+          color="green"
+        >
+          Mais Linhas
+        </Button>
+      </a>
+    </aside>
+  </div>
+</section>
+`;
