@@ -4,9 +4,6 @@ import { Element } from 'react-scroll'
 
 import ShopCard from '../../components/ShopCard'
 import Title from '../../components/Title'
-import Button from '../../components/Button'
-
-import iconShirt from './shirt.svg'
 
 import './styles.css'
 
@@ -82,7 +79,7 @@ class Shop extends Component {
         </main>
 
         <footer className="shirt">
-          <Button color='outline'>
+          {/* <Button color='outline'>
             <img
               className="icon"
               alt='icone de camiseta'
@@ -91,8 +88,8 @@ class Shop extends Component {
             <div className="text">
               Quero apenas a camiseta
             </div>
-          </Button>
-          <span className="price">Camiseta avulsa (R$ 25,00)</span>
+          </Button> */}
+          <span className="price">A camiseta avulsa estará disponível por R$ 25,00</span>
         </footer>
       </section>
     )

@@ -57,11 +57,17 @@ exports[`Map should render correctly 1`] = `
       >
         517 - Núcleo Bandeirante
       </div>
-      <Button
-        color="green"
+      <a
+        href="http://www.sistemas.dftrans.df.gov.br/horarios/"
+        rel="noopener noreferrer"
+        target="_blank"
       >
-        Mais Linhas
-      </Button>
+        <Button
+          color="green"
+        >
+          Mais Linhas
+        </Button>
+      </a>
     </aside>
   </div>
 </section>

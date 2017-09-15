@@ -19,7 +19,7 @@ class Home extends Component {
           <p>Uma aventura pela origem da diversidade</p>
 
           {/* year, month, day, hour, minute */}
-          <Countdown until={new Date(2017, 8, 20, 19, 0)} />
+          <Countdown until={new Date(2017, 8, 21, 0, 0)} />
         </main>
         <img className="tale"
           alt=""
