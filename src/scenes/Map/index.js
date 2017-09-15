@@ -30,7 +30,13 @@ class Map extends Component {
             <div className="line">167.2 - Núcleo Bandeirante</div>
             <div className="line">521 - Sobradinho</div>
             <div className="line">517 - Núcleo Bandeirante</div>
-            <Button color="green">Mais Linhas</Button>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="http://www.sistemas.dftrans.df.gov.br/horarios/"
+            >
+              <Button color="green">Mais Linhas</Button>
+            </a>
           </aside>
         </div>
       </section>

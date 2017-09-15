@@ -1,8 +1,13 @@
 @import 'ambience/color';
+@import 'ambience/responsive';
 
 .mode-selector {
   display: flex;
   justify-content: center;
+
+  @include small-only {
+    justify-content: space-around;
+  }
 
   & > .mode {
     font-size: 20px;
