@@ -1,5 +1,6 @@
 @import 'ambience/color';
 @import 'ambience/responsive';
+@import 'base/responsive-prop';
 
 .block-selector {
   display: flex;
@@ -10,8 +11,6 @@
   }
 
   & > .block {
-    font-size: 20px;
-
     margin-right: 42px;
 
     cursor: pointer;
@@ -19,12 +18,15 @@
 
     color: #000;
 
+    @include responsive-prop(font-size, 12, 20);
+    @include responsive-prop(margin-right, 12, 42);
     @include small-only {
       margin-right: 0;
     }
   }
 
   & > .block.-selected {
+    @include responsive-prop(padding-bottom, 4, 4);
     border-bottom: $color-forest 3px solid;
   }
 }
