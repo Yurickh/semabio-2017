@@ -1,0 +1,21 @@
+@import 'ambience/color';
+
+.mode-selector {
+  display: flex;
+  justify-content: center;
+
+  & > .mode {
+    font-size: 20px;
+
+    margin-right: 42px;
+
+    cursor: pointer;
+    letter-spacing: .71px;
+
+    color: $color-light;
+  }
+
+  & > .mode.-selected {
+    color: #000;
+  }
+}

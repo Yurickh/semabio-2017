@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import Price from '../Price'
-import Button from '../Button'
 
 import iconOne from './icon-1.svg'
 import iconTwo from './icon-2.svg'
