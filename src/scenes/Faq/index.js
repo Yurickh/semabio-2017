@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link, Element } from 'react-scroll'
 
 import Title from '../../components/Title'
 import Balloon from '../../components/Balloon'
@@ -38,14 +39,14 @@ class Faq extends Component {
           Caso sua dúvida não esteja aqui, entre em contato conosco.
         </p>
 
-        <main className="balloons">
+        <Element name="question" className="balloons">
           <Balloon type="question" key={this.question()}>
             {this.question()}
           </Balloon>
           <Balloon type="answer">
             {this.answer()}
           </Balloon>
-        </main>
+        </Element>
 
         <aside>
           <div className="divisor">
@@ -57,13 +58,16 @@ class Faq extends Component {
             {
               this.data.map((datum, index) => {
                 return (
-                   <span
-                     key={datum.question}
-                     className={index === this.state.selected ? '-active' : ''}
-                     onClick={() => this.selectQuestion(index)}
-                    >
-                      {datum.question}
-                    </span>
+                  <Link
+                    smooth
+                    duration={200}
+                    to="question"
+                    key={datum.question}
+                    className={index === this.state.selected ? '-active' : ''}
+                    onClick={() => this.selectQuestion(index)}
+                  >
+                    {datum.question}
+                  </Link>
                 )
               })
             }
