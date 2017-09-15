@@ -30,7 +30,17 @@ exports[`Map should render correctly 1`] = `
       <div
         className="line"
       >
-        167.2 - Núcleo Bandeirante
+        110 - Rod. do Plano Piloto
+      </div>
+      <div
+        className="line"
+      >
+        167 - Guará
+      </div>
+      <div
+        className="line"
+      >
+        349 - Taguatinga
       </div>
       <div
         className="line"
@@ -40,22 +50,12 @@ exports[`Map should render correctly 1`] = `
       <div
         className="line"
       >
-        517 - Sobradinho II
+        605 - Planaltina
       </div>
       <div
         className="line"
       >
-        167.2 - Núcleo Bandeirante
-      </div>
-      <div
-        className="line"
-      >
-        521 - Sobradinho
-      </div>
-      <div
-        className="line"
-      >
-        517 - Núcleo Bandeirante
+        160.2 - Núcleo Bandeirante
       </div>
       <a
         href="http://www.sistemas.dftrans.df.gov.br/horarios/"
