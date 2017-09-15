@@ -1,4 +1,5 @@
 @import 'ambience/color';
+@import 'ambience/responsive';
 @import 'base/responsive-prop';
 
 .balloon-bubble {
@@ -9,54 +10,67 @@
   box-sizing: border-box;
   width: 100%;
 
+  background-color: #FFF;
+  box-shadow: 0 2px 4px 0 rgba(119,119,119,.5);
+
   @include responsive-prop(padding-top, 24, 24);
   @include responsive-prop(padding-bottom, 24, 24);
   @include responsive-prop(padding-left, 36, 36);
   @include responsive-prop(padding-right, 36, 36);
-
-  background-color: #FFF;
-  box-shadow: 0 2px 4px 0 rgba(119,119,119,.5);
+  @include responsive-prop(font-size, 18, 18);
 
   &.-question {
     font-weight: bold;
-    @include responsive-prop(line-height, 17, 32);
 
     max-height: 80px;
 
     color: #58C166;
     border-radius: 100px;
     border-bottom-left-radius: 0;
+
+    @include responsive-prop(line-height, 18, 32);
+    @include small-only {
+      max-height: none;
+    }
   }
 
   &.-answer {
-    @include responsive-prop(font-size, 18, 18);
-    @include responsive-prop(line-height, 27, 27);
-    @include responsive-prop(margin-top, 94, 94);
-
     color: $color-wall;
     border-radius: 40px;
     border-bottom-right-radius: 0;
+
+    @include responsive-prop(line-height, 27, 27);
+    @include responsive-prop(margin-top, 94, 94);
+    @include small-only {
+      @include responsive-prop(margin-top, 10, 10);
+    }
   }
 }
 
 .example-enter {
-  opacity: 0.01;
-  width: 0px;
+  width: 0;
+
+  opacity: .01;
 }
 
 .example-enter.example-enter-active {
-  opacity: 1;
   width: 100%;
+
   transition: 700ms;
+
+  opacity: 1;
 }
 
 .example-leave {
-  opacity: 1;
   width: 100%;
+
+  opacity: 1;
 }
 
 .example-leave.example-leave-active {
-  opacity: 0.01;
-  width: 0px;
+  width: 0;
+
   transition: 700ms;
+
+  opacity: .01;
 }
