@@ -20,7 +20,7 @@ export default () => {
         'O imperador de todos os males: Câncer',
         'Genética Forense',
         'O Mundo das Plantas Carnívoras',
-        'Sexualidade na Escola',
+        'Sexualidade e Gênero na Educação',
         'Biologia de Parasitoides',
         'Biologia de Cetáceos',
         'Seleção Sexual',
