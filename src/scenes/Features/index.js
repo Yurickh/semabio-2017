@@ -4,9 +4,13 @@ import PageSelector from '../../components/PageSelector'
 import ModeSelector from '../../components/ModeSelector'
 import BlockSelector from '../../components/BlockSelector'
 
+import featuresData from '../../helpers/featuresData'
+
 import './styles.css'
 
 class Features extends Component {
+	data = featuresData()
+
 	state = {
 		currentPage: 0,
 		currentMode: 0,
@@ -27,6 +31,24 @@ class Features extends Component {
 
 	hasPagination = () => {
 		return false
+	}
+
+	renderContent = () => {
+		switch(this.state.currentMode) {
+			case 0: // Minicursos
+				return this.data.minicourses[this.state.currentBlock].map(miniCourse => {
+					return <div key={miniCourse} className="minicourse">{miniCourse}</div>
+				})
+			case 1: // Palestras
+				return this.data.lectures.map(lecture => {
+					return <div key={lecture} className="lecture">{lecture}</div>
+				})
+			case 2: // Rodas de conversa
+				return this.data.talkingCircles.map(talkingCircle => {
+					return <div key={talkingCircle} className="circle">{talkingCircle}</div>
+				})
+			default: return null
+		}
 	}
 
 	render() {
@@ -50,12 +72,17 @@ class Features extends Component {
 					onChange={this.changeMode}
 				/>
 
-				<BlockSelector
-					currentBlock={this.state.currentBlock}
-					onChange={this.changeBlock}
-				/>
+				{
+					this.state.currentMode === 0 // Minicursos
+					? <BlockSelector
+						currentBlock={this.state.currentBlock}
+						onChange={this.changeBlock}
+					/>
+					: null
+				}
 
 				<div className="content">
+					{ this.renderContent() }
 				</div>
 
 			</section>

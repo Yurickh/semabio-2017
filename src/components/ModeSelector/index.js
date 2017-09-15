@@ -21,7 +21,7 @@ class ModeSelector extends Component {
 		return (
 			<div className="mode-selector">
 				{
-					['Minicursos', 'Palestras', 'Rodas de conversa', 'Workshops'].map((mode, index) => {
+					['Minicursos', 'Palestras', 'Rodas de conversa'].map((mode, index) => {
 						return <div
 							className={`mode ${this.isSelected(index)}`}
 							onClick={() => this.selectMode(index)}
