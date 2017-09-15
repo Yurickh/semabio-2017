@@ -40,7 +40,10 @@
   & > .content > .map-container {
     width: 50vw;
 
-    background-color: red;
+    background-image: url('./map-fallback.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     @include responsive-prop(height, 450, 450);
     @include small-only {

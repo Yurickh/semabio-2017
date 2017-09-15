@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 
 import Cloud from '../../components/Cloud'
 import Title from '../../components/Title'
-import Button from '../../components/Button'
 
 import './styles.css'
 
@@ -13,9 +12,9 @@ class Contact extends Component {
         <Cloud />
         <Title white>Contato</Title>
 
-        <h2 className="subtitle">Mande um email para nós, ou só um “oi” mesmo se quiser</h2>
+        <h2 className="subtitle">Mande um email para nós através do endereço <strong>semabio.bsb.unb@gmail.com</strong>,<br /> ou só um “oi” mesmo se quiser</h2>
 
-        <form className="form">
+        {/* <form className="form">
           <label>
             Nome:
             <input type="text" name="name" />
@@ -31,7 +30,7 @@ class Contact extends Component {
           <Button color="red">
             Enviar
           </Button>
-        </form>
+        </form> */}
 
       </section>
     )
