@@ -91,24 +91,10 @@ exports[`Shop should render correctly 1`] = `
   <footer
     className="shirt"
   >
-    <Button
-      color="outline"
-    >
-      <img
-        alt="icone de camiseta"
-        className="icon"
-        src="shirt.svg"
-      />
-      <div
-        className="text"
-      >
-        Quero apenas a camiseta
-      </div>
-    </Button>
     <span
       className="price"
     >
-      Camiseta avulsa (R$ 25,00)
+      A camiseta avulsa estará disponível por R$ 25,00
     </span>
   </footer>
 </section>
