@@ -78,6 +78,10 @@
 
     @include responsive-prop(line-height, 20, 20);
     @include responsive-prop(height, 55, 55);
+
+    @include small-only {
+      height: auto;
+    }
   }
 
   & > .events > .event > .time {
@@ -89,6 +93,7 @@
     margin-top: 1em;
 
     @include responsive-prop(font-size, 18, 18);
+    @include responsive-prop(line-height, 22, 22);
   }
 
   & > .times > .sun {
