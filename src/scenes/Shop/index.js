@@ -37,7 +37,6 @@ class Shop extends Component {
               'Coffee Break',
               'Kit Semabio',
               '1 Minicurso',
-              'Camiseta',
             ]}
           />
           <ShopCard
