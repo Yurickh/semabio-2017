@@ -216,7 +216,7 @@ exports[`ScheduleTable should render correctly 1`] = `
       <p
         className="name"
       >
-        Minicursos Bloco C
+        Minicursos Bloco B
       </p>
     </div>
   </div>
