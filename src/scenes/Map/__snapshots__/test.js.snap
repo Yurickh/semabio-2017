@@ -64,6 +64,7 @@ exports[`Map should render correctly 1`] = `
       >
         <Button
           color="green"
+          onClick={[Function]}
         >
           Mais Linhas
         </Button>
