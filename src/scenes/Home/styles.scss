@@ -47,6 +47,15 @@
     @include responsive-prop(margin-top, 16, 8);
   }
 
+  & > .call > span {
+    display: block;
+
+    width: 80%;
+
+    @include responsive-prop(font-size, 14, 16);
+    @include responsive-prop(margin-top, 16, 32);
+  }
+
   & > .call .simple-button {
     position: relative;
     z-index: 2;
