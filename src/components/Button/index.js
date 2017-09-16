@@ -6,7 +6,7 @@ import './styles.css'
 class Button extends Component {
   render() {
     return (
-      <button className={`simple-button -${this.props.color}`}>
+      <button className={`simple-button -${this.props.color}`} onClick={this.props.onClick}>
         { this.props.children }
       </button>
     )
@@ -15,10 +15,12 @@ class Button extends Component {
 
 Button.propTypes = {
   color: PropTypes.oneOf(['green', 'red', 'outline']),
+  onClick: PropTypes.func,
 }
 
 Button.defaultProps = {
-  color: 'red'
+  color: 'red',
+  onClick: _=>_,
 }
 
 export default Button
