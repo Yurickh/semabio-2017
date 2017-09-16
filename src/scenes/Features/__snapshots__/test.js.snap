@@ -56,12 +56,7 @@ exports[`Features should render correctly 1`] = `
     <div
       className="minicourse"
     >
-      O despertar dos sentidos: o que sentimos, por que sentimos e como
-    </div>
-    <div
-      className="minicourse"
-    >
-      sentimos?
+      O despertar dos sentidos: o que sentimos, por que sentimos e como sentimos?
     </div>
     <div
       className="minicourse"

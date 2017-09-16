@@ -3,5 +3,6 @@
 exports[`Button should render correctly 1`] = `
 <button
   className="simple-button -red"
+  onClick={[Function]}
 />
 `;
