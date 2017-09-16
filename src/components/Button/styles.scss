@@ -37,15 +37,15 @@
   &.-outline {
     display: flex;
     justify-content: center;
-
+    
     color: $button-green;
     border: 2px solid $button-green;
     background-color: transparent;
 
     @include responsive-prop(padding-top, 15, 15);
     @include responsive-prop(padding-bottom, 15, 15);
-    @include responsive-prop(padding-left, 20, 20);
-    @include responsive-prop(padding-right, 20, 20);
+    @include responsive-prop(padding-left, 10, 20);
+    @include responsive-prop(padding-right, 10, 20);
   }
 
   &.-outline:hover {
