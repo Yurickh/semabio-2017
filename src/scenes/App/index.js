@@ -8,6 +8,7 @@ import Faq from '../Faq'
 import Map from '../Map'
 import Contact from '../Contact'
 import PlacesToStay from '../PlacesToStay'
+import Partners from '../Partners'
 
 class App extends Component {
   render() {
@@ -19,13 +20,10 @@ class App extends Component {
         <Features />
         <Shop />
         <Faq />
-        {/*<PlacesToStay />
-        {/* <Faq />
-        */}
         <Map />
         <PlacesToStay />
         <Contact />
-        {/*<Partners /> */}
+        <Partners />
       </div>
     )
   }
