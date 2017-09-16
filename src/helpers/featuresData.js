@@ -61,7 +61,7 @@ export default () => {
       'Impactos do Ecoturismo',
       'Evolução do Medo',
       'Etnobotânica',
-      'Intelectual',
+      'Propriedade Intelectual',
       'Os eventos de extinção: a sexta grande extinção',
       'Ciência em Quadrinhos',
     ],
