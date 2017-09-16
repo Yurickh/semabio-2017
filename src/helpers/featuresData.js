@@ -59,7 +59,7 @@ export default () => {
       'Microbiologia e o Avanço da Medicina',
       'Medicinas tradicionais do povo indígena Puyanawa',
       'Impactos do Ecoturismo',
-      'FUP)	Evolução do Medo',
+      'Evolução do Medo',
       'Etnobotânica',
       'Intelectual',
       'Os eventos de extinção: a sexta grande extinção',
