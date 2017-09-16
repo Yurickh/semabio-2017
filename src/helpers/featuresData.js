@@ -9,8 +9,7 @@ export default () => {
         'Insetos e o homem: vamos discutir esta relação?',
         'Imunoterapias',
         'Produção de Biofármacos',
-        'O despertar dos sentidos: o que sentimos, por que sentimos e como',
-        'sentimos?',
+        'O despertar dos sentidos: o que sentimos, por que sentimos e como sentimos?',
         'Oficina de Iniciação em Bonsai',
         'Desenvolvimento e Aplicação de Nanopartículas Carreadoras de Fármacos',
       ], [ // Bloco B
@@ -20,7 +19,7 @@ export default () => {
         'O imperador de todos os males: Câncer',
         'Genética Forense',
         'O Mundo das Plantas Carnívoras',
-        'Sexualidade na Escola',
+        'Sexualidade e Gênero na Educação',
         'Biologia de Parasitoides',
         'Biologia de Cetáceos',
         'Seleção Sexual',
