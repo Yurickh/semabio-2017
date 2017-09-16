@@ -3,6 +3,9 @@
 @import 'base/responsive-prop';
 
 .navbar {
+  display: flex;
+  justify-content: space-between;
+
   width: 70vw;
   margin: 0 auto;
 
@@ -22,5 +25,37 @@
     text-transform: uppercase;
 
     @include responsive-prop(margin-left, 12, 12);
+  }
+
+  & > .social {
+    display: flex;
+    align-items: center;
+  }
+
+  & > .social > .icon {
+    opacity: .7;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    @include responsive-prop(margin-left, 14, 18);
+  }
+
+  & > .social > .icon:hover {
+    opacity: 1;
+  }
+
+  & > .social > .icon.-facebook {
+    background-image: url('./facebook.svg');
+
+    @include responsive-prop(width, 6, 10);
+    @include responsive-prop(height, 14, 18);
+  }
+
+  & > .social > .icon.-instagram {
+    background-image: url('./instagram.svg');
+
+    @include responsive-prop(width, 14, 18);
+    @include responsive-prop(height, 14, 18);
   }
 }
