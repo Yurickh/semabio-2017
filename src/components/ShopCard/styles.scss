@@ -88,7 +88,7 @@
   }
 
   &:nth-child(1) > .icon {
-    @include responsive-prop(margin-top, 10, 10);
+    @include responsive-prop(margin-top, 35, 35);
   }
 
   &:nth-child(2) > .icon {
