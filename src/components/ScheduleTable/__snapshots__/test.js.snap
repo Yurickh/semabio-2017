@@ -211,7 +211,7 @@ exports[`ScheduleTable should render correctly 1`] = `
       <p
         className="time"
       >
-        19:00 às 22:00
+        19:00 às 22:30
       </p>
       <p
         className="name"
