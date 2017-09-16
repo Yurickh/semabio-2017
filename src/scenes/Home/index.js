@@ -17,6 +17,7 @@ class Home extends Component {
         <main className="call">
           <h1>A Odisseia da vida</h1>
           <p>Uma aventura pela origem da diversidade</p>
+          <span>Falta pouco pra você se inscrever:</span>
 
           {/* year, month, day, hour, minute */}
           <Countdown until={new Date(2017, 8, 21, 0, 0)} />

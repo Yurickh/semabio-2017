@@ -7,7 +7,7 @@ export default () => ({
     { time:'15:45', name: 'Coffee Break'},
     { time:'16:15', name: 'Ciência em Quadrinhos'},
     { time:'17:30', name: 'Jantar'},
-    { time:'19:00 às 22:00', name: 'Minicursos Bloco C'},
+    { time:'19:00 às 22:00', name: 'Minicursos Bloco B'},
   ],
   'TER': [
     { time:'08:00', name: 'Minicursos Bloco A'},
@@ -17,10 +17,10 @@ export default () => ({
     { time:'15:45', name: 'Coffee Break'},
     { time:'16:15', name: 'Revolução na Educação'},
     { time:'17:30', name: 'Jantar'},
-    { time:'19:00 às 22:00', name: 'Minicursos Bloco C'},
+    { time:'19:00 às 22:00', name: 'Minicursos Bloco B'},
   ],
   'QUA': [
-    { time:'08:00', name: 'Minicursos Bloco B'},
+    { time:'08:00', name: 'Minicursos Bloco C'},
     { time:'11:30', name: 'Almoço'},
     { time:'13:00', name: 'Como nossa alimentação pode salvar o mundo?'},
     { time:'14:30', name: 'Etnobotânica'},
@@ -30,7 +30,7 @@ export default () => ({
     { time:'19:00 às 22:00', name: 'Minicursos Bloco D'},
   ],
   'QUI': [
-    { time:'08:00', name: 'Minicursos Bloco B'},
+    { time:'08:00', name: 'Minicursos Bloco C'},
     { time:'11:30', name: 'Almoço'},
     { time:'13:00', name: 'Microbiologia e o Avanço da Medicina'},
     { time:'14:30', name: 'Propriedade Intelectual'},
