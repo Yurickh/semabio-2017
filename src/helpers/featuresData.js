@@ -37,7 +37,7 @@ export default () => {
       ], [ // Bloco D
         'Cavalos-Marinhos: o que são e por quê protegê-los?',
         'Biologia Forense Animal: contribuições da academia na resolução de crimes contra a fauna',
-        'Paleontologia: introdução estado da arte',
+        'Paleontologia: introdução ao estado da arte',
         'Interação Planta-Praga',
         'Visualização e simulação de proteínas',
         'O conhecimento da hereditariedade: da domesticação de plantas e animais à herança epigenética',
