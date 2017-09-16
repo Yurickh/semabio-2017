@@ -7,7 +7,7 @@ export default () => ({
     { time:'15:45', name: 'Coffee Break'},
     { time:'16:15', name: 'Ciência em Quadrinhos'},
     { time:'17:30', name: 'Jantar'},
-    { time:'19:00 às 22:00', name: 'Minicursos Bloco B'},
+    { time:'19:00 às 22:30', name: 'Minicursos Bloco B'},
   ],
   'TER': [
     { time:'08:00', name: 'Minicursos Bloco A'},
@@ -17,7 +17,7 @@ export default () => ({
     { time:'15:45', name: 'Coffee Break'},
     { time:'16:15', name: 'Revolução na Educação'},
     { time:'17:30', name: 'Jantar'},
-    { time:'19:00 às 22:00', name: 'Minicursos Bloco B'},
+    { time:'19:00 às 22:30', name: 'Minicursos Bloco B'},
   ],
   'QUA': [
     { time:'08:00', name: 'Minicursos Bloco C'},
@@ -27,7 +27,7 @@ export default () => ({
     { time:'15:45', name: 'Coffee Break'},
     { time:'16:15', name: 'Me formei. E agora?'},
     { time:'17:30', name: 'Jantar'},
-    { time:'19:00 às 22:00', name: 'Minicursos Bloco D'},
+    { time:'19:00 às 22:30', name: 'Minicursos Bloco D'},
   ],
   'QUI': [
     { time:'08:00', name: 'Minicursos Bloco C'},
@@ -37,7 +37,7 @@ export default () => ({
     { time:'15:45', name: 'Coffee Break'},
     { time:'16:15', name: 'Crise Hídrica'},
     { time:'17:30', name: 'Jantar'},
-    { time:'19:00 às 22:00', name: 'Minicursos Bloco D'},
+    { time:'19:00 às 22:30', name: 'Minicursos Bloco D'},
   ],
   'SEX': [
     { time:'08:00', name: 'Minicursos Bloco E'},
