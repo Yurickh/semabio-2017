@@ -68,7 +68,7 @@ class Shop extends Component {
               'Ciclo de Palestras',
               'Coffee Break',
               'Kit Semabio',
-              '2 Minicursos',
+              '1 Minicursos',
               'Camiseta',
             ]}
           />
@@ -80,7 +80,7 @@ class Shop extends Component {
               'Ciclo de Palestras',
               'Coffee Break',
               'Kit Semabio',
-              '3 Minicursos',
+              '2 Minicursos',
               'Camiseta',
             ]}
           />
@@ -92,7 +92,7 @@ class Shop extends Component {
               'Ciclo de Palestras',
               'Coffee Break',
               'Kit Semabio',
-              '4 Minicursos',
+              '3 Minicursos',
               'Camiseta',
             ]}
           />
