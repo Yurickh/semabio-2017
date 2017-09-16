@@ -38,7 +38,6 @@ exports[`Shop should render correctly 1`] = `
           "Coffee Break",
           "Kit Semabio",
           "1 Minicurso",
-          "Camiseta",
         ]
       }
       level={1}
