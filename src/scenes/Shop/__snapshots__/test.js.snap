@@ -90,11 +90,88 @@ exports[`Shop should render correctly 1`] = `
   <footer
     className="shirt"
   >
-    <span
-      className="price"
+    <Button
+      color="outline"
+      onClick={[Function]}
     >
-      A camiseta avulsa estará disponível por R$ 25,00
-    </span>
+      <img
+        alt="icone de camiseta"
+        className="icon -shirt"
+        src="shirt.svg"
+      />
+      <div
+        className="text"
+      >
+        Quero apenas a camiseta
+      </div>
+    </Button>
+    <Button
+      color="outline"
+      onClick={[Function]}
+    >
+      <img
+        alt="icone de desconto"
+        className="icon -discount"
+        src="discount.svg"
+      />
+      <div
+        className="text"
+      >
+        Sou aluno da Assistência Estudantil
+      </div>
+    </Button>
   </footer>
+  <span
+    className="price"
+  >
+    A camiseta avulsa estará disponível por R$ 25,00
+  </span>
+  <Modal
+    ariaHideApp={true}
+    bodyOpenClassName="ReactModal__Body--open"
+    className="modal"
+    closeTimeoutMS={0}
+    contentLabel="DDS Modal"
+    isOpen={false}
+    onRequestClose={[Function]}
+    parentSelector={[Function]}
+    portalClassName="ReactModalPortal"
+    shouldCloseOnOverlayClick={true}
+    shouldFocusAfterRender={true}
+  >
+    <h1>
+      Você sabia que...
+    </h1>
+    <p>
+      Alunos participantes do programa de assistência estudantil da UnB têm direito a 50% de desconto em sua inscrição para a XVI Semana da Biologia?
+    </p>
+    <p>
+      Basta nos enviar por e-mail a sua declaração (atualizada) de participação no programa, juntamente com um documento de identificação com foto, que iremos avaliar sua documentação e lhe responder com um código de uso único. Depois, é só realizar sua inscrição como qualquer outro participante e, no campo de códigos promocionais, inserir o código enviado para que 50% do valor total do seu pacote de inscrição seja abatido!
+    </p>
+    <p>
+      Fácil, não é? Vem com a gente aproveitar esse evento que foi pensado também para você!
+    </p>
+    <div
+      className="footer"
+    >
+      <div
+        className="bar"
+      />
+      <p>
+        O email deve ser enviado para o endereço 
+        <strong>
+          semabio.unb.bsb@gmail.com
+        </strong>
+         com o assunto “comprovante -programa de assistência”.
+      </p>
+      <p>
+        Todos os códigos só poderão ser usados uma única vez e serão atrelados aos dados de cada participante, após o uso, o código será invalidado.
+      </p>
+    </div>
+    <div
+      className="close"
+      onClick={[Function]}
+    />
+  </Modal>
 </section>
 `;
