@@ -1,13 +1,33 @@
 import React, { Component } from 'react'
 
 import { Element } from 'react-scroll'
+import Modal from 'react-modal'
 
 import ShopCard from '../../components/ShopCard'
 import Title from '../../components/Title'
+import Button from '../../components/Button'
+
+import iconShirt from './shirt.svg'
 
 import './styles.css'
 
 class Shop extends Component {
+  state = {
+    modalOpen: false
+  }
+
+  openDDSModal = () => {
+    this.setState({
+      modalOpen: true
+    })
+  }
+
+  closeDDSModal = () => {
+    this.setState({
+      modalOpen: false
+    })
+  }
+
   render() {
     return (
       <section className="page-shop">
@@ -88,8 +108,35 @@ class Shop extends Component {
               Quero apenas a camiseta
             </div>
           </Button> */}
+          <Button color='outline' onClick={this.openDDSModal}>
+            <img
+              className="icon"
+              alt='icone de camiseta'
+              src={iconShirt}
+            />
+            <div className="text">
+              Sou aluno DDS
+            </div>
+          </Button>
           <span className="price">A camiseta avulsa estará disponível por R$ 25,00</span>
         </footer>
+
+        <Modal
+          isOpen={this.state.modalOpen}
+          onRequestClose={this.closeDDSModal}
+          contentLabel='DDS Modal'
+          style={{
+            content: {
+              backgroundColor: 'red',
+              color: 'white'
+            },
+          }}
+        >
+          <h1>Potatos são solid quando você crê neles</h1>
+
+          <p onClick={this.closeDDSModal}>Clique em mim pra fechar a modal</p>
+        </Modal>
+
       </section>
     )
   }

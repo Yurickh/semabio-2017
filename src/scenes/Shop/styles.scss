@@ -84,3 +84,7 @@
     @include responsive-prop(margin-top, 12, 12);
   }
 }
+
+.ReactModalPortal {
+  z-index: 5;
+}
