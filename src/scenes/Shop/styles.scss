@@ -53,7 +53,7 @@
   }
 
   & > .shirt > .simple-button {
-    flex-basis: 45%;
+    width: 45%;
 
     margin: 0 auto;
 
@@ -61,7 +61,7 @@
       @include responsive-prop(margin-top, -120, -120);
     }
     @include small-only {
-      width: 82vw;
+      width: 100%;
 
       @include responsive-prop(margin-top, -120, -120);
     }
