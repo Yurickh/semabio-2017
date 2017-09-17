@@ -1,6 +1,6 @@
 export default () => ({
   'SEG': [
-    { time:'08:00', name: 'Minicursos Bloco A'},
+    { time:'08:00', name: 'Minicursos Bloco A; Entrega de kits'},
     { time:'11:30', name: 'Almoço'},
     { time:'13:00', name: 'A Odisseia da Vida'},
     { time:'14:30', name: 'Impactos do Ecoturismo'},
