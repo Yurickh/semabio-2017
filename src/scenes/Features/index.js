@@ -28,15 +28,30 @@ class Features extends Component {
     switch(this.state.currentMode) {
       case 0: // Minicursos
         return this.data.minicourses[this.state.currentBlock].map(miniCourse => {
-          return <div key={miniCourse} className="minicourse">{miniCourse}</div>
+          return <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="#"
+                  key={miniCourse} className="minicourse">{miniCourse}
+                </a>
         })
       case 1: // Palestras
         return this.data.lectures.map(lecture => {
-          return <div key={lecture} className="lecture">{lecture}</div>
+          return <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="#"
+                  key={lecture} className="lecture">{lecture}
+                </a>
         })
       case 2: // Rodas de conversa
         return this.data.talkingCircles.map(talkingCircle => {
-          return <div key={talkingCircle} className="circle">{talkingCircle}</div>
+          return <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="#"
+                  key={talkingCircle} className="circle">{talkingCircle}
+                </a>
         })
       default: return null
     }
