@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Schedule should render correctly 1`] = `
+<section
+  className="page-schedule"
+>
+  <Title>
+    Cronograma
+  </Title>
+  <ScheduleSelector />
+</section>
+`;

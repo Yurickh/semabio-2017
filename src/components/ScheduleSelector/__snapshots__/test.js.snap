@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScheduleSelector should render correctly 1`] = `
+<main
+  className="schedule-selector"
+>
+  <nav
+    className="week-picker"
+  >
+    <div
+      className="day -selected"
+      onClick={[Function]}
+    >
+      SEG
+    </div>
+    <div
+      className="day "
+      onClick={[Function]}
+    >
+      TER
+    </div>
+    <div
+      className="day "
+      onClick={[Function]}
+    >
+      QUA
+    </div>
+    <div
+      className="day "
+      onClick={[Function]}
+    >
+      QUI
+    </div>
+    <div
+      className="day "
+      onClick={[Function]}
+    >
+      SEX
+    </div>
+    <div
+      className="day "
+      onClick={[Function]}
+    >
+      SAB
+    </div>
+  </nav>
+  <ScheduleTable
+    selected="SEG"
+  />
+</main>
+`;

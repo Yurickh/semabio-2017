@@ -1,8 +1,6 @@
-@import "ambience/color.scss";
-
 html {
   overflow-x: hidden;
-  background-color: $color-background;
+  background-color: #FAFAFA;
 }
 
 * {
@@ -13,6 +11,7 @@ html {
 
 button {
   border: none;
+  outline: none;
 }
 
 a {

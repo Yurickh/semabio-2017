@@ -1,12 +1,11 @@
-@import 'ambience/responsive.scss';
+@import 'ambience/responsive';
 
 .cloud {
-  position: absolute;
-  bottom: 0;
-
   width: 100%;
+  pointer-events: none;
 
   @include small-only {
-    width: 240%;
+    width: 100%;
+    height: 30%;
   }
 }

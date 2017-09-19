@@ -18,10 +18,22 @@ exports[`Navbar should render correctly 1`] = `
     >
       Semana da Biologia
     </span>
-  </a>
-  <NavBurger
-    onClick={[Function]}
-    variant=""
-  />
-</div>
+  </div>
+  <div
+    className="social"
+  >
+    <a
+      className="icon -facebook"
+      href="https://www.facebook.com/SemaBio/"
+      rel="noopener noreferrer"
+      target="_blank"
+    />
+    <a
+      className="icon -instagram"
+      href="https://www.instagram.com/semabiounb/"
+      rel="noopener noreferrer"
+      target="_blank"
+    />
+  </div>
+</nav>
 `;

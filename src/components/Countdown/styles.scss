@@ -1,0 +1,42 @@
+@import 'ambience/typography.scss';
+@import 'ambience/color.scss';
+@import 'base/responsive-prop';
+
+.count-down {
+  font-weight: $weight-bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  letter-spacing: .4px;
+
+  color: #FFF;
+  background-color: $color-blood;
+
+  @include responsive-prop(font-size, 24, 24);
+  @include responsive-prop(width, 266, 266);
+  @include responsive-prop(height, 52, 52);
+  @include responsive-prop(margin-top, 12, 14);
+  @include responsive-prop(padding-right, 26, 26);
+  @include responsive-prop(padding-left, 26, 26);
+
+  & > * {
+    text-align: center;
+  }
+
+  & .separator {
+    @include responsive-prop(margin-bottom, 12, 12);
+    @include responsive-prop(padding-right, 6, 6);
+    @include responsive-prop(padding-left, 6, 6);
+  }
+
+  & .label {
+    font-weight: $weight-regular;
+
+    letter-spacing: .32px;
+
+    @include responsive-prop(font-size, 8, 8);
+  }
+}

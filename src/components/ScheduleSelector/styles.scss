@@ -1,0 +1,46 @@
+@import 'ambience/color';
+@import 'ambience/responsive';
+@import 'base/responsive-prop';
+
+.schedule-selector {
+  & > .week-picker {
+    display: flex;
+    justify-content: center;
+  }
+
+  & > .week-picker > .day {
+    box-sizing: border-box;
+    @include responsive-prop(padding-top, 14, 14);
+    @include responsive-prop(padding-bottom, 14, 14);
+    @include responsive-prop(padding-left, 34, 34);
+    @include responsive-prop(padding-right, 34, 34);
+
+    @include small-only {
+      @include responsive-prop(padding-top, 7, 7);
+      @include responsive-prop(padding-bottom, 7, 7);
+      @include responsive-prop(padding-left, 10, 10);
+      @include responsive-prop(padding-right, 10, 10);
+    }
+
+    cursor: pointer;
+
+    color: $color-forest;
+  }
+
+  & > .week-picker > .day.-selected {
+    @include responsive-prop(padding-top, 12, 12);
+    @include responsive-prop(padding-bottom, 12, 12);
+    @include responsive-prop(padding-left, 32, 32);
+    @include responsive-prop(padding-right, 32, 32);
+
+    border: $color-forest 2px solid;
+    border-radius: 24px;
+
+    @include small-only {
+      @include responsive-prop(padding-top, 5, 5);
+      @include responsive-prop(padding-bottom, 5, 5);
+      @include responsive-prop(padding-left, 8, 8);
+      @include responsive-prop(padding-right, 8, 8);
+    }
+  }
+}

@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Countdown should render correctly 1`] = `
+<div
+  className="count-down"
+>
+  <div
+    className="days"
+  >
+    <div
+      className="value"
+    >
+      00
+    </div>
+    <div
+      className="label"
+    >
+      dias
+    </div>
+  </div>
+  <div
+    className="separator"
+  >
+    :
+  </div>
+  <div
+    className="hours"
+  >
+    <div
+      className="value"
+    >
+      00
+    </div>
+    <div
+      className="label"
+    >
+      horas
+    </div>
+  </div>
+  <div
+    className="separator"
+  >
+    :
+  </div>
+  <div
+    className="minutes"
+  >
+    <div
+      className="value"
+    >
+      00
+    </div>
+    <div
+      className="label"
+    >
+      minutos
+    </div>
+  </div>
+  <div
+    className="separator"
+  >
+    :
+  </div>
+  <div
+    className="seconds"
+  >
+    <div
+      className="value"
+    >
+      00
+    </div>
+    <div
+      className="label"
+    >
+      segundos
+    </div>
+  </div>
+</div>
+`;

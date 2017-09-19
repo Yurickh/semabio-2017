@@ -1,18 +1,15 @@
-@import 'ambience/typography.scss';
-@import 'ambience/responsive.scss';
+@import 'ambience/typography';
+@import 'ambience/responsive';
+@import 'base/responsive-prop';
 
 .navbar {
-  position: relative;
-  z-index: 2;
-
   display: flex;
-  align-items: center;
   justify-content: space-between;
 
   width: 70vw;
   margin: 0 auto;
-  padding-top: 32px;
 
+  @include responsive-prop(padding-top, 32, 32);
   @include small-only {
     width: 82vw;
   }
@@ -27,64 +24,40 @@
   & > .brand > .name {
     font-weight: $weight-bold;
 
-    margin-left: 12px;
-
     text-transform: uppercase;
 
-    color: #FFF;
+    @include responsive-prop(margin-left, 12, 12);
   }
 
-  &.-open {
-    z-index: 3;
-  }
-
-  &.-open > .links {
-    position: fixed;
-    top: 0;
-    right: 0;
-
-    box-sizing: border-box;
-    width: 375px;
-    height: 100vh;
-    padding: 100px 60px;
-
-    background-color: #000;
-  }
-
-  &.-open::before {
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    display: block;
-
-    width: calc(100vw + 30px);
-    height: calc(100vh + 30px);
-    margin-left: -30px;
-
-    content: '';
-
-    opacity: .75;
-    background-color: #000;
-
-    filter: blur(10px);
-  }
-
-  & > .links {
-    position: absolute;
-    top: 100px;
-    right: 140px;
-
+  & > .social {
     display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
   }
 
-  & > .links > .link {
-    font-size: 24px;
-    line-height: 56px;
+  & > .social > .icon {
+    opacity: .7;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 
-    cursor: pointer;
-    text-transform: uppercase;
+    @include responsive-prop(margin-left, 14, 18);
+  }
+
+  & > .social > .icon:hover {
+    opacity: 1;
+  }
+
+  & > .social > .icon.-facebook {
+    background-image: url('./facebook.svg');
+
+    @include responsive-prop(width, 6, 10);
+    @include responsive-prop(height, 14, 18);
+  }
+
+  & > .social > .icon.-instagram {
+    background-image: url('./instagram.svg');
+
+    @include responsive-prop(width, 14, 18);
+    @include responsive-prop(height, 14, 18);
   }
 }
