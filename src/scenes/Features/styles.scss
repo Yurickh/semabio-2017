@@ -40,6 +40,8 @@
     width: 45%;
     margin-top: 1.5em;
 
+    color: #000;
+
     @include responsive-prop(padding-right, 20, 20);
     @include responsive-prop(line-height, 20, 26);
     @include responsive-prop(font-size, 14, 18);

@@ -50,7 +50,7 @@ exports[`Shop should render correctly 1`] = `
           "Ciclo de Palestras",
           "Coffee Break",
           "Kit Semabio",
-          "1 Minicursos",
+          "1 Minicurso",
           "Camiseta",
         ]
       }
