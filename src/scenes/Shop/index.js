@@ -68,7 +68,7 @@ class Shop extends Component {
               'Ciclo de Palestras',
               'Coffee Break',
               'Kit Semabio',
-              '1 Minicursos',
+              '1 Minicurso',
               'Camiseta',
             ]}
           />
