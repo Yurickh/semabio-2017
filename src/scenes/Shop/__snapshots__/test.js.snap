@@ -14,7 +14,7 @@ exports[`Shop should render correctly 1`] = `
   <p
     className="subtitle"
   >
-     Escolha o pacote ideal para você!
+     Escolha o pacote ideal para você! 
   </p>
   <main
     className="options"
@@ -158,7 +158,7 @@ exports[`Shop should render correctly 1`] = `
         className="bar"
       />
       <p>
-        O email deve ser enviado para o endereço
+        O email deve ser enviado para o endereço 
         <strong>
           semabio.unb.bsb@gmail.com
         </strong>
