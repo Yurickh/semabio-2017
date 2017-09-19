@@ -46,7 +46,6 @@ export default () => ({
     { time:'14:30', name: 'Os eventos de extinção: a sexta grande extinção'},
     { time:'15:45', name: 'Coffee Break'},
     { time:'16:15', name: 'Mulheres na Ciência'},
-    {},{},
   ],
   'SAB': [
     {
@@ -59,6 +58,5 @@ export default () => ({
       ]
     },
     { time:'11:30', name: 'A Biologia em Nossa Vida'},
-    {},{},{},{},{},{},
   ],
 })

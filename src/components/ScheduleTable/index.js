@@ -51,7 +51,7 @@ class ScheduleTable extends Component {
     return times
     .filter((time, index) => {
       // check if there's an event with given index present
-      return Object.keys(this.eventsOfType(type)[index]).length
+      return this.eventsOfType(type)[index]
     })
     .map(time => (
       <div
