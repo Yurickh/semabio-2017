@@ -1,13 +1,13 @@
 export default () => ({
   'SEG': [
-    { time:'08:00', name: 'Minicursos Bloco A'},
+    { time:'08:00', name: 'Minicursos Bloco A; Entrega de kits'},
     { time:'11:30', name: 'Almoço'},
     { time:'13:00', name: 'A Odisseia da Vida'},
     { time:'14:30', name: 'Impactos do Ecoturismo'},
     { time:'15:45', name: 'Coffee Break'},
     { time:'16:15', name: 'Ciência em Quadrinhos'},
     { time:'17:30', name: 'Jantar'},
-    { time:'19:00 às 22:00', name: 'Minicursos Bloco B'},
+    { time:'19:00 às 22:30', name: 'Minicursos Bloco B'},
   ],
   'TER': [
     { time:'08:00', name: 'Minicursos Bloco A'},
@@ -17,7 +17,7 @@ export default () => ({
     { time:'15:45', name: 'Coffee Break'},
     { time:'16:15', name: 'Revolução na Educação'},
     { time:'17:30', name: 'Jantar'},
-    { time:'19:00 às 22:00', name: 'Minicursos Bloco B'},
+    { time:'19:00 às 22:30', name: 'Minicursos Bloco B'},
   ],
   'QUA': [
     { time:'08:00', name: 'Minicursos Bloco C'},
@@ -27,7 +27,7 @@ export default () => ({
     { time:'15:45', name: 'Coffee Break'},
     { time:'16:15', name: 'Me formei. E agora?'},
     { time:'17:30', name: 'Jantar'},
-    { time:'19:00 às 22:00', name: 'Minicursos Bloco D'},
+    { time:'19:00 às 22:30', name: 'Minicursos Bloco D'},
   ],
   'QUI': [
     { time:'08:00', name: 'Minicursos Bloco C'},
@@ -37,7 +37,7 @@ export default () => ({
     { time:'15:45', name: 'Coffee Break'},
     { time:'16:15', name: 'Crise Hídrica'},
     { time:'17:30', name: 'Jantar'},
-    { time:'19:00 às 22:00', name: 'Minicursos Bloco D'},
+    { time:'19:00 às 22:30', name: 'Minicursos Bloco D'},
   ],
   'SEX': [
     { time:'08:00', name: 'Minicursos Bloco E'},
@@ -51,10 +51,10 @@ export default () => ({
   ],
   'SAB': [
     { time:'08:00', name: 'Minicursos Bloco E'},
+    { time: '08:00', name: 'Workshops: Projeto Fauna UnB'},
+    { time: '08:00', name: 'Exposições: Bio na Rua'},
+    { time: '08:00', name: 'Projeto Sala de Ciência'},
     { time:'11:30', name: 'A Biologia em Nossa Vida'},
-    { },
-    { },
-    { },
     { },
     { },
     { },
