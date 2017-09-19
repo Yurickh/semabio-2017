@@ -13,6 +13,7 @@ class ScheduleTable extends Component {
 	scheduleData = scheduleData()
 	oddTimes = ['small', 'full', 'medium', 'minimal']
 	evenTimes = ['half', 'medium', 'small', 'moon']
+	saturdayTimes = ['minimal', 'small', 'medium', 'half']
 
 	static propTypes = {
 		selected: PropTypes.oneOf(Object.keys(scheduleData()))
@@ -45,6 +46,10 @@ class ScheduleTable extends Component {
 
 	renderTimes = (type) => {
 		let times = type === 'even' ? this.evenTimes : this.oddTimes
+
+		if (this.props.selected === 'SAB') {
+			times = this.saturdayTimes
+		}
 
 		return times
 		.filter((time, index) => {
