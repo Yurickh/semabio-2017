@@ -1,32 +1,39 @@
-@import "ambience/typography.scss";
+@import 'ambience/color';
+@import 'ambience/responsive';
+@import 'base/responsive-prop';
 
 .shop-card {
-  $color-red: #FF7381;
-  $color-blue: #2CABCA;
-  $color-green: #58C166;
-  $color-purple: #911AEC;
-  $color-orange: #FCB755;
   $color-divisor: #F0F0F0;
-  $color-description: #9A9A9A;
+  $color-red: #FF7381;
+  $color-orange: #FCB755;
+  $color-green: #58C166;
+  $color-blue: #2CABCA;
+  $color-purple: #911AEC;
 
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
 
-  width: 210px;
-  height: 380px;
-  padding-bottom: 20px;
-
   background-color: #FFF;
-  box-shadow: rgba(#000, .5) 0 2px 9px;
+  box-shadow: rgba(#000, .2) 0 2px 9px;
+
+  @include responsive-prop(width, 260, 210);
+  @include responsive-prop(height, 380, 380);
+  @include responsive-prop(padding-bottom, 20, 20);
+  @include medium-down {
+    @include responsive-prop(margin-bottom, 100, 100);
+  }
+  @include medium-only {
+    @include responsive-prop(width, 260, 260);
+  }
 
   & > .title {
-    font-size: 24px;
-    margin-bottom: 10px;
-
     letter-spacing: -.4px;
     text-transform: uppercase;
+
+    @include responsive-prop(font-size, 24, 24);
+    @include responsive-prop(margin-bottom, 10, 10);
   }
 
   & > .title.-red {
@@ -54,52 +61,49 @@
     justify-content: center;
 
     width: 100%;
-    padding-bottom: 20px;
 
     border-bottom: $color-divisor 1px solid;
+
+    @include responsive-prop(padding-bottom, 20, 20);
   }
 
   & > .description {
-    font-size: 14px;
-    line-height: 22px;
-
-    padding: 0 20px;
-
     text-align: center;
     letter-spacing: -.4px;
 
     color: $color-description;
+
+    @include responsive-prop(font-size, 14, 14);
+    @include responsive-prop(line-height, 22, 22);
+    @include responsive-prop(padding-left, 20, 20);
+    @include responsive-prop(padding-right, 20, 20);
   }
 
   & > a > .simple-button {
-    font-size: 16px;
     font-weight: $weight-regular;
 
-    width: 125px;
-    height: 35px;
+    @include responsive-prop(font-size, 16, 16);
+    @include responsive-prop(width, 125, 125);
+    @include responsive-prop(height, 35, 35);
   }
 
   &:nth-child(1) > .icon {
-    margin-top: 10px;
+    @include responsive-prop(margin-top, 35, 35);
   }
 
   &:nth-child(2) > .icon {
-    margin-top: -20px;
-    margin-bottom: 5px;
+    @include responsive-prop(margin-top, 10, 10);
   }
 
   &:nth-child(3) > .icon {
-    margin-top: -45px;
-    margin-bottom: 25px;
+    @include responsive-prop(margin-top, 10, 10);
   }
 
   &:nth-child(4) > .icon {
-    margin-top: -65px;
-    margin-bottom: 25px;
+    @include responsive-prop(margin-top, 10, 10);
   }
 
   &:nth-child(5) > .icon {
-    margin-top: -65px;
-    margin-bottom: 25px;
+    @include responsive-prop(margin-top, 10, 10);
   }
 }

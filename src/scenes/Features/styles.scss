@@ -1,0 +1,50 @@
+@import 'ambience/responsive';
+@import 'base/responsive-prop';
+
+.page-features {
+  @include responsive-prop(margin-top, 100, 170);
+
+  & > .selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & > .selector > .page-selector {
+    @include responsive-prop(width, 90, 90);
+    @include responsive-prop(height, 20, 20);
+  }
+
+  & > .selector-placeholder {
+    @include responsive-prop(height, 20, 20);
+  }
+
+  & > .block-selector {
+    text-align: center;
+
+    @include responsive-prop(margin-top, 32, 32);
+  }
+
+  & > .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    width: 80vw;
+    margin: 0 auto;
+
+    @include responsive-prop(margin-top, 32, 32);
+  }
+
+  & > .content > * {
+    width: 45%;
+    margin-top: 1.5em;
+
+    @include responsive-prop(padding-right, 20, 20);
+    @include responsive-prop(line-height, 20, 26);
+    @include responsive-prop(font-size, 14, 18);
+    @include small-only {
+      width: 100%;
+    }
+  }
+}

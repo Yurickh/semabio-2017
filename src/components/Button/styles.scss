@@ -1,49 +1,55 @@
-@import 'ambience/typography.scss';
-@import 'ambience/responsive.scss';
-@import 'ambience/color.scss';
-
-$simple-button-red: $color-blood;
-$simple-button-green: $color-forest;
+@import 'ambience/typography';
+@import 'ambience/responsive';
+@import 'ambience/color';
+@import 'base/responsive-prop';
 
 .simple-button {
-  font-size: 18px;
+  $button-red: $color-blood;
+  $button-green: $color-forest;
+
+  font-size: 18;
   font-weight: $weight-bold;
 
   cursor: pointer;
   letter-spacing: 1px;
 
   color: #FFF;
-  background-color: $simple-button-red;
+  background-color: $button-red;
 
   @include small-only {
-    font-size: calc(14px + 1vw);
-
     width: 72vw;
+
+    @include responsive-prop(font-size, 14, 14);
   }
 
   &:hover {
-    background-color: darken($simple-button-red, 3%);
+    background-color: darken($button-red, 3%);
   }
 
   &.-green {
-    background-color: $simple-button-green;
+    background-color: $button-green;
   }
 
   &.-green:hover {
-    background-color: darken($simple-button-green, 3%);
+    background-color: darken($button-green, 3%);
   }
 
   &.-outline {
     display: flex;
-    padding: 15px 45px;
-
-    color: $simple-button-green;
-    border: 2px solid $simple-button-green;
+    justify-content: center;
+    
+    color: $button-green;
+    border: 2px solid $button-green;
     background-color: transparent;
+
+    @include responsive-prop(padding-top, 15, 15);
+    @include responsive-prop(padding-bottom, 15, 15);
+    @include responsive-prop(padding-left, 10, 20);
+    @include responsive-prop(padding-right, 10, 20);
   }
 
   &.-outline:hover {
-    background-color: $simple-button-green;
     color: #FFF;
+    background-color: $button-green;
   }
 }

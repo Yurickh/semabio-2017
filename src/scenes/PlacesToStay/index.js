@@ -14,20 +14,14 @@ class PlacesToStay extends Component {
         <main className="content">
           <div className="left">
             <div className="place">
-              <h1 className="name">Pousada Damasco</h1>
-              <span className="phone">(61) 98200-1879</span>
+              <h1 className="name">Brasília Living Hotel</h1>
+              <p className="address">SCRN 714/15, Bloco D, Entrada 38 - Asa Norte, Brasília - DF, 70761-640</p>
+              <span className="phone">(61) 3297-4421</span>
             </div>
             <div className="place">
-              <h1 className="name">Pousada Damasco</h1>
-              <span className="phone">(61) 98200-1879</span>
-            </div>
-            <div className="place">
-              <h1 className="name">Pousada Damasco</h1>
-              <span className="phone">(61) 98200-1879</span>
-            </div>
-            <div className="place">
-              <h1 className="name">Pousada Damasco</h1>
-              <span className="phone">(61) 98200-1879</span>
+              <h1 className="name">Brasília Boutique House</h1>
+              <p className="address">SHN, Quadra 01, Bloco F, Ed. VISION&FUSION - Asa Norte, Brasília - DF, 70701-000</p>
+              <span className="phone">(61) 3532-0938</span>
             </div>
           </div>
 
@@ -35,16 +29,9 @@ class PlacesToStay extends Component {
 
           <div className="right">
             <div className="place">
-              <h1 className="name">Pousada Damasco</h1>
-              <span className="phone">(61) 98200-1879</span>
-            </div>
-            <div className="place">
-              <h1 className="name">Pousada Damasco</h1>
-              <span className="phone">(61) 98200-1879</span>
-            </div>
-            <div className="place">
-              <h1 className="name">Pousada Damasco</h1>
-              <span className="phone">(61) 98200-1879</span>
+              <h1 className="name">Hostel 7 Brasília</h1>
+              <p className="address">SCLRN 708 Bloco I, Loja 20 - Asa Norte, Brasília - DF, 70740-559</p>
+              <span className="phone">(61) 3033-7707</span>
             </div>
           </div>
         </main>

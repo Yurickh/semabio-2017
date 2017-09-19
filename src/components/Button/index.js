@@ -15,10 +15,12 @@ class Button extends Component {
 
 Button.propTypes = {
   color: PropTypes.oneOf(['green', 'red', 'outline']),
+  onClick: PropTypes.func,
 }
 
 Button.defaultProps = {
-  color: 'red'
+  color: 'red',
+  onClick: _=>_,
 }
 
 export default Button

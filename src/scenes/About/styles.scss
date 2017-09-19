@@ -1,14 +1,14 @@
-@import 'ambience/typography.scss';
-@import 'ambience/responsive.scss';
-
-$page-about-color-darkgray: #979797;
-$page-about-color-darkslategrey: #2F5035;
+@import 'ambience/typography';
+@import 'ambience/responsive';
+@import 'base/responsive-prop';
 
 .page-about {
-  margin-top: 80px;
-  margin-bottom: 170px;
+  $color-darkgray: #979797;
+  $color-darkslategrey: #2F5035;
 
   text-align: center;
+
+  @include responsive-prop(margin-top, 100, 170);
 
   & > p,
   & > .title {
@@ -17,24 +17,27 @@ $page-about-color-darkslategrey: #2F5035;
   }
 
   & > p {
-    line-height: 27px;
-
     letter-spacing: .25px;
 
-    color: $page-about-color-darkgray;
+    color: $color-darkgray;
+
+    @include responsive-prop(line-height, 27, 27);
+    @include medium-only {
+      @include responsive-prop(line-height, 40, 40);
+    }
   }
 
   & > h2.title {
-    font-size: 24px;
-
-    margin-top: 86px;
-
     text-transform: uppercase;
 
-    color: $page-about-color-darkslategrey;
+    color: $color-darkslategrey;
+
+    @include responsive-prop(font-size, 24, 24);
+    @include responsive-prop(line-height, 32, 32);
+    @include responsive-prop(margin-top, 86, 86);
   }
 
   & > .carrousel {
-    margin-top: 56px;
+    @include responsive-prop(margin-top, 56, 56);
   }
 }

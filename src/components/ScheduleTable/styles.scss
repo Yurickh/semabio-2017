@@ -1,0 +1,173 @@
+@import 'ambience/color';
+@import 'ambience/responsive';
+@import 'base/responsive-prop';
+
+.schedule-table {
+  display: flex;
+  justify-content: center;
+
+  @include responsive-prop(height, 550, 550);
+  @include responsive-prop(margin-top, 33, 33);
+  @include responsive-prop(padding-bottom, 80, 80);
+
+  @include small-only {
+    width: 82vw;
+    margin: 0 auto;
+  }
+
+  & > .-odd {
+    align-self: flex-start;
+
+    text-align: right;
+  }
+
+  & > .-even {
+    align-self: flex-start;
+
+    text-align: left;
+
+    @include responsive-prop(margin-top, 60, 60);
+  }
+
+  & > .times.-odd {
+    height: 105%;
+
+    border-right: 1px solid #000;
+
+    @include small-only {
+      display: none;
+    }
+  }
+
+  & > .times.-even {
+    @include responsive-prop(margin-bottom, 40, 40);
+
+    @include small-only {
+      display: none;
+    }
+  }
+
+  & > .events.-even {
+    width: 30%;
+
+    @include responsive-prop(margin-bottom, 32, 32);
+    @include responsive-prop(margin-left, 35, 35);
+    @include small-only {
+      height: 100%;
+      padding-left: 10%;
+      border-left: 1px solid #000;
+    }
+  }
+
+  & > .events.-odd {
+    width: 30%;
+
+    @include responsive-prop(height, 55, 55);
+    @include responsive-prop(margin-right, 35, 35);
+
+    @include small-only {
+      @include responsive-prop(margin-right, 10, 10);
+    }
+
+  }
+
+  & > .events > .event {
+    letter-spacing: -.25px;
+
+    color: $color-tuna;
+
+    @include responsive-prop(line-height, 20, 20);
+    @include responsive-prop(height, 55, 55);
+
+    @include small-only {
+      height: auto;
+    }
+  }
+
+  & > .events > .event > .time {
+    @include responsive-prop(font-size, 14, 14);
+    @include responsive-prop(margin-top, 60, 60);
+  }
+
+  & > .events > .event > .name {
+    margin-top: 1em;
+
+    @include responsive-prop(font-size, 18, 18);
+    @include responsive-prop(line-height, 22, 22);
+  }
+
+  & > .times > .sun {
+    position: relative;
+    z-index: 2;
+
+    height: 3em;
+
+    border-bottom: 1px solid #000;
+
+    @include responsive-prop(width, 150, 150);
+    @include responsive-prop(margin-top, 60, 60);
+    @include responsive-prop(margin-right, 14, 14);
+    @include responsive-prop(margin-left, 14, 14);
+    @include responsive-prop(padding-bottom, 6, 6);
+  }
+
+  & > .times > .sun svg {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+
+    display: block;
+
+    width: 85%;
+
+    content: '';
+    transform: translateX(-50%);
+
+    @include responsive-prop(bottom, 6, 6);
+    @include responsive-prop(height, 44, 44);
+  }
+
+  & > .times > .sun.-small svg,
+  & > .times > .sun.-minimal svg {
+    @include responsive-prop(bottom, -28, -28);
+    .part-1,
+    .part-2,
+    .part-3 {
+      display: none;
+    }
+  }
+
+  & > .times > .sun.-medium svg,
+  & > .times > .sun.-half svg {
+    @include responsive-prop(bottom, -15, -15);
+    .part-1,
+    .part-2 {
+      display: none;
+    }
+  }
+
+  & > .times > .sun.-big svg {
+    .part-1 {
+      display: none;
+    }
+  }
+
+  & > .times > .sun.-full svg {
+    .part-1,
+    .part-2,
+    .part-3,
+    .part-4 {
+      display: block;
+    }
+  }
+
+  & > .times > .sun.-moon svg {
+    display: none;
+  }
+
+  & > .times > .sun.-moon {
+    background-image: url('./moon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

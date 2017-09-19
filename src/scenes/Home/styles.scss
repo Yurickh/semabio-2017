@@ -1,7 +1,12 @@
-@import 'ambience/typography.scss';
-@import 'ambience/responsive.scss';
+@import 'ambience/typography';
+@import 'ambience/responsive';
+@import 'ambience/responsive-prop';
+
+@import 'base/responsive-prop';
 
 .page-home {
+  position: relative;
+
   width: 100vw;
   height: 100vh;
 
@@ -9,55 +14,55 @@
   background-color: #1C281E;
 
   & > .call {
-    width: 40vw;
-    margin-left: 15vw;
-    padding-top: 50px;
+    position: relative;
+    z-index: 999;
 
+    width: 50vw;
+
+    @include responsive-prop(padding-top, 50, 60);
+    @include responsive-prop(margin-left, 220, 220);
+    @include medium-only {
+      @include responsive-prop(margin-left, 160, 160);
+    }
     @include small-only {
       width: 82vw;
       margin: 0 auto;
-      padding-top: 5vh;
     }
   }
 
   & > .call > h1 {
-    font-size: calc(32px + 1.4vw);
     font-weight: $weight-bold;
 
     letter-spacing: 1px;
     text-transform: uppercase;
 
-    @include small-only {
-      font-size: calc(32px + 1.4vw);
-    }
+    @include responsive-prop(font-size, 48, 70);
   }
 
   & > .call > p {
-    font-size: 24px;
-    line-height: 32px;
+    width: 80%;
 
-    width: 75%;
-    margin-top: 2vh;
-
-    @include small-only {
-      font-size: 20px;
-      line-height: 28px;
-
-      margin-top: 16px;
-    }
+    @include responsive-prop(font-size, 24, 32);
+    @include responsive-prop(line-height, 28, 36);
+    @include responsive-prop(margin-top, 16, 8);
   }
 
-  & > .call > .simple-button {
+  & > .call > span {
+    display: block;
+
+    width: 80%;
+
+    @include responsive-prop(font-size, 14, 16);
+    @include responsive-prop(margin-top, 16, 32);
+  }
+
+  & > .call .simple-button {
     position: relative;
     z-index: 2;
 
-    width: 270px;
-    height: 55px;
-    margin-top: 46px;
-
-    @include small-only {
-      margin-top: 5vh;
-    }
+    @include responsive-prop(width, 270, 270);
+    @include responsive-prop(height, 55, 55);
+    @include responsive-prop(margin-top, 46, 46);
   }
 
   & > .tale {
