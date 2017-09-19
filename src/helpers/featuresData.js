@@ -30,7 +30,7 @@ export default () => {
         'Biologia e Criação de Abelhas Sem Ferrão',
         'Embriões de Peixe-Zebra como modelo emergente em Ecotoxicologia',
         'Organismos aquáticos e a relação destes com a Qualidade Ambiental',
-        'Restauração e Conservação do Cerrado ',
+        'Restauração e Conservação do Cerrado',
         'Tartarugas Marinhas',
         'Teratologia',
         'Amazônia e Cerrado: Ecofisiologia de Espécies Arbóreas',

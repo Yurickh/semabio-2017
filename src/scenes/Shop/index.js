@@ -127,6 +127,9 @@ class Shop extends Component {
           onRequestClose={this.closeDDSModal}
           contentLabel='DDS Modal'
           className="modal"
+          style={{
+            overlay: { zIndex: 5 }
+          }}
         >
           <h1>
             Você sabia que...
