@@ -13,7 +13,6 @@ class ScheduleTable extends Component {
   scheduleData = scheduleData()
   oddTimes = ['small', 'full', 'medium', 'minimal']
   evenTimes = ['half', 'medium', 'small', 'moon']
-  saturdayTimes = ['minimal', 'small', 'medium', 'half']
 
   static propTypes = {
     selected: PropTypes.oneOf(Object.keys(scheduleData()))
@@ -35,21 +34,19 @@ class ScheduleTable extends Component {
 
   renderEvents = (type) => {
     const events = this.eventsOfType(type)
-
     return events.map(event => (
       <div className="event" key={`${event.time} - ${event.name}`}>
         <p className="time">{event.time}</p>
-        <p className="name">{event.name}</p>
+        { event.name && <p className="name">{event.name}</p> }
+				{ event.names && event.names.map(name => {
+					return <p className="name">{name}</p>
+				})}
       </div>
     ))
   }
 
   renderTimes = (type) => {
     let times = type === 'even' ? this.evenTimes : this.oddTimes
-
-    if (this.props.selected === 'SAB') {
-      times = this.saturdayTimes
-    }
 
     return times
     .filter((time, index) => {
