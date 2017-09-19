@@ -1,0 +1,32 @@
+@import 'ambience/color';
+@import 'ambience/responsive';
+@import 'base/responsive-prop';
+
+.block-selector {
+  display: flex;
+  justify-content: center;
+
+  @include small-only {
+    justify-content: space-around;
+  }
+
+  & > .block {
+    margin-right: 42px;
+
+    cursor: pointer;
+    letter-spacing: .71px;
+
+    color: #000;
+
+    @include responsive-prop(font-size, 12, 20);
+    @include responsive-prop(margin-right, 12, 42);
+    @include small-only {
+      margin-right: 0;
+    }
+  }
+
+  & > .block.-selected {
+    @include responsive-prop(padding-bottom, 4, 4);
+    border-bottom: $color-forest 3px solid;
+  }
+}

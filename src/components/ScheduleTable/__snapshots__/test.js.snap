@@ -18,7 +18,7 @@ exports[`ScheduleTable should render correctly 1`] = `
       <p
         className="name"
       >
-        Minicursos Bloco A
+        Minicursos Bloco A; Entrega de kits
       </p>
     </div>
     <div
@@ -32,7 +32,7 @@ exports[`ScheduleTable should render correctly 1`] = `
       <p
         className="name"
       >
-        Palestra de Abertura
+        A Odisseia da Vida
       </p>
     </div>
     <div
@@ -188,7 +188,7 @@ exports[`ScheduleTable should render correctly 1`] = `
       <p
         className="name"
       >
-        Palestra
+        Impactos do Ecoturismo
       </p>
     </div>
     <div
@@ -202,7 +202,7 @@ exports[`ScheduleTable should render correctly 1`] = `
       <p
         className="name"
       >
-        Palestra
+        Ciência em Quadrinhos
       </p>
     </div>
     <div
@@ -211,12 +211,12 @@ exports[`ScheduleTable should render correctly 1`] = `
       <p
         className="time"
       >
-        19:00 às 22:00
+        19:00 às 22:30
       </p>
       <p
         className="name"
       >
-        Minicursos Bloco C
+        Minicursos Bloco B
       </p>
     </div>
   </div>

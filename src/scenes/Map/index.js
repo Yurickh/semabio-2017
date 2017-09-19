@@ -24,13 +24,19 @@ class Map extends Component {
           </main>
 
           <aside className="bus-lines">
-            <div className="line">167.2 - Núcleo Bandeirante</div>
+            <div className="line">110 - Rod. do Plano Piloto</div>
+            <div className="line">167 - Guará</div>
+            <div className="line">349 - Taguatinga</div>
             <div className="line">521 - Sobradinho</div>
-            <div className="line">517 - Sobradinho II</div>
-            <div className="line">167.2 - Núcleo Bandeirante</div>
-            <div className="line">521 - Sobradinho</div>
-            <div className="line">517 - Núcleo Bandeirante</div>
-            <Button color="green">Mais Linhas</Button>
+            <div className="line">605 - Planaltina</div>
+            <div className="line">160.2 - Núcleo Bandeirante</div>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="http://www.sistemas.dftrans.df.gov.br/horarios/"
+            >
+              <Button color="green">Mais Linhas</Button>
+            </a>
           </aside>
         </div>
       </section>

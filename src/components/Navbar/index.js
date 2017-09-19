@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 
-// import iconFacebook from './facebook.svg'
-// import iconInstagram from './instagram.svg'
 import semabioLogo from './semabio-logo.svg'
 
 import './styles.css'
@@ -15,6 +13,20 @@ class Navbar extends Component {
           <span className="name">
             Semana da Biologia
           </span>
+        </div>
+        <div className="social">
+          <a className="icon -facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/SemaBio/"
+          >
+          </a>
+          <a className="icon -instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/semabiounb/"
+          >
+          </a>
         </div>
       </nav>
     )

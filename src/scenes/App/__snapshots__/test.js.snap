@@ -7,10 +7,12 @@ exports[`App should render correctly 1`] = `
   <Home />
   <About />
   <Schedule />
+  <Features />
   <Shop />
   <Faq />
   <Map />
   <PlacesToStay />
   <Contact />
+  <Partners />
 </div>
 `;

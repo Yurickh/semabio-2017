@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 
-import { Link } from 'react-scroll'
-
 import Cloud from '../../components/Cloud'
 import Navbar from '../../components/Navbar'
 import Countdown from '../../components/Countdown'
@@ -19,9 +17,10 @@ class Home extends Component {
         <main className="call">
           <h1>A Odisseia da vida</h1>
           <p>Uma aventura pela origem da diversidade</p>
+          <span>Falta pouco pra você se inscrever</span>
 
           {/* year, month, day, hour, minute */}
-          <Countdown until={new Date(2017, 8, 20, 19, 0)} />
+          <Countdown until={new Date(2017, 8, 21, 0, 0)} />
         </main>
         <img className="tale"
           alt=""

@@ -5,6 +5,8 @@
 @import 'base/responsive-prop';
 
 .page-home {
+  position: relative;
+
   width: 100vw;
   height: 100vh;
 
@@ -12,11 +14,13 @@
   background-color: #1C281E;
 
   & > .call {
+    position: relative;
+    z-index: 999;
+
     width: 50vw;
 
     @include responsive-prop(padding-top, 50, 60);
     @include responsive-prop(margin-left, 220, 220);
-
     @include medium-only {
       @include responsive-prop(margin-left, 160, 160);
     }
@@ -41,6 +45,15 @@
     @include responsive-prop(font-size, 24, 32);
     @include responsive-prop(line-height, 28, 36);
     @include responsive-prop(margin-top, 16, 8);
+  }
+
+  & > .call > span {
+    display: block;
+
+    width: 80%;
+
+    @include responsive-prop(font-size, 14, 16);
+    @include responsive-prop(margin-top, 16, 32);
   }
 
   & > .call .simple-button {

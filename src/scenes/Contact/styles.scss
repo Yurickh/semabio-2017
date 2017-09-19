@@ -11,7 +11,8 @@
   color: #FFF;
   background-color: #1C281E;
 
-  @include responsive-prop(padding-top, 200, 200);
+  @include responsive-prop(height, 180, 200);
+  @include responsive-prop(padding-top, 100, 240);
   @include responsive-prop(padding-bottom, 80, 80);
 
   & > .cloud {
@@ -43,6 +44,10 @@
 
     @include responsive-prop(font-size, 20, 26);
     @include responsive-prop(line-height, 26, 32);
+  }
+
+  & > .subtitle > strong {
+    color: #FFF;
   }
 
   & > .form {
