@@ -106,13 +106,8 @@
   }
 }
 
-.ReactModalPortal {
-  z-index: 5;
-}
-
 .modal {
   position: absolute;
-  z-index: 5;
   top: 50%;
   left: 50%;
 
@@ -210,8 +205,4 @@
   & > .close:hover::before {
     opacity: 1;
   }
-}
-
-.ReactModalPortal {
-  z-index: 5;
 }
