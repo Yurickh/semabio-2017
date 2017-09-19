@@ -12,7 +12,7 @@ class Contact extends Component {
         <Cloud />
         <Title white>Contato</Title>
 
-        <h2 className="subtitle">Mande um email para nós através do endereço <strong>semabio.bsb.unb@gmail.com</strong>,<br /> ou só um “oi” mesmo se quiser</h2>
+        <h2 className="subtitle">Mande um email para nós através do endereço <strong>semabio.unb.bsb@gmail.com</strong>,<br /> ou só um “oi” mesmo se quiser</h2>
 
         {/* <form className="form">
           <label>
