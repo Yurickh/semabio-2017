@@ -48,21 +48,15 @@ class Features extends Component {
           ))
       case 1: // Palestras
         return this.data.lectures.map(lecture => {
-          return <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="#"
+          return <div
                   key={lecture} className="lecture">{lecture}
-                </a>
+                </div>
         })
       case 2: // Rodas de conversa
         return this.data.talkingCircles.map(talkingCircle => {
-          return <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="#"
+          return <div
                   key={talkingCircle} className="circle">{talkingCircle}
-                </a>
+                </div>
         })
       default: return null
     }
