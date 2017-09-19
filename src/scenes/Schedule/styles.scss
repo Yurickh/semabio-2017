@@ -1,0 +1,13 @@
+@import 'ambience/color';
+@import 'base/responsive-prop';
+
+.page-schedule {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @include responsive-prop(margin-top, 100, 170);
+  @include responsive-prop(padding-bottom, 80, 80);
+
+  background: linear-gradient($color-background, $color-dark);
+}

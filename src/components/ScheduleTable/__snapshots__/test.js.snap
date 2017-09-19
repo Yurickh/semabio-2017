@@ -1,0 +1,224 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScheduleTable should render correctly 1`] = `
+<div
+  className="schedule-table"
+>
+  <div
+    className="events -odd"
+  >
+    <div
+      className="event"
+    >
+      <p
+        className="time"
+      >
+        08:00
+      </p>
+      <p
+        className="name"
+      >
+        Minicursos Bloco A; Entrega de kits
+      </p>
+    </div>
+    <div
+      className="event"
+    >
+      <p
+        className="time"
+      >
+        13:00
+      </p>
+      <p
+        className="name"
+      >
+        A Odisseia da Vida
+      </p>
+    </div>
+    <div
+      className="event"
+    >
+      <p
+        className="time"
+      >
+        15:45
+      </p>
+      <p
+        className="name"
+      >
+        Coffee Break
+      </p>
+    </div>
+    <div
+      className="event"
+    >
+      <p
+        className="time"
+      >
+        17:30
+      </p>
+      <p
+        className="name"
+      >
+        Jantar
+      </p>
+    </div>
+  </div>
+  <div
+    className="times -odd"
+  >
+    <div
+      className="sun -small"
+    >
+      <ReactSVG
+        callback={[Function]}
+        className=""
+        evalScripts="once"
+        path="sun.svg"
+        style={Object {}}
+      />
+    </div>
+    <div
+      className="sun -full"
+    >
+      <ReactSVG
+        callback={[Function]}
+        className=""
+        evalScripts="once"
+        path="sun.svg"
+        style={Object {}}
+      />
+    </div>
+    <div
+      className="sun -medium"
+    >
+      <ReactSVG
+        callback={[Function]}
+        className=""
+        evalScripts="once"
+        path="sun.svg"
+        style={Object {}}
+      />
+    </div>
+    <div
+      className="sun -minimal"
+    >
+      <ReactSVG
+        callback={[Function]}
+        className=""
+        evalScripts="once"
+        path="sun.svg"
+        style={Object {}}
+      />
+    </div>
+  </div>
+  <div
+    className="times -even"
+  >
+    <div
+      className="sun -half"
+    >
+      <ReactSVG
+        callback={[Function]}
+        className=""
+        evalScripts="once"
+        path="sun.svg"
+        style={Object {}}
+      />
+    </div>
+    <div
+      className="sun -medium"
+    >
+      <ReactSVG
+        callback={[Function]}
+        className=""
+        evalScripts="once"
+        path="sun.svg"
+        style={Object {}}
+      />
+    </div>
+    <div
+      className="sun -small"
+    >
+      <ReactSVG
+        callback={[Function]}
+        className=""
+        evalScripts="once"
+        path="sun.svg"
+        style={Object {}}
+      />
+    </div>
+    <div
+      className="sun -moon"
+    >
+      <ReactSVG
+        callback={[Function]}
+        className=""
+        evalScripts="once"
+        path="sun.svg"
+        style={Object {}}
+      />
+    </div>
+  </div>
+  <div
+    className="events -even"
+  >
+    <div
+      className="event"
+    >
+      <p
+        className="time"
+      >
+        11:30
+      </p>
+      <p
+        className="name"
+      >
+        Almoço
+      </p>
+    </div>
+    <div
+      className="event"
+    >
+      <p
+        className="time"
+      >
+        14:30
+      </p>
+      <p
+        className="name"
+      >
+        Impactos do Ecoturismo
+      </p>
+    </div>
+    <div
+      className="event"
+    >
+      <p
+        className="time"
+      >
+        16:15
+      </p>
+      <p
+        className="name"
+      >
+        Ciência em Quadrinhos
+      </p>
+    </div>
+    <div
+      className="event"
+    >
+      <p
+        className="time"
+      >
+        19:00 às 22:30
+      </p>
+      <p
+        className="name"
+      >
+        Minicursos Bloco B
+      </p>
+    </div>
+  </div>
+</div>
+`;

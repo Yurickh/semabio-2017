@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlockSelector should render correctly 1`] = `
+<div
+  className="block-selector"
+>
+  <div
+    className="block "
+    onClick={[Function]}
+  >
+    Bloco A
+  </div>
+  <div
+    className="block "
+    onClick={[Function]}
+  >
+    Bloco B
+  </div>
+  <div
+    className="block "
+    onClick={[Function]}
+  >
+    Bloco C
+  </div>
+  <div
+    className="block "
+    onClick={[Function]}
+  >
+    Bloco D
+  </div>
+  <div
+    className="block "
+    onClick={[Function]}
+  >
+    Bloco E
+  </div>
+</div>
+`;

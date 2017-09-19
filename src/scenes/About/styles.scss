@@ -1,0 +1,43 @@
+@import 'ambience/typography';
+@import 'ambience/responsive';
+@import 'base/responsive-prop';
+
+.page-about {
+  $color-darkgray: #979797;
+  $color-darkslategrey: #2F5035;
+
+  text-align: center;
+
+  @include responsive-prop(margin-top, 100, 170);
+
+  & > p,
+  & > .title {
+    width: 70vw;
+    margin: 0 auto;
+  }
+
+  & > p {
+    letter-spacing: .25px;
+
+    color: $color-darkgray;
+
+    @include responsive-prop(line-height, 27, 27);
+    @include medium-only {
+      @include responsive-prop(line-height, 40, 40);
+    }
+  }
+
+  & > h2.title {
+    text-transform: uppercase;
+
+    color: $color-darkslategrey;
+
+    @include responsive-prop(font-size, 24, 24);
+    @include responsive-prop(line-height, 32, 32);
+    @include responsive-prop(margin-top, 86, 86);
+  }
+
+  & > .carrousel {
+    @include responsive-prop(margin-top, 56, 56);
+  }
+}

@@ -1,0 +1,89 @@
+
+@import 'ambience/color';
+@import 'ambience/typography';
+@import 'ambience/responsive';
+@import 'base/responsive-prop';
+
+.page-partners {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 82vw;
+  margin: 0 auto;
+
+  @include responsive-prop(height, 80, 80);
+  @include responsive-prop(padding-top, 40, 40);
+  @include responsive-prop(padding-bottom, 40, 40);
+  @include small-only {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  & > .logo {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    @include responsive-prop(margin-right, 20, 20);
+    @include responsive-prop(margin-left, 20, 20);
+    @include small-only {
+      flex-basis: 40%;
+      justify-content: space-between;
+
+      margin: 0;
+
+      @include responsive-prop(margin-top, 20, 20);
+      @include responsive-prop(margin-bottom, 50, 50);
+    }
+  }
+
+  & > .logo.-unb {
+    background-image: url('./unb.png');
+
+    @include responsive-prop(width, 135, 135);
+    @include responsive-prop(height, 36, 36);
+  }
+
+  & > .logo.-cosbio {
+    background-image: url('./cosbio.png');
+
+    @include responsive-prop(width, 133, 133);
+    @include responsive-prop(height, 55, 55);
+  }
+
+  & > .logo.-fapdf {
+    background-image: url('./fapdf.png');
+
+    @include responsive-prop(width, 91, 91);
+    @include responsive-prop(height, 59, 59);
+  }
+
+  & > .logo.-kasvi {
+    background-image: url('./kasvi.png');
+
+    @include responsive-prop(width, 102, 102);
+    @include responsive-prop(height, 27, 27);
+  }
+
+  & > .logo.-camisetapet {
+    background-image: url('./camisetapet.png');
+
+    @include responsive-prop(width, 91, 91);
+    @include responsive-prop(height, 74, 74);
+  }
+
+  & > .logo.-petbio {
+    background-image: url('./petbio.png');
+
+    @include responsive-prop(width, 85, 85);
+    @include responsive-prop(height, 65, 65);
+  }
+
+  & > .logo.-cavalosdomar {
+    background-image: url('./cavalosdomar.png');
+
+    @include responsive-prop(width, 103, 103);
+    @include responsive-prop(height, 63, 63);
+  }
+}

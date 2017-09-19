@@ -1,19 +1,26 @@
+@import 'ambience/color';
+@import 'ambience/typography';
+@import 'ambience/responsive';
+@import 'base/responsive-prop';
+
 .page-shop {
-  width: 100vw;
-  height: 100vh;
-  padding-top: 170px;
+  width: 95vw;
+  margin: 0 auto;
 
-  & > .description {
-    font-size: 26px;
-    line-height: 24px;
+  @include responsive-prop(margin-top, 100, 170);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  & > .subtitle {
+    width: 82vw;
+    margin: 0 auto;
 
+    text-align: center;
     letter-spacing: .41px;
 
-    opacity: .53;
+    opacity: .8;
+    color: $color-description;
+
+    @include responsive-prop(font-size, 20, 26);
+    @include responsive-prop(line-height, 26, 32);
   }
 
   & > .options {
@@ -21,23 +28,186 @@
     align-items: stretch;
     justify-content: space-around;
 
-    height: 500px;
-    margin-top: 42px;
+    @include responsive-prop(margin-top, 70, 70);
+    @include responsive-prop(min-height, 380, 380);
+    @include medium-down {
+      flex-wrap: wrap;
+    }
   }
 
   & > .shirt {
     display: flex;
-
-    margin-top: 60px;
     justify-content: center;
+
+    width: 65vw;
+    margin: 0 auto;
+
+    text-align: center;
+
+    @include responsive-prop(margin-top, 60, 60);
+
+    @include small-only {
+      width: 82vw;
+      flex-direction: column-reverse;
+    }
+  }
+
+  & > .shirt > .simple-button {
+    width: 45%;
+
+    margin: 0 auto;
+
+    @include medium-only {
+      @include responsive-prop(margin-top, -120, -120);
+    }
+    @include small-only {
+      width: 100%;
+
+      @include responsive-prop(margin-top, -120, -120);
+    }
+  }
+
+  & > .shirt > .simple-button > .text {
+    font-weight: $weight-regular;
+
+    @include responsive-prop(font-size, 11, 16);
   }
 
   & > .shirt > .simple-button > .icon {
-    margin-right: 15px;
+    @include responsive-prop(margin-right, 15, 15);
+  }
+
+  & > .shirt > .simple-button > .icon.-shirt {
+    @include responsive-prop(width, 18, 25);
+  }
+
+  & > .shirt > .simple-button > .icon.-discount {
+    @include responsive-prop(width, 24, 30);
   }
 
   & > .shirt > .simple-button:hover > .icon {
     // makes image white
     filter: brightness(0) invert(1);
+  }
+
+  & > .price {
+    display: block;
+
+    width: 82vw;
+    margin: 0 auto;
+
+    text-align: center;
+    letter-spacing: .5px;
+
+    color: #9A9A9A;
+
+    @include responsive-prop(font-size, 12, 14);
+    @include responsive-prop(margin-top, 18, 18);
+  }
+}
+
+.ReactModalPortal {
+  z-index: 5;
+}
+
+.modal {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+
+  box-sizing: border-box;
+
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  color: #FAFAFA;
+  outline: none;
+  background-color: #363636;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
+
+  @include responsive-prop(width, 300, 1000);
+  @include responsive-prop(min-height, 300, 300);
+  @include responsive-prop(padding-top, 70, 80);
+  @include responsive-prop(padding-bottom, 20, 80);
+  @include responsive-prop(padding-left, 20, 120);
+  @include responsive-prop(padding-right, 20, 120);
+
+  @include small-only {
+    width: 100vw;
+    height: 100vh;
+  }
+
+
+  & > h1 {
+    font-weight: $weight-bold;
+
+    @include responsive-prop(font-size, 24, 28);
+    @include responsive-prop(line-height, 18, 32);
+    @include responsive-prop(margin-bottom, 30, 30);
+  }
+
+  & > p {
+    @include responsive-prop(font-size, 14, 18);
+    @include responsive-prop(line-height, 18, 26);
+    @include responsive-prop(margin-top, 20, 20);
+    opacity: .8;
+  }
+
+  & > .footer {
+    width: 70%;
+    margin: 0 auto;
+
+    opacity: .5;
+
+    @include responsive-prop(margin-top, 14, 20);
+    @include responsive-prop(font-size, 12, 14);
+    @include responsive-prop(line-height, 17, 20);
+
+    @include small-only {
+      width: 80%;
+    }
+  }
+
+  & > .footer > p {
+    @include responsive-prop(margin-top, 20, 20);
+  }
+
+  & > .footer > p > strong {
+    font-weight: $weight-bold;
+  }
+
+  & > .footer > .bar {
+    display: block;
+
+    width: 80%;
+    margin: 0 auto;
+
+    background-color: #FAFAFA;
+
+    @include responsive-prop(height, 1, 1);
+    @include responsive-prop(margin-top, 40, 40);
+    @include responsive-prop(margin-botto, 20, 20);
+  }
+
+  & > .close::before {
+    position: fixed;
+    z-index: 6;
+
+    display: block;
+
+    content: '╳';
+    cursor: pointer;
+
+    opacity: .5;
+    color: #FFF;
+
+    @include responsive-prop(top, 30, 30);
+    @include responsive-prop(right, 30, 30);
+    @include responsive-prop(font-size, 20, 20);
+  }
+
+  & > .close:hover::before {
+    opacity: 1;
   }
 }

@@ -1,8 +1,12 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { shallow } from 'enzyme'
+import toJSON from 'enzyme-to-json'
+
 import App from '../App'
 
-it('renders without crashing', () => {
-  const div = document.createElement('div')
-  ReactDOM.render(<App />, div)
+describe('App', () => {
+  it('should render correctly', () => {
+    const page = shallow(<App />)
+    expect(toJSON(page)).toMatchSnapshot()
+  })
 })

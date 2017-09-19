@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBurger should render correctly 1`] = `
+<div
+  className="nav-burger "
+  onClick={[Function]}
+/>
+`;

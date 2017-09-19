@@ -1,21 +1,38 @@
-@import 'ambience/typography.scss';
-@import 'ambience/responsive.scss';
+@import 'ambience/typography';
+@import 'base/responsive-prop';
 
 .simple-title {
-  font-size: 32px;
+  $color-darkslategrey: #2F5035;
 
   display: flex;
   align-items: center;
   flex-direction: column;
 
+  width: 82vw;
+  margin: 0 auto;
+
+  text-align: center;
   text-transform: uppercase;
 
-  color: #2F5035;
+  color: $color-darkslategrey;
+
+  @include responsive-prop(font-size, 32, 32);
+  @include responsive-prop(line-height, 42, 42);
 
   & > .divisor {
-    width: 100px;
-    height: 4px;
-    margin-top: 12px;
-    margin-bottom: 40px;
+    background-image: url('./divisor.svg');
+
+    @include responsive-prop(margin-top, 12, 12);
+    @include responsive-prop(margin-bottom, 40, 40);
+    @include responsive-prop(width, 100, 100);
+    @include responsive-prop(height, 4, 4);
+  }
+
+  &.-white {
+    color: #FFF;
+
+    & > .divisor {
+      background-image: url('./divisor-white.svg');
+    }
   }
 }

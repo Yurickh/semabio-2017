@@ -1,0 +1,266 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Carrousel should render correctly 1`] = `
+<div
+  className="carrousel"
+>
+  <div
+    className="fog-before"
+    onClick={[Function]}
+  />
+  <div
+    className="people"
+  >
+    <div
+      className="person -centered"
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(0px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="leticia.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(180px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="rodrigo.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(360px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="ademar.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(540px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="joao.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(720px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="pedro.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(900px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="helena.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(1080px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="ana.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(1260px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="dhara.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(-1260px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="sarah.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(-1080px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="giovana.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(-900px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="cibelle.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(-720px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="mariana.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(-540px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="marcela.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(-360px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="isadora.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(-180px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="patryck.jpg"
+      />
+    </div>
+  </div>
+  <div
+    className="bar"
+  >
+    <div
+      className="middle-bar"
+    />
+  </div>
+  <div
+    className="info"
+  >
+    <div
+      className="name"
+    >
+      Letícia Campos
+    </div>
+    <div
+      className="about"
+    >
+       
+    </div>
+  </div>
+  <div
+    className="fog-after"
+    onClick={[Function]}
+  />
+</div>
+`;

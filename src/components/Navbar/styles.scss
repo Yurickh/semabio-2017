@@ -1,40 +1,17 @@
-@import 'ambience/typography.scss';
-@import 'ambience/responsive.scss';
+@import 'ambience/typography';
+@import 'ambience/responsive';
+@import 'base/responsive-prop';
 
 .navbar {
-  position: relative;
-  z-index: 2;
-
   display: flex;
-  align-items: center;
   justify-content: space-between;
 
   width: 70vw;
   margin: 0 auto;
-  padding-top: 32px;
 
+  @include responsive-prop(padding-top, 32, 32);
   @include small-only {
     width: 82vw;
-  }
-
-  &.-open > a {
-    font-size: 1.188rem;
-    line-height: 1.625rem;
-
-    position: fixed;
-    z-index: 999;
-    bottom: 4rem;
-    left: 30%;
-
-    transform: translate(-20%, 0);
-    text-align: center;
-    text-transform: uppercase;
-
-    color: rgb(153, 137, 178);
-  
-    &:hover {
-      color: rgba(#FFF, .8);
-    }
   }
 
   & > .brand {
@@ -47,81 +24,40 @@
   & > .brand > .name {
     font-weight: $weight-bold;
 
-    margin-left: 12px;
-
     text-transform: uppercase;
 
-    color: #FFF;
+    @include responsive-prop(margin-left, 12, 12);
   }
 
-  & > .nav-burger {
-    position: relative;
+  & > .social {
+    display: flex;
+    align-items: center;
+  }
 
-    width: 3rem;
-    height: 3rem;
+  & > .social > .icon {
+    opacity: .7;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 
-    cursor: pointer;
+    @include responsive-prop(margin-left, 14, 18);
+  }
 
-    &:hover {
-      color: #FFF;
-    }
+  & > .social > .icon:hover {
+    opacity: 1;
+  }
 
-    &:before,
-    &:after {
-      position: absolute;
+  & > .social > .icon.-facebook {
+    background-image: url('./facebook.svg');
 
-      display: block;
+    @include responsive-prop(width, 6, 10);
+    @include responsive-prop(height, 14, 18);
+  }
 
-      width: 20px;
-      height: 2px;
+  & > .social > .icon.-instagram {
+    background-image: url('./instagram.svg');
 
-      content: '';
-      transition: all .3s ease;
-
-      background-color: currentColor;
-    }
-
-    &:before {
-      top: 17px;
-      left: 13px;
-
-      box-shadow: 0 12px 0 0 currentColor;
-    }
-
-    &:after {
-      top: 23px;
-      left: 13px;
-    }
-
-    &.-open {
-      position: fixed;
-      z-index: 999;
-      top: 20px;
-      right: 20px;
-
-       + .nav-items {
-        max-height: 100vh;
-
-        opacity: 1;
-      }
-
-      &:before,
-      &:after {
-        top: 23px;
-        left: 11px;
-
-        width: 24px;
-      }
-
-      &:before {
-        transform: rotate(45deg);
-
-        box-shadow: 0 0 0 0 transparent;
-      }
-
-      &:after {
-        transform: rotate(-45deg);
-      }
-    }
+    @include responsive-prop(width, 14, 18);
+    @include responsive-prop(height, 14, 18);
   }
 }

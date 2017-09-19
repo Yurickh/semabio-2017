@@ -2,12 +2,10 @@
 
 exports[`Title should render correctly 1`] = `
 <div
-  className="simple-title"
+  className="simple-title  "
 >
-  <img
-    alt="divisor"
+  <div
     className="divisor"
-    src="divisor.svg"
   />
 </div>
 `;

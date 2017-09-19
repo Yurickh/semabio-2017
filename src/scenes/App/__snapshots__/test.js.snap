@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render correctly 1`] = `
+<div
+  className="App"
+>
+  <Home />
+  <About />
+  <Schedule />
+  <Features />
+  <Shop />
+  <Faq />
+  <Map />
+  <PlacesToStay />
+  <Contact />
+  <Partners />
+</div>
+`;

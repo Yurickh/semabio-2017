@@ -1,11 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navbar should render correctly 1`] = `
-<nav
-  className="navbar"
+<div
+  className="navbar "
 >
-  <div
+  <a
     className="brand"
+    href="/"
   >
     <img
       alt="logo"
@@ -17,6 +18,22 @@ exports[`Navbar should render correctly 1`] = `
     >
       Semana da Biologia
     </span>
+  </div>
+  <div
+    className="social"
+  >
+    <a
+      className="icon -facebook"
+      href="https://www.facebook.com/SemaBio/"
+      rel="noopener noreferrer"
+      target="_blank"
+    />
+    <a
+      className="icon -instagram"
+      href="https://www.instagram.com/semabiounb/"
+      rel="noopener noreferrer"
+      target="_blank"
+    />
   </div>
 </nav>
 `;
