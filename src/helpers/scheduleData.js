@@ -1,6 +1,6 @@
 export default () => ({
   'SEG': [
-    { time:'08:00', name: 'Minicursos Bloco A; Entrega de kits'},
+    { time:'08:00', names: ['Minicursos Bloco A', 'Entrega de kits']},
     { time:'11:30', name: 'Almoço'},
     { time:'13:00', name: 'A Odisseia da Vida'},
     { time:'14:30', name: 'Impactos do Ecoturismo'},
@@ -46,17 +46,17 @@ export default () => ({
     { time:'14:30', name: 'Os eventos de extinção: a sexta grande extinção'},
     { time:'15:45', name: 'Coffee Break'},
     { time:'16:15', name: 'Mulheres na Ciência'},
-    { },
-    { },
   ],
   'SAB': [
-    { time:'08:00', name: 'Minicursos Bloco E'},
-    { time: '08:00', name: 'Workshops: Projeto Fauna UnB'},
-    { time: '08:00', name: 'Exposições: Bio na Rua'},
-    { time: '08:00', name: 'Projeto Sala de Ciência'},
+    {
+      time:'08:00',
+      names: [
+        'Minicursos Bloco E',
+        'Workshops: Projeto Fauna UnB',
+        'Exposições: Bio na Rua',
+        'Projeto Sala de Ciência',
+      ]
+    },
     { time:'11:30', name: 'A Biologia em Nossa Vida'},
-    { },
-    { },
-    { },
   ],
 })
