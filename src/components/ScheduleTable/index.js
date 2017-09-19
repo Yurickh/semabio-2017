@@ -39,7 +39,7 @@ class ScheduleTable extends Component {
         <p className="time">{event.time}</p>
         { event.name && <p className="name">{event.name}</p> }
 				{ event.names && event.names.map(name => {
-					return <p className="name">{name}</p>
+					return <p className="name" key={name}>{name}</p>
 				})}
       </div>
     ))
