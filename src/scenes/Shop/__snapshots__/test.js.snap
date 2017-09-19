@@ -138,6 +138,13 @@ exports[`Shop should render correctly 1`] = `
     portalClassName="ReactModalPortal"
     shouldCloseOnOverlayClick={true}
     shouldFocusAfterRender={true}
+    style={
+      Object {
+        "overlay": Object {
+          "zIndex": 5,
+        },
+      }
+    }
   >
     <h1>
       Você sabia que...
