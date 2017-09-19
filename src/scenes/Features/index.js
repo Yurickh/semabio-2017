@@ -24,17 +24,28 @@ class Features extends Component {
     this.setState({ currentBlock: block })
   }
 
+  fileNameFor = (index) => {
+    const block = ['A', 'B', 'C', 'D', 'E'][this.state.currentBlock]
+    const number = ('00' + index).slice(-2)
+    const PUBLIC_URL = process.env.PUBLIC_URL
+
+    return `${PUBLIC_URL}/menus/${block}${number}.pdf`
+  }
+
   renderContent = () => {
     switch(this.state.currentMode) {
       case 0: // Minicursos
-        return this.data.minicourses[this.state.currentBlock].map(miniCourse => {
-          return <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="#"
-                  key={miniCourse} className="minicourse">{miniCourse}
-                </a>
-        })
+        return this.data.minicourses[this.state.currentBlock]
+          .map((miniCourse, index) => (
+            <a href={this.fileNameFor(index+1)}
+              target="_blank"
+              key={miniCourse}
+              rel="noopener noreferrer"
+              className="minicourse"
+              >
+              {miniCourse}
+            </a>
+          ))
       case 1: // Palestras
         return this.data.lectures.map(lecture => {
           return <a
