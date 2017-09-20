@@ -1,0 +1,6 @@
+@mixin mask-image($image) {
+  mask-image: url($image);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-repeat-position: center;
+}

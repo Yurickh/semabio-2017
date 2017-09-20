@@ -9,9 +9,11 @@ import Map from '../Map'
 import Contact from '../Contact'
 import PlacesToStay from '../PlacesToStay'
 import Partners from '../Partners'
-import Buy from '../Buy'
 
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import BuyShirt from '../BuyShirt'
+import BuyPackage from '../BuyPackage'
+
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 const SPA = (props) => (
   <div className="App">
@@ -32,10 +34,12 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
-          <Route path="/comprar/:product" component={Buy} />
+        <Switch>
+          <Route path="/comprar/camiseta" component={BuyShirt} />
+          <Route path="/comprar/:product/camiseta" component={BuyShirt} />
+          <Route path="/comprar/:product" component={BuyPackage} />
           <Route exact path="/" component={SPA} />
-        </div>
+        </Switch>
       </Router>
     )
   }

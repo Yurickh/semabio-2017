@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-
-import Button from '../../components/Button'
+import PropTypes from 'prop-types'
 
 import GraphQL from '../../helpers/GraphQL'
 import ShopClient from '../../helpers/ShopClient'
 
 import './styles.css'
 
-class Buy extends Component {
+class BuyPage extends Component {
+	state = {}
 	validProducts = {
 		A: 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzEwOTE4Mzg2MDc2MA==',
 		B: 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzEwOTIzNDI1Nzk0NA==',
@@ -16,7 +16,6 @@ class Buy extends Component {
 		E: 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzEwOTMzMjAzNzY1Ng==',
 		camiseta: 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzEwOTE5NzY4ODg1Ng==',
 	}
-	state = {}
 
 	componentDidMount() {
 		this.shopClient = ShopClient()
@@ -32,12 +31,17 @@ class Buy extends Component {
 				})),
 			}))
 			.forEach(product => {
+				console.log(product);
 				this.setState({
 					[product.name]: product.variants
 				})
 			})
 		})
 		.catch(error => console.error('Error while fetching products: ' + error))
+	}
+
+	redirectToHome = () => {
+		window.location.href = '/'
 	}
 
 	getTitle = (title) => {
@@ -61,10 +65,6 @@ class Buy extends Component {
 		}
 
 		return false
-	}
-
-	redirectToHome = () => {
-		window.location.href = '/'
 	}
 
 	renderShirtPicker = () => {
@@ -163,29 +163,13 @@ class Buy extends Component {
 		})
 	}
 
+
 	render() {
-		const { product } = this.props.match.params
-
-		if (this.isInvalid()) {
-			this.redirectToHome()
-			return null
-		}
-
-		this.hasShirt = product !== 'A'
-
 		return (
-			<div className="page-buy">
-
-				{ this.hasShirt ? this.renderShirtPicker() : ''}
-
-				{ this.renderCoursePicker() }
-
-				<Button color='outline' onClick={this.buy}>
-					Comprar!
-				</Button>
+			<div className="buy-page">
 			</div>
 		)
 	}
 }
 
-export default Buy
+export default BuyPage

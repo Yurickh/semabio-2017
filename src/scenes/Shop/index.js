@@ -128,9 +128,8 @@ class Shop extends Component {
               Sou aluno da Assistência Estudantil
             </div>
           </Button>
-          <span className="price">Camiseta avulsa (R$ 25,00)</span>
         </footer>
-        <span className="price">A camiseta avulsa estará disponível por R$ 25,00</span>
+        <span className="price">Camiseta avulsa (R$ 25,00)</span>
 
         <Modal
           isOpen={this.state.modalOpen}

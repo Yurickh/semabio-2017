@@ -2,11 +2,11 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import toJSON from 'enzyme-to-json'
 
-import Buy from '../Buy'
+import BuyPage from '../BuyPage'
 
-describe('Buy', () => {
+describe('BuyPage', () => {
   it('should render correctly', () => {
-    const tree = shallow(<Buy />)
+    const tree = shallow(<BuyPage />)
     expect(toJSON(tree)).toMatchSnapshot()
   })
 })
