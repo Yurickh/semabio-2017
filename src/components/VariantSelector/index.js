@@ -63,7 +63,7 @@ class VariantSelector extends Component {
 	allowedToSelect = () => {
 		const { variants } = this.state
 
-		return variants.filter(this.variantIsSelected).length === 0
+		return this.props.allowedToSelect && variants.filter(this.variantIsSelected).length === 0
 	}
 
 	selectVariant = (variant) => {

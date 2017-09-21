@@ -80,6 +80,7 @@ class BuyShirt extends Component {
 					package={product}
 					currentColor="#58C166" // color-forest
 					onChange={this.refreshShirtSize}
+					allowedToSelect={true}
 				/>
 
 				<footer>

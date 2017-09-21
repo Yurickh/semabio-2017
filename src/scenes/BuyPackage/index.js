@@ -120,6 +120,10 @@ class BuyPackage extends Component {
     })
 	}
 
+	allowedToSelect = () => {
+		return this.remainingCourses() > 0
+	}
+
 	render() {
 		const { product } = this.props.match.params
 		const { currentBlock } = this.state
@@ -149,6 +153,7 @@ class BuyPackage extends Component {
 					product={currentBlock}
 					currentColor={this.currentColor.color}
 					onChange={this.refreshCourseList}
+					allowedToSelect={this.allowedToSelect()}
 				/>
 
 				<footer>
