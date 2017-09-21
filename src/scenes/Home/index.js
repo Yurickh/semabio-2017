@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
+import { Link } from 'react-scroll'
 
 import Cloud from '../../components/Cloud'
 import Navbar from '../../components/Navbar'
-import Countdown from '../../components/Countdown'
+import Button from '../../components/Button'
 
 import tale1x from './tale@1x.png'
 import tale2x from './tale@2x.png'
@@ -39,7 +40,9 @@ class Home extends Component {
           <span>Falta pouco pra você se inscrever</span>
 
           {/* year, month, day, hour, minute */}
-          <Countdown until={new Date(2017, 8, 21, 0, 0)} />
+          <Link to='shop' smooth duration={300}>
+            <Button color='red'>Quero me inscrever!</Button>
+          </Link>
         </main>
 
         <img className={`tale`}

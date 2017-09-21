@@ -10,21 +10,37 @@ import Contact from '../Contact'
 import PlacesToStay from '../PlacesToStay'
 import Partners from '../Partners'
 
+import BuyShirt from '../BuyShirt'
+import BuyPackage from '../BuyPackage'
+
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+
+const SPA = (props) => (
+  <div className="App">
+    <Home {...props} />
+    <About {...props} />
+    <Schedule {...props} />
+    <Features {...props} />
+    <Shop {...props} />
+    <Faq {...props} />
+    <Map {...props} />
+    <PlacesToStay {...props} />
+    <Contact {...props} />
+    <Partners {...props} />
+  </div>
+)
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Home />
-        <About />
-        <Schedule />
-        <Features />
-        <Shop />
-        <Faq />
-        <Map />
-        <PlacesToStay />
-        <Contact />
-        <Partners />
-      </div>
+      <Router>
+        <Switch>
+          <Route path="/comprar/camiseta" component={BuyShirt} />
+          <Route path="/comprar/:product/:checkoutId" component={BuyShirt} />
+          <Route path="/comprar/:product" component={BuyPackage} />
+          <Route exact path="/" component={SPA} />
+        </Switch>
+      </Router>
     )
   }
 }
