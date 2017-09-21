@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BuyShirt should render correctly 1`] = `
+<div
+  className="page-shirt"
+>
+  <div
+    className="arrow"
+    onClick={[Function]}
+  />
+  <h1
+    className="title"
+  >
+    Escolha o tamanho da sua camiseta :)
+  </h1>
+  <VariantSelector
+    currentColor="#58C166"
+    onChange={[Function]}
+    package="shirt"
+    product="shirt"
+  />
+  <footer>
+    <span>
+      ATENÇÃO: Não haverá reembolso em caso de desistência
+    </span>
+    <Button
+      className="-disabled"
+      color="green"
+      onClick={[Function]}
+    >
+      Finalizar Compra
+    </Button>
+  </footer>
+</div>
+`;

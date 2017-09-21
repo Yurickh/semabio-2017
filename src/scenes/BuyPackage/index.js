@@ -27,8 +27,7 @@ class BuyPackage extends Component {
 			return this.redirectToHome()
 		}
 
-		// we happen to have 5 packages AND 5 blocks so, why not?
-		this.blocks = validProducts.concat('A')
+		this.blocks = ['A'].concat(validProducts)
 
 		this.totalCourses = {
 			'B': 1,

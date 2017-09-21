@@ -13,6 +13,7 @@ exports[`ShopCard should render correctly 1`] = `
     className="title -green"
   >
     Pacote 
+    A
   </h3>
   <div
     className="price"
@@ -24,16 +25,13 @@ exports[`ShopCard should render correctly 1`] = `
   <div
     className="description"
   />
-  <Link
-    replace={false}
-    to="undefinedcomprar/undefined"
-  >
+  <a>
     <Button
       color="green"
       onClick={[Function]}
     >
        Comprar 
     </Button>
-  </Link>
+  </a>
 </div>
 `;

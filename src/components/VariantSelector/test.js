@@ -6,7 +6,10 @@ import VariantSelector from '../VariantSelector'
 
 describe('VariantSelector', () => {
   it('should render correctly', () => {
-    const tree = shallow(<VariantSelector />)
+    const tree = shallow(<VariantSelector
+      currentColor='red'
+      product='E'
+    />)
     expect(toJSON(tree)).toMatchSnapshot()
   })
 })

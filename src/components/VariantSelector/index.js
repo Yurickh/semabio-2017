@@ -112,6 +112,12 @@ class VariantSelector extends Component {
 		return this.isShirtSelector() ? '-shirt' : ''
 	}
 
+	variantName = (variant) => {
+		if (!this.isShirtSelector()) return variant.name
+
+		return variant.name.replace('Camiseta (', '').replace(')', '')
+	}
+
 	render() {
 		return (
 			<div className={`variant-selector ${this.selectorVariant()}`}>
@@ -122,7 +128,7 @@ class VariantSelector extends Component {
 								className={`variant ${this.variant(variant)}`}
 								onClick={() => this.toggleVariant(variant)}
 							>
-								{variant.name}
+								{this.variantName(variant)}
 								{this.variantIsSelected(variant) && (
 									<div className="tick" style={{ backgroundColor: this.props.currentColor }}>
 										<img src={checkMark} alt="check mark" />

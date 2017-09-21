@@ -6,7 +6,13 @@ import BuyPackage from '../BuyPackage'
 
 describe('BuyPackage', () => {
   it('should render correctly', () => {
-    const tree = shallow(<BuyPackage />)
+    const tree = shallow(<BuyPackage
+      match={{
+        params: {
+          product: 'E'
+        }
+      }}
+    />)
     expect(toJSON(tree)).toMatchSnapshot()
   })
 })
