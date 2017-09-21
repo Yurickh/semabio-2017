@@ -66,6 +66,33 @@
   }
 
   & > .variant-selector {
+    user-select: none;
+
     @include responsive-prop(margin-top, 26, 26);
+  }
+
+  & > footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  & > footer > .simple-button {
+    @include responsive-prop(width, 182, 182);
+    @include responsive-prop(height, 55, 55);
+    @include responsive-prop(font-size, 18, 18);
+
+  }
+
+  & > footer > .simple-button.-disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+
+    opacity: .4;
+    background-color: $color-emperor;
+
+    &:hover {
+      background-color: transparent;
+    }
   }
 }

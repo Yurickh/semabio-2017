@@ -115,7 +115,7 @@ class BuyPackage extends Component {
 
 				<footer>
 					<span>ATENÇÃO: Não haverá reembolso em caso de desistência</span>
-					<Button color='outline'>
+					<Button color='green' className={!!this.remainingCourses() ? '-disabled' : ''}>
 						Comprar!
 					</Button>
 				</footer>
