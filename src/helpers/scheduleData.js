@@ -48,16 +48,13 @@ export default () => ({
     { time:'16:15', name: 'Mulheres na Ciência'},
   ],
   'SAB': [
-    {
-      time:'08:00',
-      names: [
-        'Minicursos Bloco E',
-        'Exposições: Bio na Rua',
-        'Projeto Sala de Ciência',
-        'Workshop: Projeto Fauna UnB',
-        'Workshop: Identificação de plantas e Observação de Aves',
-      ]
-    },
-    { time:'11:30', name: 'A Biologia em Nossa Vida'},
+    { time: '07:20', name: 'Workshop: Observação de aves'},
+    { time: '08:00', names: [
+      'Exposição: Bio na Rua',
+      'Projeto Sala de Ciência',
+    ]},
+    { time: '08:30', name: 'Workshop: Projeto Fauna UnB'},
+    { time: '09:40', name: 'Workshop: Projeto Fauna UnB'},
+    { time: '11:00', name: 'Palestra Encerramento: A Biologia em Nossa Vida'},
   ],
 })

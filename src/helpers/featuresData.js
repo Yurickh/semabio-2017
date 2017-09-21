@@ -185,6 +185,10 @@ export default () => {
         name: 'Ciência em Quadrinhos',
         responsible: '',
       },
+      {
+        name: 'A Biologia em nossa vida (Encerramento)',
+        responsible: 'Vinícius Ferreira (Papo de Biólogo - Youtube)'
+      }
     ],
     talkingCircles: [
       {

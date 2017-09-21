@@ -59,14 +59,13 @@
 
     text-decoration: none;
 
-    @include medium-only {
-      @include responsive-prop(margin-top, -120, -120);
-    }
     @include small-only {
       width: 100%;
-
-      @include responsive-prop(margin-top, -120, -120);
     }
+  }
+
+  & > .shirt > a > .simple-button {
+    width: 100%;
   }
 
   & > .shirt .simple-button > .text {
