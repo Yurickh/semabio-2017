@@ -2,7 +2,15 @@
 
 exports[`App should render correctly 1`] = `
 <BrowserRouter>
-  <div>
+  <Switch>
+    <Route
+      component={[Function]}
+      path="/comprar/camiseta"
+    />
+    <Route
+      component={[Function]}
+      path="/comprar/:product/:checkoutId"
+    />
     <Route
       component={[Function]}
       path="/comprar/:product"
@@ -12,6 +20,6 @@ exports[`App should render correctly 1`] = `
       exact={true}
       path="/"
     />
-  </div>
+  </Switch>
 </BrowserRouter>
 `;
