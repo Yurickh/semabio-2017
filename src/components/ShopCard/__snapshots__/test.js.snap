@@ -12,7 +12,8 @@ exports[`ShopCard should render correctly 1`] = `
   <h3
     className="title -green"
   >
-    test title
+    Pacote 
+    A
   </h3>
   <div
     className="price"
@@ -24,5 +25,13 @@ exports[`ShopCard should render correctly 1`] = `
   <div
     className="description"
   />
+  <a>
+    <Button
+      color="green"
+      onClick={[Function]}
+    >
+       Comprar 
+    </Button>
+  </a>
 </div>
 `;

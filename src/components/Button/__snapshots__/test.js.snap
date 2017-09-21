@@ -2,7 +2,8 @@
 
 exports[`Button should render correctly 1`] = `
 <button
-  className="simple-button -red"
+  className="simple-button -red undefined"
+  color="red"
   onClick={[Function]}
 />
 `;

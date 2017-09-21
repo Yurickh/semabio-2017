@@ -8,6 +8,8 @@ describe('ShopCard', () => {
   it('should render correctly', () => {
     const card = shallow(
       <ShopCard
+        root='/'
+        product='A'
         title="test title"
         price={ 3.14 }
         level={2}

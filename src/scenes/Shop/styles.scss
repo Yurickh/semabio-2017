@@ -45,17 +45,19 @@
     text-align: center;
 
     @include responsive-prop(margin-top, 60, 60);
-
     @include small-only {
-      width: 82vw;
       flex-direction: column-reverse;
+
+      width: 82vw;
     }
   }
 
+  & > .shirt > a,
   & > .shirt > .simple-button {
     width: 45%;
-
     margin: 0 auto;
+
+    text-decoration: none;
 
     @include medium-only {
       @include responsive-prop(margin-top, -120, -120);
@@ -67,25 +69,25 @@
     }
   }
 
-  & > .shirt > .simple-button > .text {
+  & > .shirt .simple-button > .text {
     font-weight: $weight-regular;
 
     @include responsive-prop(font-size, 11, 16);
   }
 
-  & > .shirt > .simple-button > .icon {
+  & > .shirt .simple-button > .icon {
     @include responsive-prop(margin-right, 15, 15);
   }
 
-  & > .shirt > .simple-button > .icon.-shirt {
+  & > .shirt .simple-button > .icon.-shirt {
     @include responsive-prop(width, 18, 25);
   }
 
-  & > .shirt > .simple-button > .icon.-discount {
+  & > .shirt .simple-button > .icon.-discount {
     @include responsive-prop(width, 24, 30);
   }
 
-  & > .shirt > .simple-button:hover > .icon {
+  & > .shirt .simple-button:hover > .icon {
     // makes image white
     filter: brightness(0) invert(1);
   }
@@ -127,7 +129,6 @@
   @include responsive-prop(padding-bottom, 20, 80);
   @include responsive-prop(padding-left, 20, 120);
   @include responsive-prop(padding-right, 20, 120);
-
   @include small-only {
     width: 100vw;
     height: 100vh;
@@ -143,10 +144,11 @@
   }
 
   & > p {
+    opacity: .8;
+
     @include responsive-prop(font-size, 14, 18);
     @include responsive-prop(line-height, 18, 26);
     @include responsive-prop(margin-top, 20, 20);
-    opacity: .8;
   }
 
   & > .footer {
@@ -158,7 +160,6 @@
     @include responsive-prop(margin-top, 14, 20);
     @include responsive-prop(font-size, 12, 14);
     @include responsive-prop(line-height, 17, 20);
-
     @include small-only {
       width: 80%;
     }
