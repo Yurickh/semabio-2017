@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import ShopClient from '../../helpers/ShopClient'
+import ShopClient from '../../helpers/shopClient'
 import GraphQL from '../../helpers/GraphQL'
 import PackageIds from '../../helpers/PackageIds'
 
