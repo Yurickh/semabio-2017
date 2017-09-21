@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import Button from '../../components/Button'
+import VariantSelector from '../../components/VariantSelector'
 
 import './styles.css'
 
@@ -16,18 +17,24 @@ class BuyPackage extends Component {
 
 	componentWillMount() {
 		const { product } = this.props.match.params
-		const validProducts = ['A', 'B', 'C', 'D', 'E']
+		const validProducts = ['B', 'C', 'D', 'E']
 
 		if (!validProducts.includes(product)) {
 			return this.redirectToHome()
 		}
 
 		// we happen to have 5 packages AND 5 blocks so, why not?
-		this.blocks = validProducts
-		this.totalCourses = validProducts.indexOf(product)
+		this.blocks = validProducts.concat('A')
+
+		this.totalCourses = {
+			'B': 1,
+			'C': 1,
+			'D': 2,
+			'E': 3,
+		}[product]
+
 		this.currentColor = {
 			color: {
-				'A': '#FF7381',
 				'B': '#FCB755',
 				'C': '#58C166',
 				'D': '#2CABCA',
@@ -49,9 +56,9 @@ class BuyPackage extends Component {
 		return this.state.currentBlock === last ? '-disabled' : ''
 	}
 
-	selectedCourses = (course) => {
+	refreshCourseList = (courseList) => {
 		this.setState({
-			selectedCourses: this.state.selectedCourses.concat(course)
+			selectedCourses: courseList
 		})
 	}
 
@@ -77,6 +84,7 @@ class BuyPackage extends Component {
 
 	render() {
 		const { product } = this.props.match.params
+		const { currentBlock } = this.state
 		return (
 			<div className="page-package">
 				<div className="arrow" onClick={this.redirectToHome} />
@@ -93,20 +101,25 @@ class BuyPackage extends Component {
 							</p>)
 					}
 					<nav className="navigator">
-						Bloco {this.state.currentBlock}
+						Bloco {currentBlock}
 						<div className={`chevron -back ${this.backVariant()}`} onClick={this.previousBlock} />
 						<div className={`chevron -next ${this.nextVariant()}`} onClick={this.nextBlock} />
 					</nav>
 				</section>
 
-				{/* <CourseSelector
-					selected={this.state.selectedCourses}
-					selectCourse={this.selectCourse}
-				/> */}
+				<VariantSelector
+					product={currentBlock}
+					currentColor={this.currentColor.color}
+					onChange={this.refreshCourseList}
+				/>
 
-				<Button color='outline'>
-					Comprar!
-				</Button>
+				<footer>
+					<span>ATENÇÃO: Não haverá reembolso em caso de desistência</span>
+					<Button color='outline'>
+						Comprar!
+					</Button>
+				</footer>
+
 			</div>
 		)
 	}

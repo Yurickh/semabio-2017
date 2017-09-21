@@ -64,4 +64,8 @@
   & > .subtitle > .navigator > .chevron.-disabled {
     background-color: rgba($color-emperor, .4);
   }
+
+  & > .variant-selector {
+    @include responsive-prop(margin-top, 26, 26);
+  }
 }

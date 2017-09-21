@@ -5,6 +5,9 @@ import PropTypes from 'prop-types'
 import Price from '../Price'
 import Button from '../Button'
 
+import ShopClient from '../../helpers/ShopClient'
+import GraphQL from '../../helpers/GraphQL'
+
 import iconOne from './icon-1.svg'
 import iconTwo from './icon-2.svg'
 import iconThree from './icon-3.svg'
@@ -33,6 +36,25 @@ const Levels = [
 ]
 
 class ShopCard extends Component {
+  buyPackageA = () => {
+    const shopClient = ShopClient()
+
+    shopClient.createCheckout()
+    .then(checkout => {
+      const checkoutId = GraphQL.read(checkout).get('id')
+      const lineItems = {
+        // Package A's ID
+        variantId: 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8xMDgzMjc0NjkwNTg0',
+        quantity: 1,
+      }
+
+      return shopClient.addLineItems(checkoutId, lineItems)
+    })
+    .then(checkout => {
+      window.location.href = GraphQL.read(checkout).get('webUrl')
+    })
+  }
+
   render() {
     const level = Levels[this.props.level]
     const { root, product, description, price } = this.props
@@ -55,9 +77,15 @@ class ShopCard extends Component {
           {description.map(phrase => <div key={phrase}>{phrase}</div>)}
         </div>
 
-        <Link to={`${root}comprar/${product}`}>
-          <Button color="green"> Comprar </Button>
-        </Link>
+        {
+          product !== 'A'
+          ? <Link to={`${root}comprar/${product}`}>
+            <Button color="green"> Comprar </Button>
+          </Link>
+          : <a><Button color="green" onClick={this.buyPackageA}> Comprar </Button></a>
+        }
+
+
       </div>
     )
   }

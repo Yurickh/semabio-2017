@@ -26,4 +26,8 @@ export default class GraphQL {
       .map(node => GraphQL.read(node))
       .map(cb)
   }
+
+  first() {
+    return GraphQL.read(this.graph[0])
+  }
 }
