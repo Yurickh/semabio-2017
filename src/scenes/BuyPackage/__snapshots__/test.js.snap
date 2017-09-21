@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BuyPackage should render correctly 1`] = `
+<div
+  className="page-package"
+>
+  <div
+    className="arrow"
+    onClick={[Function]}
+  />
+  <h1
+    className="title"
+  >
+    Legal! Você escolheu o 
+    <span
+      style={
+        Object {
+          "color": "#911AEC",
+        }
+      }
+    >
+      pacote 
+      E
+    </span>
+  </h1>
+  <section
+    className="subtitle"
+  >
+    <p>
+      Escolha 
+      <b>
+        3
+        /
+        3
+         Minicursos
+      </b>
+    </p>
+    <nav
+      className="navigator"
+    >
+      Bloco 
+      A
+      <div
+        className="chevron -back -disabled"
+        onClick={[Function]}
+      />
+      <div
+        className="chevron -next "
+        onClick={[Function]}
+      />
+    </nav>
+  </section>
+  <VariantSelector
+    currentColor="#911AEC"
+    onChange={[Function]}
+    product="A"
+  />
+  <footer>
+    <span>
+      ATENÇÃO: Não haverá reembolso em caso de desistência
+    </span>
+    <Button
+      className="-disabled"
+      color="green"
+      onClick={[Function]}
+    >
+      Continuar
+    </Button>
+  </footer>
+</div>
+`;

@@ -1,0 +1,65 @@
+@import 'ambience/color';
+
+.variant-selector {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  & > .variant {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+    width: 47.5%;
+    margin-bottom: 2.5%;
+    padding: 26px 23px;
+
+    cursor: pointer;
+
+    border: 1px solid $color-gallery;
+    background-color: #FFF;
+  }
+
+  &.-shirt > .variant {
+    width: 19.2%;
+    justify-content: center;
+  }
+
+  & > .variant.-disabled {
+    cursor: not-allowed;
+
+    opacity: .4;
+    background-color: $color-gallery;
+
+    &::after {
+      display: block;
+
+      content: 'esgotado';
+      text-transform: uppercase;
+
+      color: red;
+    }
+  }
+
+  & > .variant.-selected {
+    position: relative;
+
+    box-shadow: rgba($color-description, .5) 0 2px 24px;
+
+    & > .tick {
+      position: absolute;
+      top: -7px;
+      right: -10px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 28px;
+      height: 28px;
+
+      border-radius: 50%;
+    }
+  }
+}

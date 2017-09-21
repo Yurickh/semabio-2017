@@ -1,5 +1,6 @@
 @import 'ambience/color';
 @import 'ambience/responsive';
+@import 'ambience/typography';
 @import 'base/responsive-prop';
 
 .shop-card {
@@ -21,11 +22,9 @@
   @include responsive-prop(width, 260, 210);
   @include responsive-prop(height, 380, 380);
   @include responsive-prop(padding-bottom, 20, 20);
-
   @include medium-down {
     @include responsive-prop(margin-bottom, 100, 100);
   }
-
   @include medium-only {
     @include responsive-prop(width, 260, 260);
   }
@@ -81,7 +80,9 @@
     @include responsive-prop(padding-right, 20, 20);
   }
 
-  & > .simple-button {
+  & > a > .simple-button {
+    font-weight: $weight-regular;
+
     @include responsive-prop(font-size, 16, 16);
     @include responsive-prop(width, 125, 125);
     @include responsive-prop(height, 35, 35);
