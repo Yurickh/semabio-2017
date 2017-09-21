@@ -1,7 +1,7 @@
 {
   "root": "build/",
   "routes": {
-    "/menus/**": "build/menus/",
+    "/ementas/*": "ementas/",
     "/comprar/**": "index.html"
   }
 }

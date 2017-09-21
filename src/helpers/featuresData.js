@@ -48,7 +48,7 @@ export default () => {
       ], [ // Bloco E
         'Biomas do Brasil',
         'Projeto de Filmagem de Vida Silvestre',
-        'PaleoArte',
+        'Paleoarte',
         'Vulnerabilidade Animal Frente às Mudanças Climáticas',
       ]
     ],

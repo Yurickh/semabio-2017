@@ -55,7 +55,6 @@ class BuyShirt extends Component {
 				return shopClient.addLineItems(checkoutId, lineItems)
 			})
 			.then(checkout => {
-				console.log(checkout);
 				window.location.href = GraphQL.read(checkout).get('webUrl')
 			})
 		}

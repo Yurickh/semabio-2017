@@ -29,7 +29,7 @@ class Features extends Component {
     const number = ('00' + index).slice(-2)
     const PUBLIC_URL = process.env.PUBLIC_URL
 
-    return `${PUBLIC_URL}/menus/${block}${number}.pdf`
+    return `${PUBLIC_URL}/ementas/${block}${number}.pdf`
   }
 
   renderContent = () => {

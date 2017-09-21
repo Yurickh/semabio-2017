@@ -14,6 +14,7 @@ exports[`BuyShirt should render correctly 1`] = `
     Escolha o tamanho da sua camiseta :)
   </h1>
   <VariantSelector
+    allowedToSelect={true}
     currentColor="#58C166"
     onChange={[Function]}
     package="shirt"
