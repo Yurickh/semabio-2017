@@ -44,7 +44,7 @@
 
     text-align: center;
 
-    @include responsive-prop(margin-top, 60, 60);
+    @include responsive-prop(margin-top, -60, 60);
     @include small-only {
       flex-direction: column-reverse;
 
@@ -59,6 +59,7 @@
 
     text-decoration: none;
 
+    @include responsive-prop(margin-top, 30);
     @include small-only {
       width: 100%;
     }
@@ -66,6 +67,8 @@
 
   & > .shirt > a > .simple-button {
     width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   & > .shirt .simple-button > .text {
