@@ -52,9 +52,10 @@ export default () => ({
       time:'08:00',
       names: [
         'Minicursos Bloco E',
-        'Workshops: Projeto Fauna UnB',
         'Exposições: Bio na Rua',
         'Projeto Sala de Ciência',
+        'Workshop: Projeto Fauna UnB',
+        'Workshop: Identificação de plantas e Observação de Aves',
       ]
     },
     { time:'11:30', name: 'A Biologia em Nossa Vida'},
