@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 
+import ShopClient from '../../helpers/ShopClient'
+import GraphQL from '../../helpers/GraphQL'
+import PackageIds from '../../helpers/PackageIds'
+
 import Button from '../../components/Button'
 import VariantSelector from '../../components/VariantSelector'
 
@@ -82,6 +86,41 @@ class BuyPackage extends Component {
 		})
 	}
 
+	nextStep = () => {
+		const { product } = this.props.match.params
+		const shopClient = ShopClient()
+
+    shopClient.createCheckout()
+		.then(checkout => {
+			if (product !== 'B') return checkout
+
+			const checkoutId = GraphQL.read(checkout).get('id')
+			const lineItems = {
+				variantId: PackageIds(product),
+				quantity: 1,
+			}
+
+			return shopClient.addLineItems(checkoutId, lineItems)
+		})
+    .then(checkout => {
+      const checkoutId = GraphQL.read(checkout).get('id')
+      const lineItems = this.state.selectedCourses.map(course => ({
+				variantId: course.id,
+				quantity: 1,
+			}))
+
+      return shopClient.addLineItems(checkoutId, lineItems)
+    })
+    .then(checkout => {
+			if (product === 'B') {
+				return window.location.href = GraphQL.read(checkout).get('webUrl')
+			}
+
+			const checkoutId = GraphQL.read(checkout).get('id')
+			window.location.href = `/comprar/${product}/${checkoutId}`
+    })
+	}
+
 	render() {
 		const { product } = this.props.match.params
 		const { currentBlock } = this.state
@@ -115,8 +154,11 @@ class BuyPackage extends Component {
 
 				<footer>
 					<span>ATENÇÃO: Não haverá reembolso em caso de desistência</span>
-					<Button color='green' className={!!this.remainingCourses() ? '-disabled' : ''}>
-						Comprar!
+					<Button
+						color='green'
+						onClick={this.nextStep}
+						className={!!this.remainingCourses() ? '-disabled' : ''}>
+						Continuar
 					</Button>
 				</footer>
 

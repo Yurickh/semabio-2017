@@ -1,3 +1,62 @@
+@import 'ambience/color';
+@import 'base/mask-image';
+@import 'base/responsive-prop';
+
 .page-shirt {
-  
+  width: 66vw;
+  margin: 10vh auto;
+
+  color: $color-emperor;
+
+  & > .arrow {
+    width: 17px;
+    height: 14px;
+
+    cursor: pointer;
+
+    background-color: $color-emperor;
+
+    @include mask-image('./arrow-back.svg');
+  }
+
+  & > .title {
+    margin-top: 1em;
+
+    @include responsive-prop(font-size, 30, 30);
+  }
+
+  & > .title > span {
+    text-transform: uppercase;
+  }
+
+  & > .variant-selector {
+    user-select: none;
+
+    @include responsive-prop(margin-top, 26, 26);
+  }
+
+  & > footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  & > footer > .simple-button {
+    @include responsive-prop(width, 182, 182);
+    @include responsive-prop(height, 55, 55);
+    @include responsive-prop(font-size, 18, 18);
+
+  }
+
+  & > footer > .simple-button.-disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+
+    opacity: .4;
+    background-color: $color-emperor;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
 }

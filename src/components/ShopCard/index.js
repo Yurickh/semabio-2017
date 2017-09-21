@@ -7,6 +7,7 @@ import Button from '../Button'
 
 import ShopClient from '../../helpers/ShopClient'
 import GraphQL from '../../helpers/GraphQL'
+import PackageIds from '../../helpers/PackageIds'
 
 import iconOne from './icon-1.svg'
 import iconTwo from './icon-2.svg'
@@ -43,8 +44,7 @@ class ShopCard extends Component {
     .then(checkout => {
       const checkoutId = GraphQL.read(checkout).get('id')
       const lineItems = {
-        // Package A's ID
-        variantId: 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8xMDgzMjc0NjkwNTg0',
+        variantId: PackageIds('A'),
         quantity: 1,
       }
 

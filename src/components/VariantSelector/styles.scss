@@ -21,6 +21,11 @@
     background-color: #FFF;
   }
 
+  &.-shirt > .variant {
+    width: 19.2%;
+    justify-content: center;
+  }
+
   & > .variant.-disabled {
     cursor: not-allowed;
 
@@ -43,13 +48,13 @@
     box-shadow: rgba($color-description, .5) 0 2px 24px;
 
     & > .tick {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
       position: absolute;
       top: -7px;
       right: -10px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       width: 28px;
       height: 28px;

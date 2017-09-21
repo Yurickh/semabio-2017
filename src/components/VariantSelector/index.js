@@ -53,8 +53,10 @@ class VariantSelector extends Component {
 	nameFor = (product) => {
 		if (product.length === 1) {
 			return `Bloco ${product}`
+		} else if (this.props.package) {
+			return `Pacote ${this.props.package}`
 		} else {
-			return 'Camiseta Semabio'
+			return 'Camiseta'
 		}
 	}
 
@@ -102,9 +104,17 @@ class VariantSelector extends Component {
 		}
 	}
 
+	isShirtSelector = () => {
+		return !!this.props.package
+	}
+
+	selectorVariant = () => {
+		return this.isShirtSelector() ? '-shirt' : ''
+	}
+
 	render() {
 		return (
-			<div className="variant-selector">
+			<div className={`variant-selector ${this.selectorVariant()}`}>
 				{
 					this.state.variants
 						.map((variant, index) => (
