@@ -39,24 +39,29 @@ class Features extends Component {
           .map((miniCourse, index) => (
             <a href={this.fileNameFor(index+1)}
               target="_blank"
-              key={miniCourse}
+              key={miniCourse.name}
               rel="noopener noreferrer"
               className="minicourse"
               >
-              {miniCourse}
+              {miniCourse.name}
             </a>
           ))
       case 1: // Palestras
         return this.data.lectures.map(lecture => {
-          return <div
-                  key={lecture} className="lecture">{lecture}
-                </div>
+          return (
+            <div key={lecture.name} className="lecture">
+              <div className="name">{lecture.name}</div>
+              <div className="responsible">{lecture.responsible}</div>
+            </div>
+          )
         })
       case 2: // Rodas de conversa
         return this.data.talkingCircles.map(talkingCircle => {
-          return <div
-                  key={talkingCircle} className="circle">{talkingCircle}
-                </div>
+          return (
+            <div key={talkingCircle.name} className="circle">
+              <div className="name">{talkingCircle.name}</div>
+              <div className="responsible">{talkingCircle.name}</div>
+            </div>)
         })
       default: return null
     }
