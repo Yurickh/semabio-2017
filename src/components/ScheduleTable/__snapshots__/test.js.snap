@@ -2,7 +2,7 @@
 
 exports[`ScheduleTable should render correctly 1`] = `
 <div
-  className="schedule-table"
+  className="schedule-table "
 >
   <div
     className="events -odd"

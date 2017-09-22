@@ -21,7 +21,7 @@ exports[`Features should render correctly 1`] = `
   >
     <a
       className="minicourse"
-      href="/menus/A01.pdf"
+      href="/ementas/A01.pdf"
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -29,7 +29,7 @@ exports[`Features should render correctly 1`] = `
     </a>
     <a
       className="minicourse"
-      href="/menus/A02.pdf"
+      href="/ementas/A02.pdf"
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -37,7 +37,7 @@ exports[`Features should render correctly 1`] = `
     </a>
     <a
       className="minicourse"
-      href="/menus/A03.pdf"
+      href="/ementas/A03.pdf"
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -45,7 +45,7 @@ exports[`Features should render correctly 1`] = `
     </a>
     <a
       className="minicourse"
-      href="/menus/A04.pdf"
+      href="/ementas/A04.pdf"
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -53,7 +53,7 @@ exports[`Features should render correctly 1`] = `
     </a>
     <a
       className="minicourse"
-      href="/menus/A05.pdf"
+      href="/ementas/A05.pdf"
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -61,7 +61,7 @@ exports[`Features should render correctly 1`] = `
     </a>
     <a
       className="minicourse"
-      href="/menus/A06.pdf"
+      href="/ementas/A06.pdf"
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -69,7 +69,7 @@ exports[`Features should render correctly 1`] = `
     </a>
     <a
       className="minicourse"
-      href="/menus/A07.pdf"
+      href="/ementas/A07.pdf"
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -77,7 +77,7 @@ exports[`Features should render correctly 1`] = `
     </a>
     <a
       className="minicourse"
-      href="/menus/A08.pdf"
+      href="/ementas/A08.pdf"
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -85,7 +85,7 @@ exports[`Features should render correctly 1`] = `
     </a>
     <a
       className="minicourse"
-      href="/menus/A09.pdf"
+      href="/ementas/A09.pdf"
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -93,7 +93,7 @@ exports[`Features should render correctly 1`] = `
     </a>
     <a
       className="minicourse"
-      href="/menus/A10.pdf"
+      href="/ementas/A10.pdf"
       rel="noopener noreferrer"
       target="_blank"
     >
