@@ -9,7 +9,7 @@ import './styles.css'
 class Schedule extends Component {
   render() {
     return (
-      <Element name="features" className="page-schedule">
+      <Element name="schedule" className="page-schedule">
         <Title>Cronograma</Title>
         <p className="subtitle">
           O evento começa no dia 23 de Outubro
