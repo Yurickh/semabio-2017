@@ -51,6 +51,7 @@ exports[`BuyPackage should render correctly 1`] = `
     </nav>
   </section>
   <VariantSelector
+    allowedToSelect={true}
     currentColor="#911AEC"
     onChange={[Function]}
     product="A"

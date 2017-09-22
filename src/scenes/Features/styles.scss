@@ -49,4 +49,11 @@
       width: 100%;
     }
   }
+
+  & > .content > .lecture > .responsible,
+  & > .content > .circle > .responsible {
+    font-size: .66em;
+
+    opacity: .5;
+  }
 }

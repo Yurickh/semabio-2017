@@ -48,6 +48,8 @@ class ScheduleTable extends Component {
   renderTimes = (type) => {
     let times = type === 'even' ? this.evenTimes : this.oddTimes
 
+    if (this.props.selected === 'SAB') return null
+
     return times
     .filter((time, index) => {
       // check if there's an event with given index present
@@ -63,9 +65,13 @@ class ScheduleTable extends Component {
     ))
   }
 
+  tableVariant = () => {
+    return this.props.selected === 'SAB' ? '-saturday' : ''
+  }
+
   render() {
     return (
-      <div className="schedule-table">
+      <div className={`schedule-table ${this.tableVariant()}`}>
         <div className="events -odd">
           {this.renderEvents('odd')}
         </div>

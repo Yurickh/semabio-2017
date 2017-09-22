@@ -11,6 +11,7 @@ import './styles.css'
 class BuyShirt extends Component {
 	state = {
 		selectedShirtSize: null,
+		ready: false,
 	}
 
 	redirectToHome = () => {
@@ -33,9 +34,23 @@ class BuyShirt extends Component {
 		this.setState({ selectedShirtSize })
 	}
 
+	loading = () => {
+		this.setState({
+			ready: false
+		})
+
+		setTimeout(() => {
+			this.setState({
+				ready: true
+			})
+		}, 2000)
+	}
+
 	finishHim = () => {
 		const { checkoutId } = this.props.match.params
 		const shopClient = ShopClient()
+
+		this.loading()
 
 		const lineItems = {
 			variantId: this.state.selectedShirtSize.id,
@@ -55,10 +70,15 @@ class BuyShirt extends Component {
 				return shopClient.addLineItems(checkoutId, lineItems)
 			})
 			.then(checkout => {
-				console.log(checkout);
 				window.location.href = GraphQL.read(checkout).get('webUrl')
 			})
 		}
+	}
+
+	onLoad = () => {
+		this.setState({
+			ready: true
+		})
 	}
 
 	render() {
@@ -80,6 +100,7 @@ class BuyShirt extends Component {
 					package={product}
 					currentColor="#58C166" // color-forest
 					onChange={this.refreshShirtSize}
+					onLoad={this.onLoad}
 					allowedToSelect={true}
 				/>
 
@@ -88,6 +109,8 @@ class BuyShirt extends Component {
 					<Button
 						color='green'
 						onClick={this.finishHim}
+						onLoad={this.onLoad}
+						loading={!this.state.ready}
 						className={!this.state.selectedShirtSize ? '-disabled' : ''}>
 						Finalizar Compra
 					</Button>

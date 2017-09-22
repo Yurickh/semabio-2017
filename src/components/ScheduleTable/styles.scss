@@ -6,10 +6,9 @@
   display: flex;
   justify-content: center;
 
-  @include responsive-prop(height, 550, 550);
+  @include responsive-prop(min-height, 550, 550);
   @include responsive-prop(margin-top, 33, 33);
   @include responsive-prop(padding-bottom, 80, 80);
-
   @include small-only {
     width: 82vw;
     margin: 0 auto;
@@ -30,7 +29,7 @@
   }
 
   & > .times.-odd {
-    height: 105%;
+    @include responsive-prop(min-height, 550, 550);
 
     border-right: 1px solid #000;
 
@@ -41,7 +40,6 @@
 
   & > .times.-even {
     @include responsive-prop(margin-bottom, 40, 40);
-
     @include small-only {
       display: none;
     }
@@ -55,6 +53,7 @@
     @include small-only {
       height: 100%;
       padding-left: 10%;
+
       border-left: 1px solid #000;
     }
   }
@@ -64,11 +63,9 @@
 
     @include responsive-prop(height, 55, 55);
     @include responsive-prop(margin-right, 35, 35);
-
     @include small-only {
       @include responsive-prop(margin-right, 10, 10);
     }
-
   }
 
   & > .events > .event {
@@ -78,7 +75,6 @@
 
     @include responsive-prop(line-height, 20, 20);
     @include responsive-prop(height, 55, 55);
-
     @include small-only {
       height: auto;
     }
@@ -169,5 +165,15 @@
     background-image: url('./moon.svg');
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+
+.schedule-table.-saturday {
+  & > .events {
+    width: 50%;
+  }
+
+  & > .events > .event {
+    height: auto;
   }
 }
