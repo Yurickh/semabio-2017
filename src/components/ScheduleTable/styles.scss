@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
 
-  @include responsive-prop(height, 550, 550);
+  @include responsive-prop(min-height, 550, 550);
   @include responsive-prop(margin-top, 33, 33);
   @include responsive-prop(padding-bottom, 80, 80);
   @include small-only {
