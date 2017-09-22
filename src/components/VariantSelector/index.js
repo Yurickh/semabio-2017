@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import ShopClient from '../../helpers/ShopClient'
+import ShopClient from '../../helpers/shopClient'
 import GraphQL from '../../helpers/GraphQL'
 
 import checkMark from './check-mark.svg'
@@ -63,7 +63,7 @@ class VariantSelector extends Component {
 	allowedToSelect = () => {
 		const { variants } = this.state
 
-		return variants.filter(this.variantIsSelected).length === 0
+		return this.props.allowedToSelect && variants.filter(this.variantIsSelected).length === 0
 	}
 
 	selectVariant = (variant) => {

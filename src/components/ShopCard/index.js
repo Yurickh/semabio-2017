@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import Price from '../Price'
 import Button from '../Button'
 
-import ShopClient from '../../helpers/ShopClient'
+import ShopClient from '../../helpers/shopClient'
 import GraphQL from '../../helpers/GraphQL'
 import PackageIds from '../../helpers/PackageIds'
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import ShopClient from '../../helpers/ShopClient'
+import ShopClient from '../../helpers/shopClient'
 import GraphQL from '../../helpers/GraphQL'
 
 import Button from '../../components/Button'
@@ -80,6 +80,7 @@ class BuyShirt extends Component {
 					package={product}
 					currentColor="#58C166" // color-forest
 					onChange={this.refreshShirtSize}
+					allowedToSelect={true}
 				/>
 
 				<footer>
