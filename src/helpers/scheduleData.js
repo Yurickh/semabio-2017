@@ -51,7 +51,7 @@ export default () => ({
     { time: '07:20', name: 'Workshop: Observação de aves (1º saída)'},
     { time: '08:30', names: [
       'Workshop: Projeto Fauna UnB (1º saída)',
-      'Workshop: Obsercavacao de aves (2º saída)',
+      'Workshop: Observação de aves (2º saída)',
       'Workshop: Identificação de Árvores do Cerrado (1º saída)',
     ]},
     { time: '09:40', names: [
