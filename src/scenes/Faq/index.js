@@ -32,7 +32,7 @@ class Faq extends Component {
 
   render() {
     return (
-      <section className="page-faq">
+      <Element name="faq" className="page-faq">
         <Title>Dúvidas Frequentes</Title>
 
         <p className="subtitle">
@@ -79,7 +79,7 @@ class Faq extends Component {
             />
           </div>
         </aside>
-      </section>
+      </Element>
     )
   }
 }

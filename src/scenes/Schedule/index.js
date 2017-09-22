@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Element } from 'react-scroll'
 
 import Title from '../../components/Title'
 import ScheduleSelector from '../../components/ScheduleSelector'
@@ -8,13 +9,13 @@ import './styles.css'
 class Schedule extends Component {
   render() {
     return (
-      <section className="page-schedule">
+      <Element name="features" className="page-schedule">
         <Title>Cronograma</Title>
         <p className="subtitle">
           O evento começa no dia 23 de Outubro
         </p>
         <ScheduleSelector />
-      </section>
+      </Element>
     )
   }
 }
