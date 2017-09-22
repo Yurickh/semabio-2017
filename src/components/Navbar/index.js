@@ -15,7 +15,7 @@ class Navbar extends Component {
 
   render() {
     return (
-      <div className={ `navbar ${this.variant()}` }>
+      <nav className={ `navbar ${this.variant()}` }>
         <a href="/" className="brand">
           <img
             alt="logo"
@@ -25,7 +25,7 @@ class Navbar extends Component {
           <span className="name">
             Semana da Biologia
           </span>
-        </div>
+        </a>
         <div className="social">
           <a className="icon -facebook"
             target="_blank"
@@ -39,6 +39,7 @@ class Navbar extends Component {
             href="https://www.instagram.com/semabiounb/"
           >
           </a>
+          <NavBurger />
         </div>
       </nav>
     )
