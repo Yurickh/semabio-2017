@@ -49,11 +49,6 @@ export default () => ({
   ],
   'SAB': [
     { time: '07:20', name: 'Workshop: Observação de aves (1º saída)'},
-    { time: '08:00', names: [
-      'Exposição: Bio na Rua',
-      'Projeto Sala de Ciência',
-      'Workshop: Observação de aves (2º saída)',
-    ]},
     { time: '08:30', names: [
       'Workshop: Projeto Fauna UnB (1º saída)',
       'Workshop: Obsercavacao de aves (2º saída)',
