@@ -84,4 +84,8 @@
     position: absolute;
     bottom: 0;
   }
+
+  &.-open img {
+    filter: blur(20px);
+  }
 }

@@ -1,44 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navbar should render correctly 1`] = `
-<div
-  className="navbar "
->
-  <a
-    className="brand"
-    href="/"
-  >
-    <img
-      alt="logo"
-      className="logo"
-      src="semabio-logo.svg"
-    />
-    <span
-      className="name"
-    >
-      Semana da Biologia
-    </span>
-  </div>
-  <div
-    className="social"
-  >
-    <a
-      className="icon -facebook"
-      href="https://www.facebook.com/SemaBio/"
-      rel="noopener noreferrer"
-      target="_blank"
-    />
-    <a
-      className="icon -instagram"
-      href="https://www.instagram.com/semabiounb/"
-      rel="noopener noreferrer"
-      target="_blank"
-    />
-  </div>
-</nav>
-`;
-
-exports[`Navbar should render correctly 2`] = `
 <nav
   className="navbar "
 >
@@ -73,5 +35,9 @@ exports[`Navbar should render correctly 2`] = `
       target="_blank"
     />
   </div>
+  <NavBurger
+    onClick={[Function]}
+    variant=""
+  />
 </nav>
 `;

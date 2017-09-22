@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Features should render correctly 1`] = `
-<section
+<_
   className="page-features"
+  name="features"
 >
   <Title>
     Programação
@@ -99,5 +100,5 @@ exports[`Features should render correctly 1`] = `
       Desenvolvimento e Aplicação de Nanopartículas Carreadoras de Fármacos
     </a>
   </div>
-</section>
+</_>
 `;

@@ -5,6 +5,7 @@
   height: 3rem;
 
   cursor: pointer;
+  user-select: none;
 
   &::before,
   &::after {
@@ -34,9 +35,10 @@
   }
 
   &.-open {
-    top: 0;
-    left: 17%;
-    z-index: 2;
+    position: fixed;
+    z-index: 12;
+    top: 4%;
+    right: 4%;
 
     &::before,
     &::after {
