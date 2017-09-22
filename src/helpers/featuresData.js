@@ -183,7 +183,7 @@ export default () => {
       },
       {
         name: 'Ciência em Quadrinhos',
-        responsible: '',
+        responsible: 'Elidiomar Ribeiro (UNIRIO)',
       },
       {
         name: 'A Biologia em nossa vida (Encerramento)',
