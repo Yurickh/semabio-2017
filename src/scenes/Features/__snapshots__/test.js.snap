@@ -18,56 +18,86 @@ exports[`Features should render correctly 1`] = `
   <div
     className="content"
   >
-    <div
+    <a
       className="minicourse"
+      href="/menus/A01.pdf"
+      rel="noopener noreferrer"
+      target="_blank"
     >
       Invasões Biológicas
-    </div>
-    <div
+    </a>
+    <a
       className="minicourse"
+      href="/menus/A02.pdf"
+      rel="noopener noreferrer"
+      target="_blank"
     >
       Introdução aos Métodos de estudo em Anatomia Comparativa de Vertebrados
-    </div>
-    <div
+    </a>
+    <a
       className="minicourse"
+      href="/menus/A03.pdf"
+      rel="noopener noreferrer"
+      target="_blank"
     >
       Citogenética Animal
-    </div>
-    <div
+    </a>
+    <a
       className="minicourse"
+      href="/menus/A04.pdf"
+      rel="noopener noreferrer"
+      target="_blank"
     >
       Cultivo de células em Mamíferos
-    </div>
-    <div
+    </a>
+    <a
       className="minicourse"
+      href="/menus/A05.pdf"
+      rel="noopener noreferrer"
+      target="_blank"
     >
       Insetos e o homem: vamos discutir esta relação?
-    </div>
-    <div
+    </a>
+    <a
       className="minicourse"
+      href="/menus/A06.pdf"
+      rel="noopener noreferrer"
+      target="_blank"
     >
       Imunoterapias
-    </div>
-    <div
+    </a>
+    <a
       className="minicourse"
+      href="/menus/A07.pdf"
+      rel="noopener noreferrer"
+      target="_blank"
     >
       Produção de Biofármacos
-    </div>
-    <div
+    </a>
+    <a
       className="minicourse"
+      href="/menus/A08.pdf"
+      rel="noopener noreferrer"
+      target="_blank"
     >
       O despertar dos sentidos: o que sentimos, por que sentimos e como sentimos?
-    </div>
-    <div
+    </a>
+    <a
       className="minicourse"
+      href="/menus/A09.pdf"
+      rel="noopener noreferrer"
+      target="_blank"
     >
       Oficina de Iniciação em Bonsai
-    </div>
-    <div
+    </a>
+    <a
       className="minicourse"
+      href="/menus/A10.pdf"
+      rel="noopener noreferrer"
+      target="_blank"
     >
       Desenvolvimento e Aplicação de Nanopartículas Carreadoras de Fármacos
-    </div>
+    </a>
   </div>
 </section>
 `;

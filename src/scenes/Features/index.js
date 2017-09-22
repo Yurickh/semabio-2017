@@ -24,19 +24,39 @@ class Features extends Component {
     this.setState({ currentBlock: block })
   }
 
+  fileNameFor = (index) => {
+    const block = ['A', 'B', 'C', 'D', 'E'][this.state.currentBlock]
+    const number = ('00' + index).slice(-2)
+    const PUBLIC_URL = process.env.PUBLIC_URL
+
+    return `${PUBLIC_URL}/menus/${block}${number}.pdf`
+  }
+
   renderContent = () => {
     switch(this.state.currentMode) {
       case 0: // Minicursos
-        return this.data.minicourses[this.state.currentBlock].map(miniCourse => {
-          return <div key={miniCourse} className="minicourse">{miniCourse}</div>
-        })
+        return this.data.minicourses[this.state.currentBlock]
+          .map((miniCourse, index) => (
+            <a href={this.fileNameFor(index+1)}
+              target="_blank"
+              key={miniCourse}
+              rel="noopener noreferrer"
+              className="minicourse"
+              >
+              {miniCourse}
+            </a>
+          ))
       case 1: // Palestras
         return this.data.lectures.map(lecture => {
-          return <div key={lecture} className="lecture">{lecture}</div>
+          return <div
+                  key={lecture} className="lecture">{lecture}
+                </div>
         })
       case 2: // Rodas de conversa
         return this.data.talkingCircles.map(talkingCircle => {
-          return <div key={talkingCircle} className="circle">{talkingCircle}</div>
+          return <div
+                  key={talkingCircle} className="circle">{talkingCircle}
+                </div>
         })
       default: return null
     }

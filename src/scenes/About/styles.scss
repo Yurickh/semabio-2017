@@ -16,6 +16,11 @@
     margin: 0 auto;
   }
 
+  & > .title.-second {
+    @include responsive-prop(margin-top, 80, 100);
+    @include responsive-prop(margin-bottom, 32, 32);
+  }
+
   & > p {
     letter-spacing: .25px;
 

@@ -10,6 +10,9 @@ class Schedule extends Component {
     return (
       <section className="page-schedule">
         <Title>Cronograma</Title>
+        <p className="subtitle">
+          O evento começa no dia 23 de Outubro
+        </p>
         <ScheduleSelector />
       </section>
     )

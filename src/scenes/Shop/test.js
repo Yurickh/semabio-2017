@@ -6,7 +6,11 @@ import Shop from '../Shop'
 
 describe('Shop', () => {
   it('should render correctly', () => {
-    const shop = shallow(<Shop />)
+    const shop = shallow(<Shop
+      match={{
+        url: '/'
+      }}
+    />)
     expect(toJSON(shop)).toMatchSnapshot()
   })
 })

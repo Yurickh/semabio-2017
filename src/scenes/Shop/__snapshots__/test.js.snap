@@ -29,7 +29,8 @@ exports[`Shop should render correctly 1`] = `
       }
       level={0}
       price={40}
-      title="Pacote A"
+      product="A"
+      root="/"
     />
     <ShopCard
       description={
@@ -42,7 +43,8 @@ exports[`Shop should render correctly 1`] = `
       }
       level={1}
       price={50}
-      title="Pacote B"
+      product="B"
+      root="/"
     />
     <ShopCard
       description={
@@ -50,13 +52,14 @@ exports[`Shop should render correctly 1`] = `
           "Ciclo de Palestras",
           "Coffee Break",
           "Kit Semabio",
-          "1 Minicursos",
+          "1 Minicurso",
           "Camiseta",
         ]
       }
       level={2}
       price={55}
-      title="Pacote C"
+      product="C"
+      root="/"
     />
     <ShopCard
       description={
@@ -70,7 +73,8 @@ exports[`Shop should render correctly 1`] = `
       }
       level={3}
       price={60}
-      title="Pacote D"
+      product="D"
+      root="/"
     />
     <ShopCard
       description={
@@ -84,27 +88,33 @@ exports[`Shop should render correctly 1`] = `
       }
       level={4}
       price={70}
-      title="Pacote E"
+      product="E"
+      root="/"
     />
   </main>
   <footer
     className="shirt"
   >
-    <Button
-      color="outline"
-      onClick={[Function]}
+    <Link
+      replace={false}
+      to="/comprar/camiseta"
     >
-      <img
-        alt="icone de camiseta"
-        className="icon -shirt"
-        src="shirt.svg"
-      />
-      <div
-        className="text"
+      <Button
+        color="outline"
+        onClick={[Function]}
       >
-        Quero apenas a camiseta
-      </div>
-    </Button>
+        <img
+          alt="icone de camiseta"
+          className="icon"
+          src="shirt.svg"
+        />
+        <div
+          className="text"
+        >
+          Quero apenas a camiseta
+        </div>
+      </Button>
+    </Link>
     <Button
       color="outline"
       onClick={[Function]}
@@ -124,7 +134,7 @@ exports[`Shop should render correctly 1`] = `
   <span
     className="price"
   >
-    A camiseta avulsa estará disponível por R$ 25,00
+    Camiseta avulsa (R$ 25,00)
   </span>
   <Modal
     ariaHideApp={true}
@@ -138,6 +148,13 @@ exports[`Shop should render correctly 1`] = `
     portalClassName="ReactModalPortal"
     shouldCloseOnOverlayClick={true}
     shouldFocusAfterRender={true}
+    style={
+      Object {
+        "overlay": Object {
+          "zIndex": 5,
+        },
+      }
+    }
   >
     <h1>
       Você sabia que...
