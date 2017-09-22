@@ -13,10 +13,23 @@ class BuyPackage extends Component {
 	state = {
 		selectedCourses: [],
 		currentBlock: 'A',
+		ready: false,
 	}
 
 	redirectToHome = () => {
 		window.location.href = '/'
+	}
+
+	loading = () => {
+		this.setState({
+			ready: false
+		})
+
+		setTimeout(() => {
+			this.setState({
+				ready: true
+			})
+		}, 2000)
 	}
 
 	componentWillMount() {
@@ -89,6 +102,8 @@ class BuyPackage extends Component {
 		const { product } = this.props.match.params
 		const shopClient = ShopClient()
 
+		this.loading()
+
     shopClient.createCheckout()
 		.then(checkout => {
 			if (product !== 'B') return checkout
@@ -124,6 +139,12 @@ class BuyPackage extends Component {
 		return this.remainingCourses() > 0
 	}
 
+	onLoad = () => {
+		this.setState({
+			ready: true
+		})
+	}
+
 	render() {
 		const { product } = this.props.match.params
 		const { currentBlock } = this.state
@@ -154,6 +175,7 @@ class BuyPackage extends Component {
 					currentColor={this.currentColor.color}
 					onChange={this.refreshCourseList}
 					allowedToSelect={this.allowedToSelect()}
+					onLoad={this.onLoad}
 				/>
 
 				<footer>
@@ -161,6 +183,7 @@ class BuyPackage extends Component {
 					<Button
 						color='green'
 						onClick={this.nextStep}
+						loading={!this.state.ready}
 						className={!!this.remainingCourses() ? '-disabled' : ''}>
 						Continuar
 					</Button>
