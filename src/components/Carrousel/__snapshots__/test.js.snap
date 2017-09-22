@@ -136,7 +136,7 @@ exports[`Carrousel should render correctly 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "transform": "translateX(calc(-1260px - 50%))",
+          "transform": "translateX(calc(1440px - 50%))",
         }
       }
     >
@@ -151,7 +151,7 @@ exports[`Carrousel should render correctly 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "transform": "translateX(calc(-1080px - 50%))",
+          "transform": "translateX(calc(-1260px - 50%))",
         }
       }
     >
@@ -166,7 +166,7 @@ exports[`Carrousel should render correctly 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "transform": "translateX(calc(-900px - 50%))",
+          "transform": "translateX(calc(-1080px - 50%))",
         }
       }
     >
@@ -181,7 +181,7 @@ exports[`Carrousel should render correctly 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "transform": "translateX(calc(-720px - 50%))",
+          "transform": "translateX(calc(-900px - 50%))",
         }
       }
     >
@@ -196,7 +196,7 @@ exports[`Carrousel should render correctly 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "transform": "translateX(calc(-540px - 50%))",
+          "transform": "translateX(calc(-720px - 50%))",
         }
       }
     >
@@ -211,7 +211,7 @@ exports[`Carrousel should render correctly 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "transform": "translateX(calc(-360px - 50%))",
+          "transform": "translateX(calc(-540px - 50%))",
         }
       }
     >
@@ -226,7 +226,7 @@ exports[`Carrousel should render correctly 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "transform": "translateX(calc(-180px - 50%))",
+          "transform": "translateX(calc(-360px - 50%))",
         }
       }
     >
@@ -234,6 +234,21 @@ exports[`Carrousel should render correctly 1`] = `
         alt="avatar"
         className="avatar"
         src="patryck.jpg"
+      />
+    </div>
+    <div
+      className="person "
+      onClick={[Function]}
+      style={
+        Object {
+          "transform": "translateX(calc(-180px - 50%))",
+        }
+      }
+    >
+      <img
+        alt="avatar"
+        className="avatar"
+        src="julia.png"
       />
     </div>
   </div>

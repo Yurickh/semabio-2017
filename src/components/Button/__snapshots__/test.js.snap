@@ -2,8 +2,12 @@
 
 exports[`Button should render correctly 1`] = `
 <button
-  className="simple-button -red undefined"
-  color="red"
+  className="simple-button -red  undefined"
   onClick={[Function]}
+  style={
+    Object {
+      "cursor": "pointer",
+    }
+  }
 />
 `;

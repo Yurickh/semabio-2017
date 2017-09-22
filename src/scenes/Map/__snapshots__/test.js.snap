@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Map should render correctly 1`] = `
-<section
+<_
   className="page-map"
+  name="map"
 >
   <Title>
     Como chegar
@@ -64,12 +65,18 @@ exports[`Map should render correctly 1`] = `
       >
         <Button
           color="green"
+          loading={false}
           onClick={[Function]}
         >
           Mais Linhas
         </Button>
       </a>
+      <h3
+        className="observation"
+      >
+        O evento vai rolar na Universidade de Brasília - Instituto de Ciências Biológicas
+      </h3>
     </aside>
   </div>
-</section>
+</_>
 `;

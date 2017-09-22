@@ -17,6 +17,7 @@ exports[`BuyShirt should render correctly 1`] = `
     allowedToSelect={true}
     currentColor="#58C166"
     onChange={[Function]}
+    onLoad={[Function]}
     package="shirt"
     product="shirt"
   />
@@ -27,7 +28,9 @@ exports[`BuyShirt should render correctly 1`] = `
     <Button
       className="-disabled"
       color="green"
+      loading={true}
       onClick={[Function]}
+      onLoad={[Function]}
     >
       Finalizar Compra
     </Button>
