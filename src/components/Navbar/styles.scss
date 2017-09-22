@@ -60,4 +60,39 @@
     @include responsive-prop(width, 14, 18);
     @include responsive-prop(height, 14, 18);
   }
+
+  &.-open {
+    z-index: 3;
+  }
+
+  &.-open > .links {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    box-sizing: border-box;
+    width: 375px;
+    height: 100vh;
+    padding: 100px 60px;
+
+    background-color: #000;
+  }
+
+  &.-open::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100vw;
+    height: 100vh;
+
+    content: '';
+
+    opacity: .75;
+    background-color: #000;
+
+    filter: blur(10px);
+  }
 }
