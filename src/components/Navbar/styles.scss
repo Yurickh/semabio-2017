@@ -82,7 +82,7 @@
     flex-direction: column;
 
     box-sizing: border-box;
-    width: 375px;
+    width: 100vw;
     height: 100vh;
     padding: 100px 60px;
 
@@ -90,6 +90,10 @@
     text-transform: uppercase;
 
     background-color: #000;
+
+    @include medium-up {
+      width: 375px;
+    }
 
     @include responsive-prop(font-size, 24, 24);
   }
