@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Element } from 'react-scroll'
 
 import Cloud from '../../components/Cloud'
 import Title from '../../components/Title'
@@ -8,7 +9,7 @@ import './styles.css'
 class Contact extends Component {
   render() {
     return (
-      <section className="page-contact">
+      <Element name="contact" className="page-contact">
         <Cloud />
         <Title white>Contato</Title>
 
@@ -32,7 +33,7 @@ class Contact extends Component {
           </Button>
         </form> */}
 
-      </section>
+      </Element>
     )
   }
 }

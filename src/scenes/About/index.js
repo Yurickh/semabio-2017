@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Element } from 'react-scroll'
+
 import Title from '../../components/Title'
 import Carrousel from '../../components/Carrousel'
 
@@ -7,7 +9,7 @@ import './styles.css'
 class About extends Component {
   render() {
     return (
-      <section className="page-about">
+      <Element name="about" className="page-about">
         <Title className="title">
           Sobre Nós
         </Title>
@@ -33,7 +35,7 @@ class About extends Component {
           Conheça nossa equipe
         </h2>
         <Carrousel />
-      </section>
+      </Element>
     )
   }
 }

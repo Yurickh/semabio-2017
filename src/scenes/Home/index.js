@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types' 
 import { Link } from 'react-scroll'
 
 import Cloud from '../../components/Cloud'
@@ -11,10 +12,29 @@ import tale2x from './tale@2x.png'
 import './styles.css'
 
 class Home extends Component {
+
+  state = {
+    menuIsOpen: false
+  }
+
+  toggleMenu = () => {
+    this.setState({
+      menuIsOpen: !this.state.menuIsOpen,
+    })
+  }
+
+  variant = () => {
+    return this.state.menuIsOpen ? '-open' : ''
+  }
+
   render() {
     return (
-      <section className="page-home">
-        <Navbar />
+      <section className={`page-home ${this.variant()}`}>
+        <Navbar
+          open={this.state.menuIsOpen}
+          toggleMenu={this.toggleMenu}
+        />
+
         <main className="call">
           <h1>A Odisseia da vida</h1>
           <p>Uma aventura pela origem da diversidade</p>
@@ -25,7 +45,8 @@ class Home extends Component {
             <Button color='red'>Quero me inscrever!</Button>
           </Link>
         </main>
-        <img className="tale"
+
+        <img className={`tale`}
           alt=""
           srcSet={
             `${tale1x} 1x,
@@ -33,10 +54,16 @@ class Home extends Component {
           }
           src={tale1x}
         />
+
         <Cloud />
       </section>
     )
   }
+}
+
+Home.propTypes = {
+  open: PropTypes.bool,
+  toggleMenu: PropTypes.func,
 }
 
 export default Home

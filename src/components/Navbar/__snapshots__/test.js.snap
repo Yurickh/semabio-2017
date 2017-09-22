@@ -2,10 +2,11 @@
 
 exports[`Navbar should render correctly 1`] = `
 <nav
-  className="navbar"
+  className="navbar "
 >
-  <div
+  <a
     className="brand"
+    href="/"
   >
     <img
       alt="logo"
@@ -17,7 +18,7 @@ exports[`Navbar should render correctly 1`] = `
     >
       Semana da Biologia
     </span>
-  </div>
+  </a>
   <div
     className="social"
   >
@@ -34,5 +35,9 @@ exports[`Navbar should render correctly 1`] = `
       target="_blank"
     />
   </div>
+  <NavBurger
+    onClick={[Function]}
+    variant=""
+  />
 </nav>
 `;
