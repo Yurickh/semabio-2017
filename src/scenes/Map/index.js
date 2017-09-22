@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Element } from 'react-scroll'
 
 import Title from '../../components/Title'
 import Button from '../../components/Button'
@@ -9,7 +10,7 @@ import './styles.css'
 class Map extends Component {
   render() {
     return (
-      <section className="page-map">
+      <Element name="map" className="page-map">
         <Title>Como chegar</Title>
 
         <h2 className="subtitle">Selecionamos algumas das principais linhas de ônibus para você</h2>
@@ -40,7 +41,7 @@ class Map extends Component {
             <h3 className="observation">O evento vai rolar na Universidade de Brasília - Instituto de Ciências Biológicas</h3>
           </aside>
         </div>
-      </section>
+      </Element>
     )
   }
 }

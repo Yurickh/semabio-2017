@@ -72,6 +72,7 @@
     bottom: 0;
 
     width: 72vw;
+    transition: opacity .15s ease-in;
 
     @include small-only {
       width: 95vw;
@@ -82,5 +83,9 @@
   & > .cloud {
     position: absolute;
     bottom: 0;
+  }
+
+  &.-open img {
+    filter: blur(20px);
   }
 }

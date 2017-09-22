@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Element } from 'react-scroll'
 
 import Title from '../../components/Title'
 import ModeSelector from '../../components/ModeSelector'
@@ -69,7 +70,7 @@ class Features extends Component {
 
   render() {
     return (
-      <section className="page-features">
+      <Element name="features" className="page-features">
         <Title>Programação</Title>
 
         <ModeSelector
@@ -90,7 +91,7 @@ class Features extends Component {
           { this.renderContent() }
         </div>
 
-      </section>
+      </Element>
     )
   }
 }
