@@ -11,10 +11,10 @@
     "react-test-renderer": "^15.6.1"
   },
   "dependencies": {
-    "prop-types": "^15.5.10",
     "google-maps": "^3.2.1",
     "graphql-js-client": "^0.7.0",
     "halogen": "^0.2.0",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-modal": "^2.3.2",
