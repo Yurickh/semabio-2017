@@ -5,18 +5,6 @@ exports[`App should render correctly 1`] = `
   <Switch>
     <Route
       component={[Function]}
-      path="/comprar/camiseta"
-    />
-    <Route
-      component={[Function]}
-      path="/comprar/:product/:checkoutId"
-    />
-    <Route
-      component={[Function]}
-      path="/comprar/:product"
-    />
-    <Route
-      component={[Function]}
       exact={true}
       path="/"
     />

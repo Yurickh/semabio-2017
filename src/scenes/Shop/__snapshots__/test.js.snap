@@ -92,52 +92,6 @@ exports[`Shop should render correctly 1`] = `
       root="/"
     />
   </main>
-  <footer
-    className="shirt"
-  >
-    <Link
-      replace={false}
-      to="/comprar/camiseta"
-    >
-      <Button
-        color="outline"
-        loading={false}
-        onClick={[Function]}
-      >
-        <img
-          alt="icone de camiseta"
-          className="icon"
-          src="shirt.svg"
-        />
-        <div
-          className="text"
-        >
-          Quero apenas a camiseta
-        </div>
-      </Button>
-    </Link>
-    <Button
-      color="outline"
-      loading={false}
-      onClick={[Function]}
-    >
-      <img
-        alt="icone de desconto"
-        className="icon -discount"
-        src="discount.svg"
-      />
-      <div
-        className="text"
-      >
-        Sou aluno da Assistência Estudantil
-      </div>
-    </Button>
-  </footer>
-  <span
-    className="price"
-  >
-    Camiseta avulsa (R$ 25,00)
-  </span>
   <Modal
     ariaHideApp={true}
     bodyOpenClassName="ReactModal__Body--open"
