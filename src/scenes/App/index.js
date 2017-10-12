@@ -35,9 +35,9 @@ class App extends Component {
     return (
       <Router>
         <Switch>
-          <Route path="/comprar/camiseta" component={BuyShirt} />
+          {/* <Route path="/comprar/camiseta" component={BuyShirt} />
           <Route path="/comprar/:product/:checkoutId" component={BuyShirt} />
-          <Route path="/comprar/:product" component={BuyPackage} />
+          <Route path="/comprar/:product" component={BuyPackage} /> */}
           <Route exact path="/" component={SPA} />
         </Switch>
       </Router>

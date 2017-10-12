@@ -105,7 +105,7 @@ class Shop extends Component {
           />
         </main>
 
-        <footer className="shirt">
+        {/* <footer className="shirt">
           <Link to={`${url}comprar/camiseta`}>
             <Button color='outline'>
               <img
@@ -128,8 +128,8 @@ class Shop extends Component {
               Sou aluno da Assistência Estudantil
             </div>
           </Button>
-        </footer>
-        <span className="price">Camiseta avulsa (R$ 25,00)</span>
+        </footer> */}
+        {/* <span className="price">Camiseta avulsa (R$ 25,00)</span> */}
 
         <Modal
           isOpen={this.state.modalOpen}

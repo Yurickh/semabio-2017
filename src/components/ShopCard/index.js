@@ -77,13 +77,13 @@ class ShopCard extends Component {
           {description.map(phrase => <div key={phrase}>{phrase}</div>)}
         </div>
 
-        {
+        {/* {
           product !== 'A'
           ? <Link to={`${root}comprar/${product}`}>
             <Button color="green"> Comprar </Button>
           </Link>
           : <a><Button color="green" onClick={this.buyPackageA}> Comprar </Button></a>
-        }
+        } */}
 
 
       </div>
