@@ -13,6 +13,7 @@ import patryck from './images/patryck.jpg'
 import pedro from './images/pedro.jpg'
 import rodrigo from './images/rodrigo.jpg'
 import sarah from './images/sarah.jpg'
+import julia from './images/julia.png'
 
 export default () => [
   {
@@ -75,5 +76,9 @@ export default () => [
     name: 'Patryck Dougllas',
     about: ' ',
     photo: patryck,
+  }, {
+    name: 'Julia Klaczko',
+    about: 'Professora Orientadora',
+    photo: julia,
   }
 ]

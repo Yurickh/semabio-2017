@@ -80,4 +80,12 @@
       @include responsive-prop(margin-top, 45, 45);
     }
   }
+
+  & > .content > .bus-lines > .observation {
+    margin-top: 1em;
+
+    color: $color-description;
+
+    @include responsive-prop(font-size, 18, 16);
+  }
 }

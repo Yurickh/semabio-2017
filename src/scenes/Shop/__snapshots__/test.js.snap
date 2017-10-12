@@ -101,6 +101,7 @@ exports[`Shop should render correctly 1`] = `
     >
       <Button
         color="outline"
+        loading={false}
         onClick={[Function]}
       >
         <img
@@ -117,6 +118,7 @@ exports[`Shop should render correctly 1`] = `
     </Link>
     <Button
       color="outline"
+      loading={false}
       onClick={[Function]}
     >
       <img

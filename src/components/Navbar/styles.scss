@@ -98,6 +98,10 @@
     @include responsive-prop(font-size, 24, 24);
   }
 
+  &.-open > .links > .link {
+    color: #FFF;
+  }
+
   &.-open > .links > .link:hover {
     color: $color-forest;
   }

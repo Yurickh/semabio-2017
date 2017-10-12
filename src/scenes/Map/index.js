@@ -38,6 +38,7 @@ class Map extends Component {
             >
               <Button color="green">Mais Linhas</Button>
             </a>
+            <h3 className="observation">O evento vai rolar na Universidade de Brasília - Instituto de Ciências Biológicas</h3>
           </aside>
         </div>
       </Element>

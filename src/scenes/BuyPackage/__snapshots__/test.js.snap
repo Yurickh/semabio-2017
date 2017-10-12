@@ -51,8 +51,10 @@ exports[`BuyPackage should render correctly 1`] = `
     </nav>
   </section>
   <VariantSelector
+    allowedToSelect={true}
     currentColor="#911AEC"
     onChange={[Function]}
+    onLoad={[Function]}
     product="A"
   />
   <footer>
@@ -62,6 +64,7 @@ exports[`BuyPackage should render correctly 1`] = `
     <Button
       className="-disabled"
       color="green"
+      loading={true}
       onClick={[Function]}
     >
       Continuar

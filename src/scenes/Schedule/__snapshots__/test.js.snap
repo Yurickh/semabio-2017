@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Schedule should render correctly 1`] = `
-<section
+<_
   className="page-schedule"
+  name="schedule"
 >
   <Title>
     Cronograma
@@ -10,8 +11,8 @@ exports[`Schedule should render correctly 1`] = `
   <p
     className="subtitle"
   >
-    O evento começa no dia 23 de Outubro
+    O evento acontece de 23 a 28 de Outubro
   </p>
   <ScheduleSelector />
-</section>
+</_>
 `;

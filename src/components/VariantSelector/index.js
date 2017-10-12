@@ -18,6 +18,7 @@ class VariantSelector extends Component {
 		product: PropTypes.oneOf(['A', 'B', 'C', 'D', 'E', 'shirt']).isRequired,
 		currentColor: PropTypes.string.isRequired,
 		onChange: PropTypes.func,
+		onLoad: PropTypes.func,
 	}
 
 	componentDidMount() {
@@ -46,7 +47,7 @@ class VariantSelector extends Component {
 						name: variant.get('title'),
 						available: variant.get('available')
 					}))
-			})
+			}, this.props.onLoad)
 		})
 	}
 

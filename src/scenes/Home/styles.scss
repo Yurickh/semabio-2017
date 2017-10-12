@@ -85,7 +85,7 @@
     bottom: 0;
   }
 
-  &.-open img {
+  &.-open img:not(.logo) {
     filter: blur(20px);
   }
 }

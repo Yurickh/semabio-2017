@@ -58,7 +58,6 @@
     background-color: $color-wall;
 
     @include responsive-prop(height, 320, 320);
-
     @include small-only {
       display: none;
     }
@@ -75,7 +74,6 @@
     @include responsive-prop(left, -5, -5);
     @include responsive-prop(width, 11, 11);
     @include responsive-prop(height, 11, 11);
-
     @include medium-down {
       display: none;
     }
@@ -103,16 +101,17 @@
   & > aside > .left > a {
     cursor: pointer;
 
+    color: $color-wall;
+
     @include responsive-prop(font-size, 18, 18);
     @include responsive-prop(line-height, 24, 48);
-
     @include small-only {
       margin-top: 5vw;
     }
   }
 
   & > aside > .left > a:hover {
-    color: $color-wall;
+    color: $color-bullfrog;
   }
 
   & > aside > .left > a.-active {
