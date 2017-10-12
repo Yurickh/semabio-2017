@@ -25,14 +25,5 @@ exports[`ShopCard should render correctly 1`] = `
   <div
     className="description"
   />
-  <a>
-    <Button
-      color="green"
-      loading={false}
-      onClick={[Function]}
-    >
-       Comprar 
-    </Button>
-  </a>
 </div>
 `;

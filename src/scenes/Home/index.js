@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types' 
+import PropTypes from 'prop-types'
 import { Link } from 'react-scroll'
 
 import Cloud from '../../components/Cloud'
@@ -38,12 +38,12 @@ class Home extends Component {
         <main className="call">
           <h1>A Odisseia da vida</h1>
           <p>Uma aventura pela origem da diversidade</p>
-          <span>Falta pouco pra você se inscrever</span>
+          {/* <span>Falta pouco pra você se inscrever</span>
 
-          {/* year, month, day, hour, minute */}
+          {/* year, month, day, hour, minute *
           <Link to='shop' smooth duration={300}>
             <Button color='red'>Quero me inscrever!</Button>
-          </Link>
+          </Link> */}
         </main>
 
         <img className={`tale`}
