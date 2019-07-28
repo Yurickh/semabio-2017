@@ -7,7 +7,6 @@
     "enzyme-to-json": "^1.5.1",
     "node-sass-chokidar": "^0.0.3",
     "npm-run-all": "^4.1.0",
-    "react-scripts": "1.0.11",
     "react-test-renderer": "^15.6.1"
   },
   "dependencies": {
@@ -19,6 +18,7 @@
     "react-dom": "^15.6.1",
     "react-modal": "^2.3.2",
     "react-router-dom": "^4.2.2",
+    "react-scripts": "^3.0.1",
     "react-scroll": "^1.5.4",
     "react-svg": "^2.1.21",
     "reset-css": "^2.2.1",
@@ -33,5 +33,17 @@
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
     "new": "source ./bin/new"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
