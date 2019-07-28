@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Element } from 'react-scroll'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import Modal from 'react-modal'
 
 import ShopCard from '../../components/ShopCard'
 import Title from '../../components/Title'
-import Button from '../../components/Button'
+// import Button from '../../components/Button'
 
 import iconShirt from './shirt.svg'
 import iconDiscount from './discount.svg'
@@ -14,18 +14,18 @@ import './styles.css'
 
 class Shop extends Component {
   state = {
-    modalOpen: false
+    modalOpen: false,
   }
 
   openDDSModal = () => {
     this.setState({
-      modalOpen: true
+      modalOpen: true,
     })
   }
 
   closeDDSModal = () => {
     this.setState({
-      modalOpen: false
+      modalOpen: false,
     })
   }
 
@@ -46,11 +46,7 @@ class Shop extends Component {
             price={40}
             level={0}
             root={url}
-            description={[
-              'Ciclo de Palestras',
-              'Coffee Break',
-              'Kit Semabio',
-            ]}
+            description={['Ciclo de Palestras', 'Coffee Break', 'Kit Semabio']}
           />
           <ShopCard
             product="B"
@@ -134,47 +130,51 @@ class Shop extends Component {
         <Modal
           isOpen={this.state.modalOpen}
           onRequestClose={this.closeDDSModal}
-          contentLabel='DDS Modal'
+          contentLabel="DDS Modal"
           className="modal"
           style={{
-            overlay: { zIndex: 5 }
+            overlay: { zIndex: 5 },
           }}
         >
-          <h1>
-            Você sabia que...
-          </h1>
+          <h1>Você sabia que...</h1>
 
           <p>
-            Alunos participantes do programa de assistência estudantil da UnB têm direito a 50% de desconto
-             em sua inscrição para a XVI Semana da Biologia?
+            Alunos participantes do programa de assistência estudantil da UnB
+            têm direito a 50% de desconto em sua inscrição para a XVI Semana da
+            Biologia?
           </p>
 
           <p>
-            Basta nos enviar por e-mail a sua declaração (atualizada) de participação no programa,
-             juntamente com um documento de identificação com foto, que iremos avaliar sua documentação e
-             lhe responder com um código de uso único. Depois, é só realizar sua inscrição como qualquer
-             outro participante e, no campo de códigos promocionais, inserir o código enviado para que 50%
-             do valor total do seu pacote de inscrição seja abatido!
+            Basta nos enviar por e-mail a sua declaração (atualizada) de
+            participação no programa, juntamente com um documento de
+            identificação com foto, que iremos avaliar sua documentação e lhe
+            responder com um código de uso único. Depois, é só realizar sua
+            inscrição como qualquer outro participante e, no campo de códigos
+            promocionais, inserir o código enviado para que 50% do valor total
+            do seu pacote de inscrição seja abatido!
           </p>
 
           <p>
-            Fácil, não é? Vem com a gente aproveitar esse evento que foi pensado também para você!
+            Fácil, não é? Vem com a gente aproveitar esse evento que foi pensado
+            também para você!
           </p>
 
           <div className="footer">
-            <div className="bar"></div>
+            <div className="bar" />
             <p>
-              O email deve ser enviado para o endereço <strong>semabio.unb.bsb@gmail.com</strong> com o assunto “comprovante -programa de assistência”.
+              O email deve ser enviado para o endereço{' '}
+              <strong>semabio.unb.bsb@gmail.com</strong> com o assunto
+              “comprovante -programa de assistência”.
             </p>
             <p>
-              Todos os códigos só poderão ser usados uma única vez e serão atrelados aos dados de cada
-               participante, após o uso, o código será invalidado.
+              Todos os códigos só poderão ser usados uma única vez e serão
+              atrelados aos dados de cada participante, após o uso, o código
+              será invalidado.
             </p>
           </div>
 
-          <div className="close" onClick={this.closeDDSModal}></div>
+          <div className="close" onClick={this.closeDDSModal} />
         </Modal>
-
       </section>
     )
   }

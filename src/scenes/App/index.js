@@ -10,12 +10,12 @@ import Contact from '../Contact'
 import PlacesToStay from '../PlacesToStay'
 import Partners from '../Partners'
 
-import BuyShirt from '../BuyShirt'
-import BuyPackage from '../BuyPackage'
+// import BuyShirt from '../BuyShirt'
+// import BuyPackage from '../BuyPackage'
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-const SPA = (props) => (
+const SPA = props => (
   <div className="App">
     <Home {...props} />
     <About {...props} />

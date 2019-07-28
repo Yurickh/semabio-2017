@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 import Price from '../Price'
-import Button from '../Button'
+// import Button from '../Button'
 
 import ShopClient from '../../helpers/shopClient'
 import GraphQL from '../../helpers/GraphQL'
@@ -21,38 +21,43 @@ const Levels = [
   {
     variant: '-red',
     image: iconOne,
-  }, {
+  },
+  {
     variant: '-orange',
     image: iconTwo,
-  }, {
+  },
+  {
     variant: '-green',
     image: iconThree,
-  }, {
+  },
+  {
     variant: '-blue',
     image: iconFour,
-  }, {
+  },
+  {
     variant: '-purple',
     image: iconFive,
-  }
+  },
 ]
 
 class ShopCard extends Component {
   buyPackageA = () => {
     const shopClient = ShopClient()
 
-    shopClient.createCheckout()
-    .then(checkout => {
-      const checkoutId = GraphQL.read(checkout).get('id')
-      const lineItems = {
-        variantId: PackageIds('A'),
-        quantity: 1,
-      }
+    shopClient
+      .createCheckout()
+      .then(checkout => {
+        const checkoutId = GraphQL.read(checkout).get('id')
+        const lineItems = {
+          variantId: PackageIds('A'),
+          quantity: 1,
+        }
 
-      return shopClient.addLineItems(checkoutId, lineItems)
-    })
-    .then(checkout => {
-      window.location.href = GraphQL.read(checkout).get('webUrl')
-    })
+        return shopClient.addLineItems(checkoutId, lineItems)
+      })
+      .then(checkout => {
+        window.location.href = GraphQL.read(checkout).get('webUrl')
+      })
   }
 
   render() {
@@ -61,20 +66,17 @@ class ShopCard extends Component {
 
     return (
       <div className="shop-card">
-        <img className="icon"
-          alt=""
-          src={level.image}
-        />
-        <h3 className={`title ${level.variant}`}>
-          Pacote {product}
-        </h3>
+        <img className="icon" alt="" src={level.image} />
+        <h3 className={`title ${level.variant}`}>Pacote {product}</h3>
 
         <div className="price">
           <Price>{price}</Price>
         </div>
 
         <div className="description">
-          {description.map(phrase => <div key={phrase}>{phrase}</div>)}
+          {description.map(phrase => (
+            <div key={phrase}>{phrase}</div>
+          ))}
         </div>
 
         {/* {
@@ -84,8 +86,6 @@ class ShopCard extends Component {
           </Link>
           : <a><Button color="green" onClick={this.buyPackageA}> Comprar </Button></a>
         } */}
-
-
       </div>
     )
   }
@@ -100,7 +100,7 @@ ShopCard.propTypes = {
 }
 
 ShopCard.defaultProps = {
-  description: []
+  description: [],
 }
 
 export default ShopCard
